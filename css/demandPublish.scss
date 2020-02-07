@@ -1,0 +1,623 @@
+.pr-banner-wrapper {
+  width: 100%;
+  height: 200px;
+  padding-top: 72px;
+  text-align: center;
+  background-image: url('../img/userCenter.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  h2 {
+      margin-top: 0;
+      margin-bottom: 9px;
+      font-size: 34px;
+      font-family: MicrosoftYaHei;
+      font-weight: 400;
+      color: rgba(255, 255, 255, 1);
+  }
+
+  p {
+      font-size: 16px;
+      font-family: MicrosoftYaHei;
+      font-weight: 400;
+      color: rgba(255, 255, 255, 1);
+  }
+}
+
+.pr-content-wrapper {
+  padding-bottom: 83px;
+  background-color: #F5F5F5;
+
+  .pr-nav-arrow {
+      width: 1200px;
+      margin: 0 auto;
+      overflow: hidden;
+
+      .breadcrumb {
+          background-color: #F5F5F5;
+
+          li {
+              a {
+                  font-size: 16px;
+              }
+          }
+      }
+  }
+
+  .pr-form-wrapper {
+      width: 1200px;
+      margin: 0 auto;
+      padding: 59px 30px 87px 30px;
+      overflow: hidden;
+      background-color: #ffffff;
+      .pr-form-title {
+          position: relative;
+          margin-bottom: 10px;
+          padding-bottom: 20px;
+          border-bottom: 1px solid #f5f5f5;
+
+          a {
+              display: inline-block;
+              font-size: 22px;
+              font-family: MicrosoftYaHei;
+              font-weight: 400;
+              color: rgba(51, 51, 51, 1);
+              text-decoration: none;
+              cursor: pointer;
+          }
+
+          span {
+              display: inline-block;
+              width: 1px;
+              height: 20px;
+              margin: 0 50px;
+              background: rgba(229, 229, 229, 1);
+          }
+
+          .form-title-active {
+              position: relative;
+              color: #025AB3;
+          }
+          .line{
+              width: 88px;
+              height: 4px;
+              background-color: #025AB3;
+              position: absolute;
+              bottom: 0;
+          }
+      }
+
+      .info {
+          width: 100%;
+          padding: 20px 30px;
+          margin-bottom: 30px;
+        //   border: 1px solid #f5f5f5;
+
+          span {
+              font-size: 16px;
+              color: red;
+          }
+      }
+
+      .form {
+          text-align: right;
+          .control-label{
+            width: 120px;
+          }
+        }
+
+      .form-group {
+        display: inline-block;
+        margin-bottom: 30px;
+        display: flex;
+        input{
+           color: #999999; 
+        }
+          label {
+              vertical-align: middle;
+              font-size: 16px;
+              font-family: MicrosoftYaHei;
+              font-weight: 400;
+              color: inherit;
+              display: flex;
+              align-items: center;
+              justify-content: flex-end;
+              // width: 120px;
+              span {
+                  color: rgba(255, 0, 0, 1);
+              }
+          }
+
+          .input-wrapper {
+              display: inline-block;
+              vertical-align: middle;
+          }
+
+          .radio-item-frist {
+              margin-left: 29px;
+          }
+
+          .radio-item {
+              margin-right: 42px;
+
+              input[type="radio"] {
+                  position: absolute;
+                  top: 6px;
+                  left: 13px;
+                  width: 16px;
+                  height: 16px;
+                  z-index: 2;
+                  opacity: 0;
+
+                  &:checked+label::after {
+                      background: url('../img/radio-select.png') no-repeat;
+                      background-position: center center;
+                  }
+              }
+
+              label {
+                  position: relative;
+                  font-size: 16px;
+                  line-height: 18px;
+                  font-family: MicrosoftYaHei;
+                  font-weight: 400;
+                  color: rgba(51, 51, 51, 1);
+
+                  &::after {
+                      content: '';
+                      display: block;
+                      width: 18px;
+                      height: 18px;
+                      position: absolute;
+                      left: -28px;
+                      bottom: 0px;
+                      border-radius: 50%;
+                      border: solid 1px #025AB3;
+                  }
+              }
+          }
+
+          .fileinput-wrapper {
+              margin-right: 30px;
+              position: relative;
+              width: 276px;
+              height: 171px;
+              background: rgba(244, 244, 244, 1);
+              text-align: center;
+              font-size: 16px;
+              font-family: MicrosoftYaHei;
+              font-weight: 400;
+              color: rgba(153, 153, 153, 1);
+
+              input {
+                  width: 276px;
+                  height: 133px;
+                  opacity: 0;
+              }
+
+              &::after {
+                  position: absolute;
+                  left: 50%;
+                  top: 50%;
+                  content: '';
+                  display: block;
+                  height: 52px;
+                  width: 2px;
+                  background: rgba(204, 204, 204, 1);
+                  transform: translate3d(-50%, -50%, 0);
+              }
+
+              &::before {
+                  position: absolute;
+                  left: 50%;
+                  top: 50%;
+                  content: '';
+                  display: block;
+                  width: 52px;
+                  height: 2px;
+                  background: rgba(204, 204, 204, 1);
+                  transform: translate3d(-50%, -50%, 0);
+              }
+
+              button {
+                  margin: 30px auto 0 auto;
+                  width: 100px;
+                  height: 30px;
+                  background: rgba(2, 90, 179, 1);
+                  border-radius: 15px;
+                  font-size: 14px;
+                  line-height: 20px;
+                  font-family: MicrosoftYaHei;
+                  font-weight: 400;
+                  color: rgba(254, 254, 254, 1);
+                  border-color: transparent;
+              }
+          }
+
+          .with-text-input {
+              box-sizing: border-box;
+              width: 400px;
+            //   padding-right: 16px;
+            //   background-color: #F5F5F5;
+              font-size:16px;
+              font-family:MicrosoftYaHei;
+              font-weight:400;
+              line-height: 56px;
+              color:rgba(51,51,51,1);
+              input {
+                  box-sizing: border-box;
+                  width: 345px !important;
+                  float: left;
+              }
+          }
+      }
+
+      .date {
+          float: right;
+          width: 399px;
+
+          .input-group-addon {
+              background: #f5f5f5;
+              border: solid 1px #F5F5F5;
+          }
+          .form-control{
+              color: #999999;
+          }
+      }
+
+      .text-left {
+          text-align: left;
+      }
+
+      .checkbox {
+          text-align: center;
+
+          input[type="checkbox"] {
+              width: 20px;
+              height: 20px;
+              position: absolute;
+              opacity: 0;
+              z-index: 2;
+
+              &:checked+label::after {
+                  background: url('../img/personalRegistration-selected.png') no-repeat;
+              }
+          }
+
+          label {
+              padding-left: 17px;
+              position: relative;
+              font-size: 16px;
+              font-family: MicrosoftYaHei;
+              font-weight: 400;
+              color: rgba(51, 51, 51, 1);
+
+              &::after {
+                  content: '';
+                  display: block;
+                  position: absolute;
+                  left: -20px;
+                  bottom: 2px;
+                  width: 20px;
+                  height: 20px;
+                  background: url('../img/personalRegistration-unselected.png') no-repeat;
+              }
+          }
+      }
+
+      .submit-btn {
+          margin-top: 81px;
+          text-align: center;
+          button {
+              margin-right: 10px;
+              width: 250px;
+              height: 60px;
+              background: rgba(2, 90, 179, 1);
+              font-size: 18px;
+              font-family: MicrosoftYaHei;
+              font-weight: 400;
+              color: rgba(255, 255, 255, 1);
+              border-color: transparent;
+              border-radius: 0;
+          }
+      }
+
+      .dropdown {
+          select {
+              box-sizing: border-box;
+              width: 399px;
+              height: 56px;
+              font-size: 16px;
+              font-family: MicrosoftYaHei;
+              font-weight: 400;
+              text-align: left;
+              color: #999999;
+              background: rgba(244, 244, 244, 1);
+              border: 0;
+              box-shadow: 0 0 0 0;
+              border-radius: 0;
+          }
+      }
+
+      .one-select {
+          select {
+              width: 400px;
+          }
+      }
+      .text-info {
+          float: right;
+          width: 967px;
+          padding: 20px;
+          margin-bottom: 30px;    
+          text-align: left;
+          border: solid 1px #f5f5f5;
+          color: #999999;
+      }
+
+      // 上传图片
+      .fileinput-three {
+          span {
+              display: inline-block;
+              color: #999999;
+              font-size: 12px;
+          }
+
+          .form-group {
+              margin-bottom: 0;
+          }
+
+          .fileinput-wrapper {
+              margin-top: 10px;
+          }
+
+          .file-name-input {
+              height: 40px;
+              width: 276px;
+              margin-top: 10px;
+              font-size: 16px;
+          }
+      }
+      // 选项框
+      .checkbox-group {
+          // margin-left: 47px;
+
+          .control-title {
+              display: inline-block;
+              margin-right: 23px;
+              font-size: 16px;
+              font-family: MicrosoftYaHei;
+              font-weight: 400;
+              color: rgba(51, 51, 51, 1);
+              line-height: 38px;
+              vertical-align: top;
+          }
+
+          .checkbox-right {
+              display: inline-block;
+              width: 87%;
+
+              .checkbox-position {
+                  display: inline-block;
+                  margin-right: 55px;
+                  margin-bottom: 30px;
+
+                  &:nth-child(5),
+                  &:nth-child(10) {
+                      margin-right: 0px;
+                  }
+
+                  label {
+                      min-width: 129px;
+                      text-align: left;
+                      font-size: 16px;
+                      font-family: MicrosoftYaHei;
+                      font-weight: 400;
+                      color: rgba(51, 51, 51, 1);
+                      display: flex;
+                      justify-content: flex-start;
+                  }
+              }
+          }
+      }
+
+      .text-right {
+          text-align: right;
+      }
+
+      .text-left {
+          text-align: left;
+      }
+
+      .input-wrapper {
+
+          input,
+          select {
+              width: 399px;
+          }
+
+          ul {
+              width: 399px;
+          }
+      }
+
+      .keyword-input-wrapper {
+          display: inline-block;
+          position: relative;
+          width: 106px;
+          background-color: #F5F5F5;
+          border-radius: 15px;
+
+          .keyword-input {
+              width: 86px;
+              height: 30px;
+              border-radius: 15px;
+              outline: none;
+          }
+
+          .keyword-input-icon {
+              position: absolute;
+              right: 12px;
+              bottom: 9px;
+              display: block;
+              width: 12px;
+              height: 12px;
+              background: url('../img/delete.png') no-repeat;
+              background-position: center center;
+              transform: rotateZ(45deg);
+          }
+      }
+
+      .keyword-item {
+          display: inline-block;
+          position: relative;
+          margin-right: 30px;
+          height: 30px;
+          padding: 0 32px 0 12px;
+          background-color: #F5F5F5;
+          border-radius: 15px;
+          line-height: 30px;
+          font-size: 16px;
+          font-family: MicrosoftYaHei;
+          font-weight: 400;
+          color: rgba(153, 153, 153, 1);
+
+          .keyword-item-delete {
+              position: absolute;
+              right: 12px;
+              bottom: 9px;
+              display: block;
+              width: 12px;
+              height: 12px;
+              background: url('../img/delete.png') no-repeat;
+              background-position: center center;
+          }
+      }
+
+      .form-textarea {
+          label {
+              vertical-align: top;
+          }
+
+          .textarea-bg {
+              width: 967px;
+              background-color: #F5F5F5;
+              border-color: transparent;
+              box-shadow: 0 0 0 0;
+              outline: none;
+          }
+      }
+
+      .address-dropdown-wrapper {
+          margin-left: 20px;
+
+          &:nth-child(2) {
+              margin-left: 0;
+          }
+      }
+
+      .checkbox-group {
+          // margin-left: 22px;
+          .control-title {
+              display: inline-block;
+              margin-right: 23px;
+              // margin-left: 20px;
+              font-size:16px;
+              font-family:MicrosoftYaHei;
+              font-weight:400;
+              color:rgba(51,51,51,1);
+              line-height:38px;
+              vertical-align: top;
+          }
+          .checkbox-right {
+              display: inline-block;
+              width: 87%;
+              .checkbox-position {
+                  display: inline-block;
+                  margin-right: 55px;
+                  margin-bottom: 30px;
+                  &:nth-child(5),&:nth-child(10) {
+                      margin-right: 0px;
+                  }
+                  label {
+                      min-width: 129px;
+                      text-align: left;
+                      font-size:16px;
+                      font-family:MicrosoftYaHei;
+                      font-weight:400;
+                      color:rgba(51,51,51,1);
+                  }
+              }
+          }
+      }
+
+      .fileinput-left {
+          label {
+              vertical-align: top;
+              margin-left: 46px;
+          }
+
+          div {
+              display: inline-block;
+          }
+      }
+
+      .three-select {
+          select {
+              width: 310px;
+          }
+      }
+      // 候选人
+      .candidate-wrapper {
+          padding-bottom: 20px;
+          margin-bottom: 20px;
+          border-bottom: solid 1px #f5f5f5;
+          text-align: center;
+          .candidate-add-btn {
+              text-align: center; 
+              padding: 10px 20px;
+              border: solid 1px #025AB3;
+              color: #025AB3;
+              background: #ffffff;
+          }
+      }
+      // 文件上传
+      .form-fileupload {
+          cursor: pointer;
+        a{
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .btn_addPic {
+            display: inline-block;
+            position: relative;
+            width: 140px;
+            height:46px;
+            line-height:46px; 
+            overflow: hidden;
+            background: #025AB3;
+            color: #fff;
+            text-align: center;
+            font-size: 14px;
+          }
+        .filePrew{
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 140px;
+            height:46px;
+            font-size: 16px;
+            opacity: 0;
+            filter: alpha(opacity=0);
+            cursor: pointer;
+        }
+      }
+  }
+}
+
+.margin-agree {
+  text-align: left !important;
+  margin-left: 166px;
+  margin-top: 33px;
+}

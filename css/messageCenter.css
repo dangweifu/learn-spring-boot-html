@@ -1,0 +1,342 @@
+@charset "UTF-8";
+.tab-content {
+  background: #fff;
+  margin-top: 1px;
+  min-height: 500px;
+  margin-bottom: 80px;
+}
+
+.tab-content .dockingform {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+}
+
+.tab-content .dockingform .control {
+  display: flex;
+  align-items: center;
+}
+
+.tab-content .dockingform .form-control {
+  width: 153px;
+  height: 40px;
+  margin-right: 30px;
+  background: #F4F4F4;
+  border: none;
+  box-shadow: none;
+  font-size: 14px;
+  color: #999999;
+}
+
+.tab-content .dockingform .inputStyle {
+  height: 40px;
+  width: 270px;
+  line-height: 40px;
+  color: #999999;
+  font-size: 14px;
+  background: #F4F4F4;
+  border: none;
+  padding: 12px;
+  margin-right: 20px;
+}
+
+.tab-content .dockingform .control-label {
+  font-size: 16px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #333333;
+}
+
+.tab-content .dockingform .search {
+  width: 80px;
+  height: 40px;
+  background: #025AB3;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+.tab-content .dockingform .reset {
+  width: 80px;
+  height: 40px;
+  background: #fff;
+  border: 1px solid #025AB3;
+  font-size: 16px;
+  color: #025AB3;
+  margin-left: 10px;
+}
+
+.tab-content .import {
+  padding: 20px 40px 30px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tab-content .import div {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.tab-content .import img {
+  width: 20px;
+  height: 18px;
+  margin-right: 10px;
+}
+
+.tab-content .import span {
+  padding-right: 28px;
+  font-size: 16px;
+}
+
+.tab-content .import a {
+  font-size: 16px;
+  color: #333333;
+  text-decoration: none;
+}
+
+.tab-content .import .notice {
+  width: 92px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  background: #2AC579;
+  border: none;
+  margin-left: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.tab-content .import .notice a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.tab-content .import .detail {
+  font-size: 16px;
+}
+
+.tab-content .import .detail .lookDetail {
+  font-size: 14px;
+  color: #025AB3;
+  border-bottom: 1px solid;
+  margin: 0px;
+}
+
+.tab-content .docking-table {
+  padding: 0 40px;
+}
+
+.tab-content .docking-table .title-table {
+  background: rgba(2, 90, 179, 0.15);
+}
+
+.tab-content .docking-table .title-table th {
+  color: #333333;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  text-align: center;
+  font-size: 16px;
+  border: none;
+}
+
+.tab-content .docking-table .table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #fff;
+}
+
+.tab-content .docking-table .checkboxOne {
+  padding-left: 10px;
+}
+
+.tab-content .docking-table .checkboxOne input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  opacity: 0;
+  z-index: 2;
+}
+
+.tab-content .docking-table .checkboxOne input[type="checkbox"]:checked + label::after {
+  background-image: url("../img/personalRegistration-selected.png");
+  border: none;
+  cursor: pointer;
+}
+
+.tab-content .docking-table .checkboxOne label {
+  position: relative;
+  font-size: 18px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #333333;
+}
+
+.tab-content .docking-table .checkboxOne label::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: -9px;
+  bottom: -7px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #BCBCBC;
+  border-radius: 2px;
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+.tab-content .docking-table .table th, .tab-content .docking-table .table tr td {
+  border: none;
+}
+
+.tab-content .docking-table .table th:nth-child(3), .tab-content .docking-table .table tr td:nth-child(3) {
+  cursor: pointer;
+}
+
+.tab-content .docking-table .title {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 345px;
+  border: none;
+}
+
+.tab-content .docking-table table, .tab-content .docking-table tr th {
+  border: none;
+  text-align: center;
+}
+
+.tab-content .docking-table tr td {
+  text-align: center;
+  border: none;
+  font-size: 14px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+}
+
+.tab-content .docking-table tr td img {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.tab-content .docking-table tr td img:last-child {
+  margin-right: 0px;
+}
+
+.tab-content .docking-table input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+
+.tab-content .docking-table .page {
+  text-align: center;
+}
+
+.tab-content .docking-table .page .pagination > .active > a, .tab-content .docking-table .page .pagination > li > a {
+  margin-right: 5px;
+  border-radius: 4px;
+}
+
+.tab-content .docking-table .page .pagination > li:first-child > a {
+  border-radius: 4px;
+}
+
+.requirementDetail {
+  min-height: 1000px;
+  background: #fff;
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 40px 40px;
+}
+
+.requirementDetail p {
+  font-size: 22px;
+  font-weight: bold;
+  padding-top: 60px;
+  margin: 0px;
+}
+
+.requirementDetail .secret {
+  padding: 0 20px;
+  width: 100%;
+}
+
+.requirementDetail .secret .nav-ceil {
+  text-align: center;
+  padding: 20px 0px;
+  background: #f6f6f6;
+  width: 100%;
+  margin-top: 30px;
+  font-size: 16px;
+  font-family: '微软雅黑';
+  color: #333333;
+}
+
+.requirementDetail .secret .nav-ceil .txt-ceil {
+  padding-right: 60px;
+}
+
+.requirementDetail .secret .content {
+  width: 100%;
+}
+
+.requirementDetail .secret .content p {
+  padding: 30px 0 10px;
+  border-bottom: 1px solid #cccccc;
+}
+
+.requirementDetail .secret .content p span {
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.requirementDetail .secret .content .txt {
+  padding: 0 20px;
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 36px;
+  color: #333;
+  min-height: 300px;
+}
+
+.requirementDetail .secret .content .txt h5 {
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+.requirementDetail .secret .content .txt span {
+  color: #468cd3;
+}
+
+.requirementDetail .secret .content .button {
+  margin-top: 50px;
+  padding: 0 20px;
+}
+
+.requirementDetail .secret .content .button .btn {
+  width: 140px;
+  height: 40px;
+  background: #fff;
+  color: #025AB3;
+  border: 1px solid #025AB3;
+}
+
+.requirementDetail .secret .content .button .txt {
+  font-size: 16px;
+  color: #333333;
+  font-family: '微软雅黑';
+}
+
+.requirementDetail .secret .content .button .left {
+  float: left;
+}
+
+.requirementDetail .secret .content .button .right {
+  float: right;
+}

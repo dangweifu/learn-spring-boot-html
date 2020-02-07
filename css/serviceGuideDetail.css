@@ -1,0 +1,49 @@
+.question_title{
+
+}
+
+.question_title p{
+    margin: 30px 0;
+}
+
+.numberBars{
+   margin: 150px 0;
+}
+
+.numberBars div{
+    width: 116px;
+    height: 30px;
+    border:1px solid #025AB3;
+    border-radius: 5px;
+    color: #025AB3;
+    text-align: center;
+    line-height: 30px;
+    display: inline-block;
+}
+
+.numberBars p{
+    width: 155px;
+    color: #333;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.numberBars div:hover{
+    cursor: pointer;
+}
+
+.numberBars button{
+    width: 140px;
+    height: 40px;
+    background: #025AB3;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    border:none;
+    border-radius: 6px;
+    margin-right: 30px;
+}

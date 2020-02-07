@@ -1,0 +1,40 @@
+.allprovince{
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 20px;
+    clear: both;
+    float: none;
+    overflow: hidden;
+    background: white;
+}
+.allprovince ul li {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    float: left;
+    position: relative;
+    display: inline-block;
+    list-style: none;
+    width: 212px;
+    text-indent: 5px;
+    height: 70px;
+    margin: 0 20px 10px 0;
+}
+.allprovince ul li img {
+    opacity: 0;
+    transition: all 0.3s;
+    position: absolute;
+    width: 166px;
+    height: 53px!important;
+}
+.allprovince ul li:hover img{
+    opacity: 1;
+}
+.allprovince ul li .allprovince_title {
+    font-weight: bold;
+    margin-top: 2px;
+    width: 166px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

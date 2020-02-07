@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>个人注册</title>
+  <!--[if lt IE 9]>
+  <script src="../js/html5shiv.min.js"></script>
+  <script src="../js/respond.min.js"></script>
+  <![endif]-->
+
+  <script src="../layui.all.js"></script>
+
+  <!-- Bootstrap -->
+  <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/font-awesome.min.css" rel="stylesheet">
+  <link href="../css/common.min.css" rel="stylesheet">
+  <link href="../css/personalRegistration.css" rel="stylesheet">
+    <style>
+        .col-xs-8{
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+<!-- 头部区域 -->
+<header></header>
+<!--body-->
+<div class="pr-banner-wrapper">
+  <h2>用户注册</h2>
+</div>
+<div class="pr-content-wrapper">
+  <div class="pr-nav-arrow top">
+    <img class="icon" src="img/home.png" alt="">
+    <ol class="breadcrumb">
+      <li><a href="../index.html">首页</a></li>
+      <li><a href="#">用户注册</a></li>
+    </ol>
+  </div>
+  <div class="pr-form-wrapper">
+    <div class="pr-form-title">
+      <a href="../unitRegistration.html">单位注册</a>
+      <span></span>
+      <a class="form-title-active">个人注册</a>
+    </div>
+    <form class="form-horizontal" role="form" id="form">
+      <div class="form-group">
+        <label class="col-xs-4 control-label"><span>*</span> 注册账号：</label>
+        <div class="col-xs-4">
+          <input class="form-control" name="userName" type="text" placeholder="4-16个字符，可以用英文、数字、下划线">
+          <div class="errors"></div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-xs-4 control-label"><span>*</span> 密码：</label>
+        <div class="col-xs-4">
+          <input class="form-control" id="password" name="password" type="password"
+                 placeholder="12-20位字符组成，必须包含大小写字母和数字 ">
+          <div class="errors"></div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-xs-4 control-label"><span>*</span> 确认密码：</label>
+        <div class="col-xs-4">
+          <input class="form-control" name="passwordConfirm" type="password" placeholder="请输入确认密码">
+          <div class="errors"></div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-xs-4 control-label"><span>*</span> 真实姓名：</label>
+        <div class="col-xs-4">
+          <input class="form-control" name="trueName" type="text" placeholder="请输入您的真实姓名">
+          <div class="errors"></div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-xs-4 control-label"><span>*</span> 身份证号：</label>
+        <div class="col-xs-4">
+          <input class="form-control" name="idCard" type="text" placeholder="请输入您的身份证号">
+          <div class="errors"></div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-xs-4 control-label" style="margin-right: 15px"><span>*</span> 上传身份证照：</label>
+        <div class="col-xs-8 row">
+          <div class="col-xs-6 fileinput-wrapper">
+            <input type="file" name="cardFront" onchange="getPhoto(this,'img-front')">
+            <div class="errors" style="position: relative;bottom: -50px;left: -15px;text-align: left;"></div>
+            上传身份证正面
+            <img id="img-front"/>
+          </div>
+        </div>
+        <div class="col-xs-8 idCard">
+          <div class="col-xs-6 fileinput-wrapper">
+            <input type="file" name="cardBack" onchange="getPhoto(this,'img-back')">
+            <div class="errors"  style="position: relative;bottom: -57px;left: -15px;text-align: left;"></div>
+            上传身份证反面
+            <img id="img-back"/>
+          </div>
+          <div class="errors" style="clear: both;height: 20px"></div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-xs-4 control-label"><span>*</span> 电子邮箱：</label>
+        <div class="col-xs-4">
+          <input class="form-control" name="email" type="email" placeholder="请输入电子邮箱 ">
+          <div class="errors"></div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-xs-4 control-label"><span>*</span> 手机号：</label>
+        <div class="col-xs-4">
+          <input class="form-control" name="telphone" type="text" placeholder="请输入您的手机号 ">
+          <div class="errors"></div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-xs-4 control-label"><span>*</span> 短信验证：</label>
+        <div class="col-xs-4">
+          <input class="form-control" name="telCode" type="text" placeholder="请输入短信验证码 ">
+          <div class="short-message getcode" onclick="sendSms(this)">获取验证码</div>
+          <div class="errors"></div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-xs-4 control-label"> 单位名称：</label>
+        <div class="col-xs-4">
+          <input class="form-control" name="unitName" type="text" placeholder="请输入单位名称 ">
+          <div class="errors"></div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-xs-4 control-label">单位地址：</label>
+        <div class="input-wrapper dropdown address-dropdown-wrapper col-xs-2">
+          <select title="省份" class="form-control" name="province" id="province"
+                  onchange="getcity(this.value)">
+            <option value="1">请选择所在省份</option>
+          </select>
+        </div>
+        <div class="input-wrapper dropdown address-dropdown-wrapper col-xs-2">
+          <select title="市区" class="form-control" name="city" id="city" onchange="getcounty(this.value)">
+            <option value="1">请选择所在市区</option>
+          </select>
+        </div>
+        <div class="input-wrapper dropdown address-dropdown-wrapper col-xs-2">
+          <select title="区" class="form-control" name="county" id="county">
+            <option value="1">请选择所在区</option>
+          </select>
+        </div>
+      </div>
+      <div class="checkbox col-xs-10">
+        <input type="checkbox" name="agree" id="agree">
+        <label>点击阅读注册协议</label>
+        <div class="errors"></div>
+      </div>
+      <div class="submit-btn col-xs-12">
+        <button type="submit" class="btn btn-default">确定注册</button>
+      </div>
+    </form>
+  </div>
+</div>
+<!-- 脚注区域 -->
+<footer>
+</footer>
+
+<!-- jQuery 和 Bootstrap-->
+<script src="../bootstrap/js/jquery.min.js"></script>
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+<script src="../js/validate.min.js"></script>
+<script src="../js/cookie.min.js"></script>
+<script src="../js/common.js"></script>
+
+<script>
+  $("header").load("header.html");
+  $("footer").load("footer.html");
+  
+  //省市区
+  var parentId = 0;
+  ajax("get", "/front/cgarea/findChilds/" + parentId, parentId, function (res) {
+    if (res.code == 0) {
+      var areaList = res.areaList;
+      var str = "<option value='1'>请选择所在省份</option>";
+      for (var i = 0; i < areaList.length; i++) {
+        str += "<option value='" + areaList[i].areaId + "'>" + areaList[i].areaName + "</option>";
+      }
+      $("#province").html(str)
+      $("#province").val(1)
+    }
+  })
+
+  function getcity(parentId) {
+    ajax("get", "/front/cgarea/findChilds/" + parentId, parentId, function (res) {
+      if (res.code == 0) {
+        var areaList = res.areaList;
+        var str = "";
+        for (var i = 0; i < areaList.length; i++) {
+          str += "<option value='" + areaList[i].areaId + "'>" + areaList[i].areaName + "</option>";
+        }
+        $("#city").html(str)
+        $("#city").val(areaList[0].areaId || 1)
+        getcounty(areaList[0].areaId)
+      }
+    })
+  }
+
+  function getcounty(parentId) {
+    ajax("get", "/front/cgarea/findChilds/" + parentId, parentId, function (res) {
+      if (res.code == 0) {
+        var areaList = res.areaList;
+        var str = "";
+        for (var i = 0; i < areaList.length; i++) {
+          str += "<option value='" + areaList[i].areaId + "'>" + areaList[i].areaName + "</option>";
+        }
+        $("#county").html(str)
+        $("#county").val(areaList[0].areaId || 1)
+      }
+    })
+  }
+
+  $(document).ready(function () {
+    $('#form')
+      .validate({
+        rules: {
+          userName: {
+            required: true,
+            rangelength: [4, 16],
+            checkUserName: true,
+            remote: {
+              url: apiUrl + '/front/cgmember/idDetect',   //后台处理程序
+              type: "post",                               //数据发送方式
+              dataType: "json",                           //接受数据格式
+              data: {                                     //要传递的数据
+                username: function () {
+                  return $("input[name='userName']").val();
+                }
+              }
+            }
+          },
+          password: {
+            required: true,
+            rangelength: [12, 20],
+            checkPwd: true
+          },
+          passwordConfirm: {
+            required: true,
+            equalTo: "#password"
+          },
+          trueName: {
+            required: true
+          },
+          idCard: {
+            required: true,
+            rangelength: [18, 18],
+          },
+          cardFront: {
+            required: true,
+          },
+          cardBack: {
+            required: true
+          },
+          email: {
+            required: true,
+            email: true,
+            rangelength:[10,20],
+          },
+          telphone: {
+            required: true,
+            rangelength:[11,11],
+            digits:true,
+          },
+          telCode: {
+            required: true,
+            rangelength:[6,6]
+          },
+          agree: "required"
+        },
+        messages: {
+          userName: {
+            required: "账号不能为空",
+            rangelength: "账号长度为4-16位",
+            remote: "用户已存在"
+          },
+          password: {
+            required: "密码不能为空",
+            rangelength: "密码长度为12-20位",
+            checkPwd:'密码格式有误'
+          },
+          passwordConfirm: {
+            required: "密码不能为空",
+            equalTo: "与上一次输入密码不一致"
+          },
+          trueName: {
+            required: "真实姓名不能为空"
+          },
+          idCard: {
+            required: "身份证号不能为空",
+            rangelength:"输入的18位的验证码",
+          },
+          cardFront: {
+            required: "身份证照不能为空"
+          },
+          cardBack: {
+            required: "身份证照不能为空"
+          },
+          email: {
+            rangelength: "邮箱格式不正确", 
+            required: "邮箱不能为空",
+            email: "无效的邮箱地址"
+          },
+          telphone: {
+            rangelength: "手机号长度11位", 
+            required: "电话不能为空",
+            maxlength:"输入的电话号码有误",
+            digits:"输入的电话号码有误"
+          },
+          telCode: {
+            required: "验证码不能为空",
+            rangelength:"输入的6位的验证码",
+          },
+          agree: "请接受我们的条款"
+
+        },
+        errorElement: "div",
+        errorPlacement: function (error, element) {
+          error.appendTo(element.parent().find(".errors"));
+        },
+        submitHandler: function (form) {
+          //Use Ajax to submit form data
+          var json = $("#form").serializeJson()
+          json.cardFront = $("#img-front").attr("origin-url");
+          json.cardBack = $("#img-back").attr("origin-url");
+          json.province = json.province == 1 ? '' : json.province;
+          json.city = json.city == 1 ? '' : json.city;
+          json.county = json.county == 1 ? '' : json.county;
+          layer.msg('注册中', {
+            icon: 16
+            ,shade: 0.01
+          })
+          ajaxRaw("post", "/front/cgmember/register", JSON.stringify(json), function (result) {
+            console.log(result);
+            if (result.code == 0) {//根据返回值进行跳转
+               layer.msg("注册成功！");
+              window.location.href = '../login.html';
+            } else {
+              if (result.code == 110) {
+                layer.msg("验证码已失效！");
+              } else if (result.code == 120) {
+                layer.msg("验证码错误！");
+              } else {
+                layer.msg("注册失败！");
+              }
+            }
+          }, 'json');
+        }
+      })
+    $.validator.addMethod("checkUserName", function (value, element, params) {
+      var checkUserName = /^[a-zA-Z0-9_]+$/g;
+      return this.optional(element) || (checkUserName.test(value));
+    }, "账号只能包含英文、数字、下划线");
+    $.validator.addMethod("checkPwd", function (value, element, params) {
+      var checkPwd = /^(?![0-9a-z]+$)(?![0-9A-Z]+$)(?![a-zA-Z]+$)[a-zA-Z0-9\W_]+$/g;
+      return this.optional(element) || (checkPwd.test(value));
+    }, "密码必须包含大小写字母和数字");
+  })
+
+  function getPhoto(e, id) {
+    var formdata = new FormData();
+    formdata.append('file', e.files[0]);
+    ajaxImg("/uploadLocal", formdata, function (result) {
+
+      if (result.code == 0) {
+        $('#' + id).attr("src", imgUrl + result.file.url).attr("origin-url", result.file.url)
+      }
+    })
+  }
+
+  function sendSms(e) {
+    var valid = $("input[name=telphone]").valid();
+    if (valid) {
+      if($(".getcode").text()!="获取验证码"){
+        return false;
+      }
+      var i=60;
+      $(".getcode").text(i+"秒").attr("disabled","disabled")
+      var timer=setInterval(function(){
+        i--;
+        $(".getcode").text(i+"秒")
+        if(i==0){
+          i=60;
+          $(".getcode").text("获取验证码").removeAttr("disabled");
+          clearInterval(timer)
+        }
+      },1000)
+      ajax("post", "/front/cgmember/smsVerification", {"telphone": $("input[name=telphone]").val(),"flag":"register"}, function (result) {
+        console.log(result);
+        if (result.code == 0) {//根据返回值进行跳转
+          $(".short-message").addClass('disabled').html("验证码已发送")
+          $(".getcode").removeAttr("disabled")
+        } else {
+           layer.msg("发送失败！");
+        }
+      }, 'json');
+    }
+  }
+
+</script>
+
+</html>

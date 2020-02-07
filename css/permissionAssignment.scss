@@ -1,0 +1,220 @@
+// .assignment{
+//   background: #fff;
+//   min-height: 1000px;
+//   margin-bottom: 80px;
+//   padding: 30px 34px;
+//   .title-table{
+//     background: rgba(2,90,179,0.15);
+//     th{
+//       color: #333333;
+//       font-family: MicrosoftYaHei;
+//       font-weight: 400;
+//       text-align: center;
+//       font-size: 16px;
+//     }
+//   }
+//   .checkboxOne{
+//     padding-left: 10px;
+//     input[type="checkbox"] {
+//         width: 20px;
+//         height: 20px;
+//         position: absolute;
+//         opacity: 0;
+//         z-index: 2;
+//         &:checked +label::after{
+//           background-image: url('../img/personalRegistration-selected.png');
+//           border:none;
+//           cursor: pointer;
+//         }
+//     }
+//     label {
+//         position: relative;
+//         font-size:18px;
+//         font-family:MicrosoftYaHei;
+//         font-weight:400;
+//         color:rgba(51,51,51,1);
+//         &::after {
+//             content: '';
+//             display: block;
+//             position: absolute;
+//             left: -9px;
+//             bottom: -10px;
+//             width: 20px;
+//             height: 20px;
+//             border:1px solid #BCBCBC;
+//             border-radius:2px;
+//             cursor: pointer;
+//         }   
+//     }
+//   }
+//   .table>tbody>tr>td{
+//     text-align: center;
+//   }
+//   .number{
+//     width: 80px;
+//     text-align: center;
+//   }
+//   .glyphicon{
+//     color: #cccccc;
+//   }
+//   .permission{
+//     text-align: left;
+//     padding-left: 36px;
+//   }
+//   .treeview span.icon{
+//     width: 120px;
+//     margin-left: 96px;
+//     margin-right: 0PX;
+//   }
+//   .treeview span.indent{
+//     margin-right: 60px;
+//   }
+//   .treeview .list-group-item{
+//     text-align: left;
+//   }
+//   .treeview .node-selected{
+//     background: #f5f5f5!important;
+//     color: #333333!important;
+//   }
+
+//   .modal-footer{
+//     border-top:none;
+//     display: flex;
+//     justify-content: center;
+//     .btn+.btn{
+//       margin-left: 20px;
+//     }
+//   }
+//   .btn-default{
+//     width:140px;
+//     height:40px;
+//     background:#025AB3;
+//     border:1px solid #025AB3;
+//     font-size:16px;
+//     background-color: #fff;
+//     border-radius:2px;
+//     &:hover{
+//       background:#025AB3;
+//       color: #fff;
+//     }
+//   }
+//   .btn-primary{
+//     width:140px;
+//     height:40px;
+//     background:#025AB3;
+//     color: #fff;
+//     font-size:16px;
+//     background-color: #025AB3;
+//     border-radius:2px;
+//   }
+// }
+.demand-table,
+.docking-table {
+  padding: 0 40px;
+
+  .title-table {
+    background: rgba(2, 90, 179, 0.15);
+
+    th {
+      color: #333333;
+      font-family: MicrosoftYaHei;
+      font-weight: 400;
+      text-align: center;
+      font-size: 16px;
+      border: none;
+
+    }
+  }
+
+  .checkboxOne {
+    // padding-left: 10px;
+
+    input[type="checkbox"] {
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      opacity: 0;
+      z-index: 2;
+
+      &:checked+label::after {
+        background-image: url('../img/personalRegistration-selected.png');
+        border: none;
+        cursor: pointer;
+      }
+    }
+
+    label {
+      position: relative;
+      font-size: 18px;
+      font-family: MicrosoftYaHei;
+      font-weight: 400;
+      color: rgba(51, 51, 51, 1);
+
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: -9px;
+        bottom: -10px;
+        width: 20px;
+        height: 20px;
+        border: 1px solid #BCBCBC;
+        border-radius: 2px;
+        // background-image: url('../img/personalRegistration-unselected.png');
+        cursor: pointer;
+      }
+    }
+  }
+
+  .table th,
+  .table tr td {
+    border: none;
+  }
+
+  table,tbody,tr,th,td {
+    border: 1px solid #666666 !important; 
+  }
+
+  table,
+  tr th {
+    border: none;
+    text-align: center;
+  }
+
+  tr td {
+    text-align: center;
+    border: none;
+    font-size: 14px;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    &:last-child {
+      text-align: left;
+    }
+    img {
+      margin-right: 20px;
+      cursor: pointer;
+
+      &:last-child {
+        margin-right: 0px;
+      }
+    }
+  }
+
+  tr td a {
+    display: block;
+    width: 70px;
+    height: 20px;
+    background: url("../img/more.png") no-repeat;
+    background-position: center center;
+  }
+
+  .accordion-body tr td:last-child {
+    text-align: left;
+    text-indent: 2em;
+  }
+
+  input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+  }
+}

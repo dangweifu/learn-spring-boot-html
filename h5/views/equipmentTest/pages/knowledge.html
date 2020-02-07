@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<style>
+		.card-photo-four{
+			padding: 10px 0px;
+			margin: 0;
+            box-shadow: none;
+            background: transparent;
+        }
+
+        .card-photo-four .line-list {
+            display: inline-block;
+            margin-bottom: 10px;
+            font-size: 0;
+        }
+
+        .card-photo-four .line-list .card {
+            width: 96.5%;
+            height: 19.62%;
+            background-color: #ffffff;
+        }
+
+        .card-photo-four .line-list:nth-child(even) .card {
+            float: right;
+        }
+        
+        .card-photo-four .line-list .card .image{
+            position: relative;
+            width:168px;
+            height:165px;
+            background:rgba(255,255,255,1);
+            border-radius:6px 6px 0px 0px;
+            overflow: hidden;
+        }
+        .card-photo-four .line-list .card .image img{
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            transform: translateY(-50%);
+        }
+
+        .card-photo-four .line-list .card .text{
+            display: block;
+            padding: 0 0 15px 0;
+            font-size:14px;
+            font-family:MicrosoftYaHei;
+            font-weight:400;
+            color:rgba(51,51,51,1);
+            line-height:20px;
+            text-align: center;
+        }
+
+	</style>
+
+	<div class="mui-card card-photo-four">
+		<!--内容区-->
+		<div class="mui-card-content mui-row">
+			<div class=" line-list mui-col-sm-6 mui-col-xs-6">
+                <div class="card">
+                    <div class="image">
+                        <img class="lazy" src="../../../../assets/img/lazyload/default.png" width="100%" height="auto" data-original="../../../../assets/img/photoCard/2.png"  >
+                    </div>
+                    <span class="text">海军武器装备</span>
+                </div>
+			</div>
+		</div>
+	</div>
+
+    <!-- <script type="text/babel"> -->
+    <script src="../../../../static/js/lazyload/jquery.lazyload.min.js" type="text/javascript"></script>
+    <script>
+		mui.ready(function(){
+			var dataArr = [
+				{ text : '海军武器装备', img: '../../../../assets/img/photoCard/2.png' },
+				{ text : '现代武器装备概论', img: '../../../../assets/img/photoCard/3.png' },
+				{ text : '海军武器装备', img: '../../../../assets/img/photoCard/4.png' },
+				{ text : '现代武器装备概论', img: '../../../../assets/img/photoCard/5.png' },
+				{ text : '海军武器装备', img: '../../../../assets/img/photoCard/2.png' },
+				{ text : '现代武器装备概论', img: '../../../../assets/img/photoCard/3.png' },
+				{ text : '海军武器装备', img: '../../../../assets/img/photoCard/4.png' },
+				{ text : '现代武器装备概论', img: '../../../../assets/img/photoCard/5.png' }
+			];
+
+			var templateHtml = '';
+
+			mui.each(dataArr, function(index, item){
+				templateHtml +=
+					`
+                    <div class=" line-list mui-col-sm-6 mui-col-xs-6">
+                        <div class="card">
+                            <div class="image">
+                                <img class="lazy" src="../../../../assets/img/lazyload/default.png" width="100%" height="auto" data-original="${item.img}"  >
+                            </div>
+                                <span class="text">${item.text}</span>
+                        </div>
+                    </div>
+					`
+			});
+
+			// 产品技术
+            mui('.list2 .mui-card-content')[0].innerHTML = templateHtml;
+            
+            // 懒加载
+            $("img.lazy").lazyload({
+                // threshold: 1,
+                effect: "fadeIn"
+            });
+		});
+	</script>
+</html>

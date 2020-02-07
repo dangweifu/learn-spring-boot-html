@@ -1,0 +1,142 @@
+.tab-content {
+    overflow: hidden;
+    padding: 40px 41px;
+
+    .form-group {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 30px;
+
+        input {
+            width: 384px;
+            background: #fff;
+            border: 1px solid #ccc;
+        }
+
+        .control-label {
+            width: 130px;
+            text-align: right;
+            font-weight: 500;
+            font-size: 16px;
+
+            span {
+                color: #ff0000;
+            }
+        }
+
+        textarea.form-control {
+            width: 928px;
+            // height: 52px;
+            box-shadow: 0 0 0 0 transparent;
+            &:focus {
+                border: 0;
+                background-color: #f1f7ff; 
+            }
+        }
+
+        select {
+            width: 384px;
+            height: 52px;
+            box-shadow: 0 0 0 0 transparent;
+            border: solid 1px #ccc;
+            appearance: none;/*清除select下拉框默认样式*/
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            padding-right: 14px;/*为下拉小箭头留出一点位置，避免被文字覆盖*/
+            background-image: url("../img/arrow.png") no-repeat scroll right center transparent;/*自定义图片覆盖原有的下三角符号*/
+            background-size: 100% 100%;
+            background-position: center;
+            &::-ms-expand {
+                display: none;/*清除IE默认下拉按钮，但是测试发现IE10以上有效，IE8，9默认下拉按钮仍旧存在*/
+            }
+        }
+    }
+
+    .form-fileupload {
+        a {
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        span {
+            margin-left: 10px;
+            font-size: 16px;
+        }
+
+        h5 {
+            color: #ccc;
+        }
+
+        .file {
+            display: flex;
+            align-items: center;
+        }
+
+        .btn_addPic {
+            display: inline-block;
+            position: relative;
+            width: 140px;
+            height: 46px;
+            line-height: 46px;
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background: #fff;
+            color: #999;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .filePrew {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 140px;
+            height: 46px;
+            font-size: 16px;
+            opacity: 0;
+            filter: alpha(opacity=0);
+            cursor: pointer;
+        }
+    }
+
+    .submit-btn {
+        text-align: center;
+        margin: 60px 0;
+
+        .btn {
+            width: 224px;
+            height: 56px;
+            font-size: 16px;
+            border-radius: 0px;
+            margin-right: 20px;
+            cursor: pointer;
+        }
+
+        .submit {
+            background: #025AB3;
+            color: #fff;
+            border: none;
+        }
+
+        .save {
+            background: #fff;
+            color: #025AB3;
+            border: 1px solid #025AB3;
+
+            &:hover {
+                background: #025AB3;
+                color: #fff;
+            }
+        }
+    }
+}
+button a {
+    color: #fff;
+    text-decoration: none;
+    &:hover {
+        color: #fff;
+        text-decoration: none;
+    }
+}

@@ -1,0 +1,230 @@
+.mian {
+  padding: 11px 14px 30px 14px;
+}
+.fr {
+  float: right;
+}
+.mui-icon {
+  color: #999999;
+}
+.main-list .list-slid-title {
+  position: relative;
+  background: white;
+  width: 100%;
+  height: 48px;
+  text-indent: 11px;
+}
+.main-list .list-slid-title span {
+  font-weight: 550;
+  color: #333333;
+  font-size: 17px;
+  border-radius: 2px;
+  line-height: 48px;
+}
+.main-list .list-slid-title .iconss {
+  display: none;
+}
+.main-list .list-slid-title .icons::before {
+  content: '\e581';
+  line-height: 48px;
+  margin-right: 10px;
+}
+.main-list .list-slid-title .iconss::before {
+  content: '\e580';
+  line-height: 48px;
+  margin-right: 10px;
+}
+.main-list .list-slid-title::before {
+  content: '';
+  width: 90%;
+  position: absolute;
+  height: 1px;
+  bottom: -1px;
+  background: #e5e5e5;
+}
+.main-list .list-slide-ulo li {
+  list-style: none;
+  float: left;
+  display: inline-block;
+  color: #666666;
+  line-height: 33px;
+  width: 35%;
+}
+.main-list .list-slide-ulo li:nth-child(2n) {
+  list-style: none;
+  float: left;
+  display: inline-block;
+  width: 65%;
+}
+.main-list .list-slide-ulo {
+  padding: 11px;
+  padding-top: 0;
+  margin-top: -11px;
+  display: none;
+  clear: both;
+  overflow: hidden;
+  background: white;
+}
+.main-list .list-slide-ulo4 li,
+.main-list .list-slide-ulo3 li,
+.main-list .list-slide-ulo5 li,
+.main-list .list-slide-ulo6 li,
+.main-list .list-slide-ulo7 li {
+  width: 33%!important;
+  text-align: center;
+  padding: 14px 0;
+}
+.main-list div {
+  height: 99px;
+  width: 100%;
+  box-sizing: border-box;
+  background: #ffffff;
+  border-radius: 2px;
+  margin-bottom: 10px;
+  padding: 15px 10px 15px 10px;
+}
+.main-list div p.title {
+  font-size: 18px;
+  font-family: MicrosoftYaHei;
+  font-weight: bold;
+  font-weight: 400;
+  color: #333333;
+  line-height: 23px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.main-list div p.title span.curs {
+  display: inline-block;
+  margin-right: 5px;
+  text-align: center;
+  line-height: 18px;
+  font-size: 11px;
+  position: relative;
+  top: -2px;
+  font-weight: 400;
+  color: #ffffff;
+  width: 53px;
+  height: 18px;
+  background: #72be6c;
+  border-radius: 2px;
+}
+.main-list div p.times {
+  height: 14px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #999999;
+  line-height: 20px;
+}
+.main-list div p.times span.curs {
+  color: red;
+}
+.tabs {
+  display: flex;
+  height: 44px;
+  background: white;
+}
+.tabs p {
+  width: 50%;
+  text-align: center;
+}
+.tabs p a {
+  padding: 7px 10px 13px 10px;
+  line-height: 44px;
+  color: #333333;
+  font-size: 15px;
+}
+.tabs p a.cur {
+  color: #025ab3;
+  border-bottom: 2px solid #025ab3;
+}
+.tabb {
+  padding: 0 14px;
+}
+.mui-card {
+  margin: 0!important;
+}
+.mui-card ul li {
+  font-size: 17px;
+}
+.heihgt44 {
+  height: 44px;
+}
+.ment_list {
+  margin: 10px 0;
+  background: white;
+  justify-content: space-around;
+  height: 108px;
+  display: flex;
+}
+.ment_list .ment-list-divs {
+  margin-top: 20px;
+  text-align: center;
+}
+.ment_list .ment-list-divs .ment-list-img {
+  width: 44px;
+  background: #fff7f1;
+  border-radius: 8px;
+  display: inline-block;
+  position: relative;
+  height: 44px;
+  margin-bottom: 2px;
+}
+.ment_list .ment-list-divs .ment-list-img img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  width: 23px;
+  height: 23px;
+  line-height: 23px;
+}
+.ment-Laws {
+  background: white;
+  margin-bottom: 20px;
+  padding: 21px 14px;
+}
+.ment-Laws .ment-laws-top {
+  margin-bottom: 20px;
+}
+.ment-Laws span.title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333333;
+  line-height: 19px;
+  position: relative;
+  margin-left: 10px;
+}
+.ment-Laws span.title::before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  width: 3px;
+  height: 16px;
+  left: -10px;
+  background: #025AB3;
+}
+.ment-Laws span.more {
+  width: 40px;
+  font-size: 11px;
+  text-align: center;
+  color: white;
+  line-height: 19px;
+  height: 19px;
+  background: linear-gradient(87deg, #036cd7 0%, #6bb5ff 100%);
+  border-radius: 10px;
+}
+.ment-Laws .ment-laws-list .ment-laws-li {
+  margin-bottom: 15px;
+  color: #333333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.ment-Laws .ment-laws-list a:last-child .ment-laws-li {
+  margin-bottom: 0;
+}

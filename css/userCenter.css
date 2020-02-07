@@ -1,0 +1,245 @@
+.userCenter {
+  background: #f5f5f5;
+}
+
+.userCenter .middle {
+  margin-bottom: 61px;
+}
+
+.userCenter .middle h3 {
+  font-size: 20px;
+  font-family: MicrosoftYaHei-Bold;
+  font-weight: 500;
+}
+
+.userCenter .middle a {
+  color: #333333;
+  text-decoration: none;
+}
+
+.userCenter .middle .col-xs-3 {
+  padding-left: 0px;
+  padding-right: 25px;
+}
+
+.userCenter .middle .thumbnail {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  padding: 74px 0px 60px 0px;
+  border: none;
+  border-radius: 0px;
+  margin-bottom: 25px;
+}
+
+.userCenter .middle .thumbnail:hover {
+  background-color: #025AB3;
+  color: #fff;
+}
+
+.userCenter .middle .thumbnail:hover a {
+  color: #fff;
+}
+
+.userCenter .middle .thumbnail:hover .userimg1 {
+  background-image: url(../img/user_1_after.png);
+}
+
+.userCenter .middle .thumbnail:hover .userimg2 {
+  background-image: url(../img/user_2_after.png);
+}
+
+.userCenter .middle .thumbnail:hover .userimg3 {
+  background-image: url(../img/user_3_after.png);
+}
+
+.userCenter .middle .thumbnail:hover .userimg4 {
+  background-image: url(../img/user_4_after.png);
+}
+
+.userCenter .middle .thumbnail:hover .userimg5 {
+  background-image: url(../img/user_5_after.png);
+}
+
+.userCenter .middle .thumbnail:hover .userimg6 {
+  background-image: url(../img/user_6_after.png);
+}
+
+.userCenter .middle .thumbnail:hover .userimg7 {
+  background-image: url(../img/user_7_after.png);
+}
+
+.userCenter .middle .thumbnail:hover .userimg8 {
+  background-image: url(../img/user_8_after.png);
+}
+
+.userCenter .middle .thumbnail:hover .userimg9 {
+  background-image: url(../img/user_9_after.png);
+}
+
+.userCenter .middle .thumbnail:hover .userimg10 {
+  background-image: url(../img/user_10_after.png);
+}
+
+.userCenter .middle .thumbnail:hover .userimg11 {
+  background-image: url(../img/user_11_after.png);
+}
+
+.userCenter .middle .thumbnail:hover .userimg12 {
+  background-image: url(../img/user_12_after.png);
+}
+
+.userCenter .middle .thumbnail:hover .userimg13 {
+  background-image: url(../img/user_13_after.png);
+}
+
+.userCenter .middle .thumbnail:hover .userimg14 {
+  background-image: url(../img/user_14_after.png);
+}
+
+.userCenter .middle .thumbnail:hover .userimg15 {
+  background-image: url(../img/user_15_after.png);
+}
+
+.userCenter .middle .thumbnail:hover .userimg16 {
+  background-image: url(../img/user_16_after.png);
+}
+.userCenter .middle .thumbnail:hover .userimg17 {background-image: url(../img/user_17_after.png);}
+
+.userCenter .middle .userimg1 {
+  background-image: url(../img/user_1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 99px;
+}
+
+.userCenter .middle .userimg2 {
+  background-image: url(../img/user_2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 99px;
+}
+
+.userCenter .middle .userimg3 {
+  background-image: url(../img/user_3.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 99px;
+}
+
+.userCenter .middle .userimg4 {
+  background-image: url(../img/user_4.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 99px;
+}
+
+.userCenter .middle .userimg5 {
+  background-image: url(../img/user_5.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 99px;
+}
+
+.userCenter .middle .userimg6 {
+  background-image: url(../img/user_6.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 99px;
+}
+
+.userCenter .middle .userimg7 {
+  background-image: url(../img/user_7.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 99px;
+}
+
+.userCenter .middle .userimg8 {
+  background-image: url(../img/user_8.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 99px;
+}
+
+.userCenter .middle .userimg9 {
+  background-image: url(../img/user_9.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 99px;
+}
+
+.userCenter .middle .userimg10 {
+  background-image: url(../img/user_10.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 99px;
+}
+
+.userCenter .middle .userimg11 {
+  background-image: url(../img/user_11.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 99px;
+}
+
+.userCenter .middle .userimg12 {
+  background-image: url(../img/user_12.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 99px;
+}
+
+.userCenter .middle .userimg13 {
+  background-image: url(../img/user_13.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 99px;
+}
+
+.userCenter .middle .userimg14 {
+  background-image: url(../img/user_14.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 99px;
+}
+
+.userCenter .middle .userimg15 {
+  background-image: url(../img/user_15.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 99px;
+}
+
+.userCenter .middle .userimg16 {
+  background-image: url(../img/user_16.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 99px;
+}
+
+.userCenter .middle .userimg17 {
+  background-image: url(../img/user_17.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 99px;
+}

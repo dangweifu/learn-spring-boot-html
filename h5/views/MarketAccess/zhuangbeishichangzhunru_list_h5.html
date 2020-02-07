@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>装备市场准入</title>
+
+    <link href="/h5/static/css/mui/mui.min.css" rel="stylesheet"/>
+	<link href="/h5/assets/css/common.min.css" rel="stylesheet"/>
+	<link rel="stylesheet" href="/h5/assets/css/queryPoint.css">
+    <link rel="stylesheet" href="/h5/assets/css/head.css">
+
+	<script src="/h5/static/js/babel/babel-browser.min.js" type="text/javascript"></script>
+	<script src="/h5/static/js/mui/mui.min.js" type="text/javascript"></script>
+  	<script src="/h5/static/js/jquery/jquery.min.js" type="text/javascript"></script>
+  	<script src="/h5/assets/js/home/index.js" type="text/babel"></script>
+    <script type="text/javascript" charset="utf-8">
+      	mui.init();
+    </script>
+</head>
+<body>
+    <header>
+        <div class="heades heades-search-text">
+            <div class="mui-icon mui-icon-arrowleft icons back-icons backs"></div>
+            <div class="heades-title"></div>
+            <div class="searchs">
+                <span class="mui-icon mui-icon-search icons serar-icons"></span>
+            </div>
+        </div>
+        <!-- //搜索 -->
+        <div class="heades heades-search-box">
+            <div class="mui-icon mui-icon-arrowleft icons back-icons searchs_back"></div>
+            <input type="text" placeholder="请输入搜索关键字" class="heades-searc">
+            <span class="serarch-btn fr">搜索</span>
+        </div>
+        <!-- 搜索历史 -->
+        <div class="history-mark">
+            <p class="history-mark-title">搜素历史 <span class="mui-icon mui-icon-trash fr"></span></p>
+            <div class="history-mark-ulo">
+                <div class="history-mark-ulo-li">军械员工具箱等十型设...</div>
+                <div class="history-mark-ulo-li">军械员工具箱等十型设...</div>
+                <div class="history-mark-ulo-li">军械员工具箱等十型设...</div>
+                <div class="history-mark-ulo-li">军械员工具箱等十型设...</div>
+                <div class="history-mark-ulo-li">军械员工具箱等十型设...</div>
+                <div class="history-mark-ulo-li">军械员工具箱等十型设...</div>
+                <div class="history-mark-ulo-li">军械员工具箱等十型设...</div>
+                <div class="history-mark-ulo-li">军械员工具箱等十型设...</div>
+            </div>
+        </div>
+        <script>
+            //获取标题
+            $(".heades-title").text(document.title);
+            //回退
+            $(".backs").on("click",function(){
+                window.history.back();
+            })
+            //点击搜索条件显示
+            $(".searchs").on("click",function(){
+                $(".heades-search-text").hide()
+                $(".heades-search-box").show();
+                $(".history-mark").show();
+            });
+            //开始搜索
+            $(".serarch-btn").on("click",function(){
+                $(".heades-search-text").show()
+                $(".heades-search-box").hide();
+                $(".history-mark").hide();
+                $.ajax({
+                    type:"GET",
+                    url:"",
+                    data:{title:$(".heades-searc").val()},
+                    success:function(res){
+
+                    }
+                })
+            })
+            //开始搜索回退
+            $(".searchs_back").on("click",function(){
+                $(".heades-search-text").show()
+                $(".heades-search-box").hide();
+                $(".history-mark").hide();
+            })
+        </script>
+    </header>
+	<!-- 内容 -->
+	<article class="mui-content  list">
+        <style>
+            .card-photo-four{
+                padding: 10px 0px;
+                margin: 0;
+                padding-bottom: 0;
+                padding-right:0;
+                box-shadow: none;
+                background: transparent;
+            }
+
+            .card-photo-four .line-list {
+                display: inline-block;
+                margin-bottom: 10px;
+                background:rgb(245,245,245);
+                border-radius:6px;
+                font-size: 0;
+                border-right:6px solid white;
+            }
+            .card-photo-four .line-list:nth-child(2n){
+                border-right:0;
+                border-left:6px solid white;
+            }
+
+
+            .card-photo-four .line-list .card {
+                width: 96.5%;
+                height: 19.62%;
+                /* background-color: #ffffff; */
+            }
+
+            .card-photo-four .line-list:nth-child(even) .card {
+                float: right;
+            }
+
+            .card-photo-four .line-list .card .image{
+                position: relative;
+                bottom:0;
+                top:0;
+                right:0;
+                left:0;
+                margin:auto;
+                width:74px;
+                height:120px;
+                /* background:rgba(255,255,255,1); */
+                border-radius:6px 6px 0px 0px;
+                overflow: hidden;
+            }
+            .card-photo-four .line-list .card .image img{
+                position: absolute;
+                top: 50%;
+                left: 0;
+                right: 0;
+                transform: translateY(-50%);
+            }
+
+            .card-photo-four .line-list .card .text{
+                display: block;
+                padding: 0 0 15px 0;
+                font-size:14px;
+                font-family:MicrosoftYaHei;
+                font-weight:400;
+                color:rgba(51,51,51,1);
+                line-height:20px;
+                text-align: center;
+            }
+        </style>
+
+        <section>
+            <div class="ment_list">
+                <a href="/h5/views/MarketAccess/tabPage.html">
+                    <div class="ment-list-divs">
+                        <div class="ment-list-img">
+                            <img src="/h5/assets/img/home/bai.png" alt="">
+                        </div>
+                        <p>百问百答</p>
+                    </div>
+                </a>
+                <a href="/h5/views/MarketAccess/tabPage.html">
+                    <div class="ment-list-divs">
+                        <div class="ment-list-img">
+                            <img src="/h5/assets/img/home/zhi.png" alt="">
+                        </div>
+                        <p>知识问答</p>
+                    </div>
+                </a>
+                <a href="/h5/views/MarketAccess/tabPage.html">
+                    <div class="ment-list-divs">
+                        <div class="ment-list-img">
+                            <img src="/h5/assets/img/home/xu.png" alt="">
+                        </div>
+                        <p>许可指南</p>
+                    </div>
+                </a>
+                <a href="/h5/views/MarketAccess/tabPage.html">
+                    <div class="ment-list-divs">
+                        <div class="ment-list-img">
+                            <img src="/h5/assets/img/home/xuan.png" alt="">
+                        </div>
+                        <p>宣讲</p>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+
+        <section>
+            <div class="ment-Laws">
+                <div class="ment-laws-top">
+                    <span class="title">准入办理流程</span>
+                </div>
+                <div class="ment-laws-list">
+                    <a href="javascript:;"><div class="ment-laws-li">海上月是天上月</div></a>
+                    <a href="jacascript:;"><div class="ment-laws-li">眼前人是心上人</div></a>
+                    <a href="jacascript:;"><div class="ment-laws-li">向来心是看客心</div></a>
+                    <a href="jacascript:;"><div class="ment-laws-li">奈何已是剧中人</div></a>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="ment-Laws">
+                <div class="ment-laws-top">
+                    <span class="title">准入法规</span>
+                    <span class="fr more">更多</span>
+                </div>
+                <div class="ment-laws-list">
+                    <a href="javascript:;"><div class="ment-laws-li">装武器装备科研生产与维修领域准入管理制度有装武器装备科研生产与维修领域准入管理制度有...</div></a>
+                    <a href="javascript:;"><div class="ment-laws-li">民营企业保护相关技术或产品的知识产权权益应...</div></a>
+                    <a href="javascript:;"><div class="ment-laws-li">民营企业能否申请国防专利？如何申请？</div></a>
+                    <a href="javascript:;"><div class="ment-laws-li">国防专利管理有何特殊要求？</div></a>
+                    <a href="javascript:;"></a>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="ment-Laws">
+                <div class="ment-laws-top">
+                    <span class="title">专家观点</span>
+                    <span class="fr more">更多</span>
+                </div>
+                <div class="ment-laws-list">
+                    <a href="javascript:;"><div class="ment-laws-li">对竞争过程结果有异议，如何进行询问、质疑和...</div></a>
+                    <a href="javascript:;"><div class="ment-laws-li">装备采购方式及适用条件是什么？</div></a>
+                    <a href="javascript:;"><div class="ment-laws-li">如何督促民营企业提供质量合格的产品？</div></a>
+                    <a href="javascript:;"><div class="ment-laws-li">如果民营企业在竞争前期有较大投入，竞争失利...</div></a>
+                    <a href="javascript:;"><div class="ment-laws-li">装备采购方式及适用条件是什么？</div></a>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="ment-Laws">
+                <div class="ment-laws-top">
+                    <span class="title">装备知识</span>
+                    <span class="fr more">更多</span>
+                </div>
+                <div class="mui-card card-photo-four">
+                    <!--内容区-->
+                    <div class="mui-card-content mui-row">
+                        <div class=" line-list mui-col-sm-6 mui-col-xs-6">
+                            <div class="card">
+                                <img src="/h5/assets/img/home/carousel-1.png" class="image" alt="">
+                                <span class="text">海军武器装备</span>
+                            </div>
+                        </div>
+                        <div class=" line-list mui-col-sm-6 mui-col-xs-6">
+                            <div class="card">
+                                <img src="/h5/assets/img/home/carousel-1.png" class="image" alt="">
+                                <span class="text">海军武器装备</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <script type="text/babel"> -->
+        <script src="/h5/static/js/lazyload/jquery.lazyload.min.js" type="text/javascript"></script>
+        <script>
+            mui.ready(function(){
+                var dataArr = [
+                    { text : '海军武器装备', img: '/h5/assets/img/photoCard/2.png' },
+                    { text : '现代武器装备概论', img: '/h5/assets/img/photoCard/3.png' },
+                    { text : '海军武器装备', img: '/h5/assets/img/photoCard/4.png' },
+                    { text : '现代武器装备概论', img: '/h5/assets/img/photoCard/5.png' },
+                    { text : '海军武器装备', img: '/h5/assets/img/photoCard/2.png' },
+                    { text : '现代武器装备概论', img: '/h5/assets/img/photoCard/3.png' },
+                    { text : '海军武器装备', img: '/h5/assets/img/photoCard/4.png' },
+                    { text : '现代武器装备概论', img: '/h5/assets/img/photoCard/5.png' }
+                ];
+
+                var templateHtml = '';
+
+                mui.each(dataArr, function(index, item){
+                    templateHtml +=
+                        `
+                        <div class=" line-list mui-col-sm-6 mui-col-xs-6">
+                            <div class="card">
+                                <div class="image">
+                                    <img class="lazy" src="/h5/assets/img/lazyload/default.png" width="100%" height="auto" data-original="${item.img}"  >
+                                </div>
+                                    <span class="text">${item.text}</span>
+                            </div>
+                        </div>
+                        `
+                });
+                // 产品技术
+                $(' .mui-card-content').html(templateHtml);
+
+                // 懒加载
+                $("img.lazy").lazyload({
+                    // threshold: 1,
+                    effect: "fadeIn"
+                });
+            });
+        </script>
+    </article>
+</body>
+<script>
+    $(document).ready(function(){
+        $(".tabs p").on("click",function(){
+            $(this).find("a").addClass("cur").parent().siblings().find("a").removeClass("cur");
+            $(".mui-content").eq($(this).index()).show().siblings(".mui-content").hide();
+        })
+    })
+</script>
+</html>

@@ -1,0 +1,90 @@
+
+.retract, .dockingretract {
+    display: block;
+}
+
+.retract input, .dockingretract input {
+    background: #f5f5f5;
+    border: none;
+    box-shadow: none;
+}
+
+.retract .date, .dockingretract .date {
+    display: inline-table;
+    width: 200px;
+}
+
+.retract .date .input-group-addon, .dockingretract .date .input-group-addon {
+    background: #f5f5f5;
+    border: solid 1px #F5F5F5;
+}
+
+.retract .timeTxt, .dockingretract .timeTxt {
+    padding: 0 20px;
+}
+
+.retract .form-line-two, .dockingretract .form-line-two {
+    padding: 0 34px;
+}
+
+.retract .form-line-two label, .dockingretract .form-line-two label {
+    float: left;
+    font-size: 16px;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: #333333;
+    line-height: 38px;
+}
+
+.retract .form-line-two .date, .dockingretract .form-line-two .date {
+    float: left;
+    width: 180px;
+    height: 40px;
+    box-sizing: border-box;
+    background: #F5F5F5;
+}
+
+.retract .form-line-two .date input, .dockingretract .form-line-two .date input {
+    height: 40px;
+}
+
+.retract .form-line-two .date .input-group-addon, .dockingretract .form-line-two .date .input-group-addon {
+    background: #f5f5f5;
+    border: solid 1px #F5F5F5;
+}
+
+.retract .form-line-two .text, .dockingretract .form-line-two .text {
+    margin: 0 10px;
+    float: left;
+    font-size: 16px;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: #333333;
+    line-height: 38px;
+}
+.control-label{
+    height: 34px;
+    line-height: 34px;
+    margin-bottom: 0;
+    vertical-align: top;
+}
+.AuditTime{
+    margin-bottom: 10px;
+}
+.modal-sbsj{
+    width: 400px;
+    margin: 0;
+}
+.modal{
+    left: 50%;
+    top: 50%;
+    margin-left: -200px;
+    margin-top: -139px;
+}
+.btn-default{
+    color: #025AB3; 
+    border-radius: none;
+}
+.btn{
+    border-radius: none;
+}

@@ -1,0 +1,29 @@
+.form-group label{
+    text-align: right;
+    margin-left: 0;
+}
+.formTitle{
+    height: 40px;
+    /* line-height: 40px; */
+}
+.formTitle label{
+    text-align: right;
+    font-weight: bold!important;
+    font-size: 14px!important;
+}
+.modal-content .modal-body-need{
+    padding: 20px 0;
+}
+#demandDocking .modal-dialog{
+    margin-left: auto;
+    margin-right: auto;
+    position: static;
+    margin-top:100px;
+}
+textarea{
+    background-color: #F4F4F4;
+    border: none;
+    resize: none;
+    color:#999999;
+    font-size: 16px;
+}

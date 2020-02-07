@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>用户中心</title>
+
+  <!--[if lt IE 9]>
+  <script src="../../js/html5shiv.min.js"></script>
+  <script src="../../js/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Bootstrap -->
+  <link href="../../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../../css/font-awesome.min.css" rel="stylesheet">
+  <link href="../../css/common.min.css" rel="stylesheet">
+  <link href="../../css/userCenter.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- 头部区域 -->
+  <header>
+  </header>
+
+  <div class="user">
+    <div class="txt-banner">
+      <h2>用户中心</h2>
+    </div>
+  </div>
+  <div class="userCenter">
+    <div class="container">
+      <div class="top">
+        <img class="icon" src="../../img/home.png" alt="">
+        <ol class="breadcrumb">
+          <li><a href="../../index.html">首页</a></li>
+          <li>用户中心</li>
+        </ol>
+      </div>
+      <div class="middle">
+        <div class="col-xs-3 qxkz user-information-management" onclick="toUserIformation()" id="UserInfo">
+          <div class="thumbnail">
+            <div class="userimg1"></div>
+            <h3>用户信息</h3>
+          </div>
+        </div>
+        <a href="../../signUpExhibition/signUpExhibitionList-user.html">
+          <div class="col-xs-3 qxkz user-signup-exhibitors" id="SignUpExhibitors">
+            <div class="thumbnail">
+              <div class="userimg2"></div>
+              <h3>报名参展</h3>
+            </div>
+          </div>
+        </a>
+        <a href="../../userSuperviseCenter/userSuperviseCenter.html">
+          <div class="col-xs-3 qxkz user-monitoring-center"  id="MonitoringCenter">
+            <div class="thumbnail">
+              <div class="userimg3"></div>
+              <h3>监控中心</h3>
+            </div>
+          </div>
+        </a>
+        <a href="../../demandDocking/myArmyNotice.html">
+          <div class="col-xs-3 qxkz user-demand-docking" id="DemandDocking">
+            <div class="thumbnail">
+              <div class="userimg4"></div>
+              <h3>需求对接</h3>
+            </div>
+          </div>
+        </a>
+        <a href="../../userCenter/purchaseNotice.html">
+        <!-- <a href="../../userCenter/purchaseNotice.html" class="qxkz user-purchase-notice"> -->
+          <div class="col-xs-3 qxkz user-publication-management" id="PublicationManagement">
+            <div class="thumbnail">
+              <div class="userimg5"></div>
+              <h3>发布管理</h3>
+            </div>
+          </div>
+        </a>
+        <a href="/advisoryComplaints/userAdvice.html">
+          <div class="col-xs-3 qxkz user-advisory-advice" id="AdvisoryAdvice">
+            <div class="thumbnail">
+              <div class="userimg6"></div>
+              <h3>咨询建议</h3>
+            </div>
+          </div>
+        </a>
+        <a href="./productRecommendation_List.html">
+          <div class="col-xs-3 qxkz user-product-recommendation" id="ProductRecommendation">
+            <div class="thumbnail">
+              <div class="userimg7"></div>
+              <h3>产品自荐</h3>
+            </div>
+          </div>
+        </a>
+        <a href="/advisoryComplaints/complaintList.html">
+          <div class="col-xs-3 qxkz user-questioning-complaints" id="QuestioningComplaints">
+            <div class="thumbnail">
+              <div class="userimg8"></div>
+              <h3>质疑投诉</h3>
+            </div>
+          </div>
+        </a>
+        <a href="./contentCollects.html">
+          <div class="col-xs-3 qxkz user-my-concern" id="MyConcern">
+            <div class="thumbnail">
+              <div class="userimg9"></div>
+              <h3>我的关注</h3>
+            </div>
+          </div>
+        </a>
+        <a href="../../userCenter/subaccount.html">
+          <div class="col-xs-3 qxkz user-account-management" id="SubAccountManagement">
+            <div class="thumbnail">
+              <div class="userimg10"></div>
+              <h3>账户管理</h3>
+            </div>
+          </div>
+        </a>
+        <div class="col-xs-3 qxkz user-participation-bidding" id="ParticipationBidding">
+          <div class="thumbnail">
+            <div class="userimg11"></div>
+            <h3>参与招标</h3>
+          </div>
+        </div>
+        <a href="./messageCenter.html">
+          <div class="col-xs-3 qxkz user-message-center" id="MessageCenter">
+            <div class="thumbnail">
+              <div class="userimg12"></div>
+              <h3>消息中心</h3>
+            </div>
+          </div>
+        </a>
+        <a href="../../userStatisticalCenter/userStatisticalCenter.html">
+          <div class="col-xs-3 qxkz user-statistical-analysis" id="statisticalAnalysis">
+            <div class="thumbnail">
+              <div class="userimg13"></div>
+              <h3>统计分析</h3>
+            </div>
+          </div>
+        </a>
+        <a href="/ministerMailbox/mailbox.html">
+          <div class="col-xs-3 qxkz user-minister-mailbox" id="MinisterMailbox">
+            <div class="thumbnail">
+              <div class="userimg14"></div>
+              <h3>部长信箱</h3>
+            </div>
+          </div>
+        </a>
+        <!-- <div class="col-xs-3" id="CertificateVerification">
+          <div class="thumbnail">
+            <div class="userimg15"></div>
+            <h3>证书查验</h3>
+          </div>
+        </div> -->
+        <a href="/userCenterEquipmenTest/announcementInfor.html">
+        <!-- <div class="col-xs-3 qxkz user-equipment-experiment" id="EquipmentExperiment"> -->
+        <div class="col-xs-3 " id="EquipmentExperiment">
+          <div class="thumbnail qxkz user-equipment-experiment">
+            <div class="userimg16"></div>
+            <h3>装备试验</h3>
+          </div>
+        </div>
+      </a>
+
+
+        <a href="#">
+          <!-- <div class="col-xs-3 qxkz user-equipment-experiment" id="EquipmentExperiment"> -->
+          <div class="col-xs-3 " id="printManage">
+            <div class="thumbnail qxkz user-print-management">
+              <div class="userimg17"></div>
+              <h3>打印管理</h3>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 脚注区域 -->
+  <footer>
+  </footer>
+
+  <!-- Initialize Swiper -->
+  <script src="../../bootstrap/js/jquery.min.js"></script>
+  <script src="../../bootstrap/js/bootstrap.min.js"></script>
+  <script src="../../js/common.js"></script>
+  <script src="../../js/cookie.min.js"></script>
+  <script>
+    $("header").load("../../header.html");
+    $("footer").load("../../footer.html");
+    // window.onload=function(){
+    //   var authority = JSON.parse(window.localStorage.getItem('authority'));
+    //   var UserInfo=false;
+    //   var SignUpExhibitors=false;
+    //   var MonitoringCenter=false;
+    //   var DemandDocking=false;
+    //   var PublicationManagement=false;
+    //   var AdvisoryAdvice=false;
+    //   var ProductRecommendation=false;
+    //   var QuestioningComplaints=false;
+    //   var MyConcern=false;
+    //   var SubAccountManagement=false;
+    //   var ParticipationBidding=false;
+    //   var MessageCenter=false;
+    //   var statisticalAnalysis=false;
+    //   var MinisterMailbox=false;
+    //   var CertificateVerification=false;
+    //   var EquipmentExperiment=false;
+    //   for (var i = 0; i < authority.length; i++) {
+    //     var au =  authority[i];
+    //     if(au=="user:info"){
+    //       UserInfo=true;
+    //       continue;
+    //     }
+    //     if(au=="user:signup:exhibitors"){
+    //       SignUpExhibitors=true;
+    //       continue;
+    //     }
+    //     if(au=="user:monitoring:center"){
+    //       MonitoringCenter=true;
+    //       continue;
+    //     }
+    //     if(au=="user:demand:docking"){
+    //       DemandDocking=true;
+    //       continue;
+    //     }
+    //     if(au=="user:publication:management"){
+    //       PublicationManagement=true;
+    //       continue;
+    //     }
+    //     if(au=="user:advisory:advice"){
+    //       AdvisoryAdvice=true;
+    //       continue;
+    //     }
+    //     if(au=="user:product:recommendation"){
+    //       ProductRecommendation=true;
+    //       continue;
+    //     }
+    //     if(au=="user:questioning:complaints"){
+    //       QuestioningComplaints=true;
+    //       continue;
+    //     }
+    //     if(au=="user:my:concern"){
+    //       MyConcern=true;
+    //       continue;
+    //     }
+    //     if(au=="user:subaccount:management"){
+    //       SubAccountManagement=true;
+    //       continue;
+    //     }
+    //     if(au=="user:participation:bidding"){
+    //       ParticipationBidding=true;
+    //       continue;
+    //     }
+    //     if(au=="user:message:center"){
+    //       MessageCenter=true;
+    //       continue;
+    //     }
+    //     if(au=="user:statistical:analysis"){
+    //       statisticalAnalysis=true;
+    //       continue;
+    //     }
+    //     if(au=="user:minister:mailbox"){
+    //       MinisterMailbox=true;
+    //       continue;
+    //     }
+    //     if(au=="user:certificate:verification"){
+    //       CertificateVerification=true;
+    //       continue;
+    //     }
+    //     if(au=="user:equipment:experiment"){
+    //       EquipmentExperiment=true;
+    //       continue;
+    //     }
+    //   }
+    //   if(!UserInfo){
+    //     $("#UserInfo").remove();
+    //   }
+    //   if(!SignUpExhibitors){
+    //     $("#SignUpExhibitors").remove();
+    //   }
+    //   if(!MonitoringCenter){
+    //     $("#MonitoringCenter").remove();
+    //   }
+    //   if(!DemandDocking){
+    //     $("#DemandDocking").remove();
+    //   }
+    //   if(!PublicationManagement){
+    //     $("#PublicationManagement").remove();
+    //   }
+    //   if(!AdvisoryAdvice){
+    //     $("#AdvisoryAdvice").remove();
+    //   }
+    //   if(!ProductRecommendation){
+    //     $("#ProductRecommendation").remove();
+    //   }
+    //   if(!QuestioningComplaints){
+    //     $("#QuestioningComplaints").remove();
+    //   }
+    //   if(!MyConcern){
+    //     $("#MyConcern").remove();
+    //   }
+    //   if(!SubAccountManagement){
+    //     $("#SubAccountManagement").remove();
+    //   }
+    //   if(!ParticipationBidding){
+    //     $("#ParticipationBidding").remove();
+    //   }
+    //   if(!MessageCenter){
+    //     $("#MessageCenter").remove();
+    //   }
+    //   if(!statisticalAnalysis){
+    //     $("#statisticalAnalysis").remove();
+    //   }
+    //   if(!MinisterMailbox){
+    //     $("#MinisterMailbox").remove();
+    //   }
+    //   if(!CertificateVerification){
+    //     $("#CertificateVerification").remove();
+    //   }
+    //   if(!EquipmentExperiment){
+    //     $("#EquipmentExperiment").remove();
+    //   }
+    // }
+
+
+    function toUserIformation() {
+      var userinfo = JSON.parse(window.localStorage.getItem('user'));
+      var memberId = userinfo.memberType
+      if (memberId == 10) { //个人用户
+        window.location = "../../userInformation/personalUser.html"
+      } else if (memberId == 20) { //企业用户
+        window.location = "../../userInformation/enterpriseEnterprise.html"
+      } else if (memberId == 30) { //军工
+        window.location = "../../userInformation/enterpriseEnterprise.html"
+      } else if (memberId == 40) { //军队
+        window.location = "../../userInformation/armyUser.html"
+      } else if (memberId == 50) { //专家用户
+        window.location = "../../userInformation/expertUser.html"
+      } else if (memberId == 60) { //专项用户
+        window.location = "../../userInformation/specialUser.html"
+      }
+    }
+  </script>
+</body>
+
+</html>

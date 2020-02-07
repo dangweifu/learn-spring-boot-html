@@ -1,0 +1,482 @@
+@charset "UTF-8";
+.pr-banner-wrapper {
+    width: 100%;
+    height: 200px;
+    padding-top: 72px;
+    text-align: center;
+    background-image: url("../img/Product_recommendation.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin-top: -3px;
+}
+
+.pr-banner-wrapper h2 {
+    margin-top: 0;
+    margin-bottom: 9px;
+    font-size: 34px;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: white;
+}
+
+.pr-banner-wrapper p {
+    font-size: 16px;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: white;
+}
+
+.pr-content-wrapper {
+    padding-bottom: 190px;
+    /*background-color: #fff;*/
+    background-color: #F5F5F5;
+    /*height: 800px;*/
+}
+
+.pr-content-wrapper .pr-nav-arrow {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.pr-content-wrapper .pr-nav-arrow .breadcrumb {
+    background-color: #F5F5F5;
+}
+
+.pr-content-wrapper .pr-nav-arrow .breadcrumb li a {
+    font-size: 16px;
+}
+
+/*基础信息区域*/
+.basic_content{
+    width: 1200px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 50px;
+}
+
+.contentPart .contentHead{
+    padding: 24px 0;
+    margin: 0 62px;
+    border-bottom: 1px solid #E5E5E5;
+}
+.contentPart .contentHead div{
+    position: relative;
+}
+.contentPart .contentHead span:nth-of-type(1){
+    color: rgb(2, 90, 179);
+    font-family: "微软雅黑 Regular", 微软雅黑;
+    font-size: 20px;
+    font-weight: 400;
+}
+.contentPart .contentHead span:nth-of-type(2){
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    font-size: 13px;
+    color:rgb(51, 51, 51);
+    position: absolute;
+    right: 0;
+    border:1px solid rgb(51, 51, 51);
+    text-align: center;
+    line-height: 20px;
+}
+.contentPart .contentHead span:nth-of-type(2):hover{
+    cursor: pointer;
+}
+
+.tableList{
+    margin-top: 20px;
+}
+
+.productName{
+    vertical-align: middle;
+    font-size: 16px;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: inherit;
+    display: inline-block;
+}
+
+.conect_one{
+    width: 50%;
+    display: inline;
+}
+
+.conect_two{
+    width: 50%;
+    display: inline;
+}
+
+.conect_one span,.conect_two span{
+    color: red;
+}
+
+.input-wrapper{
+    display: inline-block;
+    vertical-align: middle;
+    height: 52px;
+}
+
+.input-wrapper input{
+    box-sizing: border-box;
+    width: 400px;
+    height: 52px;
+    padding: 6px 12px;
+    font-size: 16px;
+    color: #999999;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    background: #f4f4f4;
+    border-color: transparent;
+    box-shadow: 0 0 0 0 !important;
+    border-radius: 0;
+}
+
+.input-wrapper select{
+    box-sizing: border-box;
+    width: 399px;
+    height: 52px;
+    font-size: 16px;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    text-align: left;
+    color: #999999;
+    background: #f4f4f4;
+    border: 0;
+    box-shadow: 0 0 0 0;
+    border-radius: 0;
+}
+
+.conect_oneList img{
+    width: 20px;
+    height: 20px;
+}
+
+.conect_twoList,.conect_threeList,.conect_fourList,.conect_fiveList,.conect_sixList,.conect_sevenList,.conect_enighList{
+    margin-top: 20px;
+}
+
+.mapconect_two span{
+    color: red;
+}
+
+.mapconect_two{
+    width: 100%;
+    margin-top: 20px;
+    height: 52px;
+}
+
+.mapinput-wrapper{
+    width: 86%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 150px;
+}
+
+.mapinput-wrapper input{
+    box-sizing: border-box;
+    width: 100%;
+    height: 52px;
+    padding: 6px 12px;
+    font-size: 16px;
+    color: #999999;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    background: #f4f4f4;
+    border-color: transparent;
+    box-shadow: 0 0 0 0 !important;
+    border-radius: 0;
+}
+
+.moremapinput-wrapper{
+    display: inline-block;
+    vertical-align: top;
+    width: 86%;
+}
+
+.moremapinput-wrapper textarea{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 6px 12px;
+    font-size: 16px;
+    color: #999999;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    background: #f4f4f4;
+    border-color: transparent;
+    box-shadow: 0 0 0 0 !important;
+    border-radius: 0;
+}
+
+/*试验能力信息*/
+.tableList_two{
+    padding: 25px;
+    padding-top: 0px;
+}
+
+.test_oneList{
+    padding: 20px 0;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.test_twoList,.test_threeList,.test_fiveList,.test_sixList,.test_sevenList,.test_eightList,.test_nineList{
+    margin-top: 20px;
+}
+
+.spcecial input{
+    width: 350px !important;
+}
+
+.spcecial_t select{
+    width: 396px !important;
+}
+
+.product_time{
+    height: 40px;
+    margin-top: 16px;
+    display: inline-block;
+}
+
+.product_time .date {
+    float: left;
+    width: 180px;
+    height: 52px;
+    box-sizing: border-box;
+    background: #F4F4F4;
+}
+
+.product_time .date input {
+    height: 52px;
+    border: none;
+}
+
+.product_time .date .input-group-addon {
+    background: #f4f4f4;
+}
+
+.input-group input{
+    background: #f4f4f4;
+}
+
+.product_one,.text{
+    float: left;
+}
+
+.glyphicon,.text{
+    color: #555 !important;
+}
+
+.text{
+    line-height: 40px;
+    margin: 0 12px;
+}
+
+.product_one{
+    vertical-align: middle;
+    font-size: 16px;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: inherit;
+    display: inline-block;
+    float: left;
+    line-height: 52px;
+}
+
+.upload{
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+
+}
+
+.upload button{
+    width: 200px;
+    height: 50px;
+    color: #ccc;
+    background: #fff;
+    border: 1px solid #ccc;
+}
+
+.test_sixList,.test_nineList{
+    margin-left: 23px;
+}
+
+.addzi{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.addzi button{
+    width: 200px;
+    height: 55px;
+    background: #025ab3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.addAbility{
+    width: 100%;
+    height: 55px;
+    border: 1px dashed #025ab3;
+    text-align: center;
+    line-height: 53px;
+    color: #025ab3;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.addAbility:hover{
+    cursor: pointer;
+}
+
+/*设备信息*/
+th{
+    padding: 0;
+    margin: 0;
+}
+
+.anBtn{
+    margin-top: 15px;
+    padding: 0 30px;
+}
+
+.anBtn:hover{
+    cursor: pointer;
+}
+
+.anBtn button{
+    width: 80px;
+    height: 35px;
+    color: #999;
+    border:1px solid #999;
+    background: #fff;
+    margin-left:30px;
+}
+
+.anBtn button:hover{
+    color:#025ab3 ;
+    border:1px solid #025ab3;
+}
+
+.greenBtn{
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    background: #2AC579;
+    text-align: center;
+    float: right;
+}
+
+.greenBtn span{
+    color: #fff;
+}
+
+.equipmentList table{
+    margin-top: 24px;
+    margin-bottom: 14px;
+    width: 100%;
+}
+
+.equipmentList thead tr th{
+    border: 1px solid #ddd;
+    font-weight: 400;
+    height: 50px;
+    line-height: 50px;
+    font-size: 13px;
+    padding: 0;
+    text-align: center;
+}
+
+.equipmentList tbody tr td{
+    border: 1px solid #ddd;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.equipmentList thead tr th:nth-child(1),.equipmentList tbody tr td:nth-child(1){
+    width: 50px;
+}
+
+.equipmentList tbody tr td:last-child{
+    color: #025ab3;
+}
+
+.armsmain{
+  margin-top: 20px;
+}
+
+.sub_two{
+    margin-top: 20px;
+    margin-left: 180px;
+}
+
+.sub_two span{
+    color: red;
+}
+
+.submitBtn{
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.save{
+    width: 250px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    color: #fff;
+    background: #025ab3;
+    border: none;
+}
+
+.checkSub{
+    width: 250px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    color: #fff;
+    background: #FD8C1D;
+    border: none;
+    margin-left: 20px;
+}
+
+/*添加设备弹框*/
+.modal-dialog{
+    width: 1200px !important;
+    left: 29% !important;
+    margin-top: -280px !important;
+}
+
+.modal-dialog .modal-body .form-group{
+    justify-content: left !important;
+}
+
+.addTarget{
+    width: 130px;
+    height: 38px;
+    margin-left: 150px;
+    margin-bottom: 20px;
+}
+
+.addTarget button{
+    width: 130px;
+    height: 38px;
+    color: #025AB3;
+    background: #fff;
+    border:1px solid #025AB3;
+    font-size: 16px;
+    border-radius: 5px;
+    line-height: 36px;
+}
+
+.pr-content-wrapper .pr-form-wrapper {
+    width: 1198px !important;
+}

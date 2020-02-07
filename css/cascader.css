@@ -1,0 +1,39 @@
+  /*这里采用浮动是为了让宽度自适应*/
+.cascader-menus{
+    float: left;
+    font-size: 0;
+    height: 204px;
+    border: 1px #ccc solid;
+    background-color: #fff;
+    z-index: 1000!important;
+}
+/*布局用的inline-block，并且溢出会有滚动条*/
+.cascader-menus .menus{
+    display: inline-block;
+    min-width: 160px;
+    height: 204px;
+    overflow-y: auto;
+    border-right: 1px #ccc solid;
+    list-style: none;
+    padding-left: 20px;
+    background-color: #fff;
+    z-index: 1000!important;
+}
+.cascader-menus .menus:last-child{
+    border-right: none;
+}
+.cascader-menus .menus li{
+    font-size: 14px;
+    padding: 0 10px;
+    line-height: 30px;
+    height: 30px;
+    list-style: none;
+}
+.cascader-menus .menus li:hover {
+    cursor: pointer;
+    background-color: #eee;
+}
+/*点击的时候需要加的样式*/
+.cascader-menus .menus li.active {
+    background-color: #eee;
+}

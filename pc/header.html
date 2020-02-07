@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<!-- 头部区域 -->
+<div class="header_bg">
+  <div class="container">
+    <div class="header">
+      <div class="logo-img" style="display: inline-block"></div>
+      <div class="right_m" id="userBar" style="display: inline-block;float: right">
+        <a href="../login.html" class="login">登录</a>
+        <a href="./personalRegistration.html" class="register">注册</a>
+        <a href="./user/userCenter.html" class="register">用户中心</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- 导航栏 -->
+<div class="nav-tab">
+  <div class="container person">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="./index.html">首页</a></li>
+      <li><a href="#">采购公告</a></li><!-- /procurementNotices/procurementNotices.html -->
+      <li><a href="#">采购需求</a></li><!-- /purchaseRequirement/amryRequirement.html -->
+      <li><a href="#">集中采购</a></li><!-- /focusPurchase/focusPurchase.html -->
+      <li><a href="#">预研指南</a></li><!-- /researchGuide/guideGenericTechnology.html -->
+      <li><a href="#">专题发布</a></li>
+      <li><a href="#">通用装备</a></li><!-- /generalEquipment/generalEquipment.html -->
+      <li><a href="#">试验鉴定</a></li><!-- /equipmentTest/equipmenTest.html -->
+      <li><a href="#">成果推广</a></li><!-- /achievementExtension/componentsList.html -->
+      <li><a href="#">共享资源</a></li>
+      <li><a href="#">法规标准</a></li><!-- /statuteStandard/statuteStandard.html -->
+      <li><a href="#">装备市场准入</a></li><!-- /equipmentMarketAccess/equipmentMarketAccess.html -->
+      <li><a href="#">企业及产品</a></li><!-- /enterprisesProducts/enterprisesProducts.html -->
+      <li><a href="#">服务指南</a></li><!-- /serviceGuide/serviceGuide.html -->
+    </ul>
+  </div>
+</div>
+<script>
+  $(document).ready(function () {
+    var token = Cookies.get('token');
+    // console.log("token==="+token);
+    var userBar = '';
+    // if (token) {
+    if (true) {
+      // var user = JSON.parse(window.localStorage.getItem('user'));
+      // var unitName=user.unitName;
+      // if(unitName===""||unitName==null){
+      //       unitName=user.deptName==null||user.deptName===""?user.directlyUnitName:user.deptName
+      //   }
+      //
+      //   if(unitName===""||unitName==null){
+      //       unitName=user.userName;
+      //   }
+
+      userBar = '<a href="#">我的关注</a>' +
+        '<a href="./user/userCenter.html" class="register user_center" >用户中心</a>' +
+        '<a href="#" class="register">消息中心</a>' +
+        '<a href="#" class="register" style="font-size: 20px;">'+"unitName"+'</a>' +
+        '<a href="javascript:;" onclick="clearLoginInfo();" class="register"><div class="tuichu"></div></a>';
+    } else {
+      userBar =
+        '<a href="./login.html" class="login">登录</a><a href="#" class="register">注册</a>';
+    }
+    $("#userBar").html(userBar);
+  });
+</script>
+
+</html>

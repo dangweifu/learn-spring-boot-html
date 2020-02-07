@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<style>
+		.card-title-time{
+			padding: 10px 13px;
+			margin: 0;
+			box-shadow: none;
+		}
+
+		.card-title-time .line-list{
+			height: 30px;
+			line-height: 30px;
+		}
+
+		.card-title-time .line-list p{
+			color: rgba(51,51,51,1);
+			margin-bottom: 0;
+		}
+
+		.card-title-time .line-list time{
+			font-size: 13px;
+			color: rgba(102, 102, 102, 1);
+			text-align: right;
+		}
+	</style>
+
+	<div class="mui-card card-title-time">
+		<!--页眉，放置标题-->
+		<div class="mui-card-header card-head-row">
+			<div class="mui-row">
+				<h2 class="card-title mui-col-xs-10"></h2>
+				<div class="btn-box mui-col-xs-2">
+					<button type="button" class="mui-btn card-button">更多</button>
+				</div>
+			</div>
+		</div>
+
+		<!--内容区-->
+		<div class="mui-card-content">
+			<div class="mui-row line-list">
+				<p class="mui-ellipsis mui-col-xs-9"></p>
+				<time class="mui-col-xs-3"></time>
+			</div>
+		</div>
+	</div>
+
+	<!-- <script type="text/babel"> -->
+	<script>
+		mui.ready(function(){
+			var dataArr = [
+				{ text : '关于加快吸纳优势民营企业进入武器装备装备', time : '2019-9-8' },
+				{ text : '关于加快吸纳优势民营企业进入武器装备装备', time : '2019-9-8' },
+				{ text : '关于加快吸纳优势民营企业进入武器装备装备', time : '2019-9-8' },
+				{ text : '关于加快吸纳优势民营企业进入武器装备装备', time : '2019-9-8' },
+				{ text : '关于加快吸纳优势民营企业进入武器装备装备', time : '2019-9-8' }
+			];
+
+			var templateHtml = '';
+
+			mui.each(dataArr, function(index, item){
+				templateHtml +=
+					`
+						<div class="mui-row line-list">
+							<p class="mui-ellipsis mui-col-xs-9">${item.text}</p>
+							<time class="mui-col-xs-3">${item.time}</time>
+						</div>
+					`
+			});
+
+			// 要闻动态
+			mui('.news .mui-card-content')[0].innerHTML = templateHtml;
+
+			mui(".news .card-title")[0].innerHTML = '要闻动态';
+
+			$(".news .card-button")[0].onclick = function() {
+				window.location.href = "/src/views/newstrends/index.html"
+			};
+			$(".news .mui-card-content")[0].onclick = function() {
+				window.location.href = "/src/views/newstrends/newsTrendsDetail.html"
+			};
+
+			// 通知公告
+			if(mui('.notice-announcement .mui-card-content')[0]) {
+				mui('.notice-announcement .mui-card-content')[0].innerHTML = templateHtml;
+	
+				mui(".notice-announcement .card-title")[0].innerHTML = '通知公告';
+				
+				$(".notice-announcement .card-button")[0].onclick = function() {
+					window.location.href = "/src/views/noticeannouncement/index.html"
+				};
+				$(".notice-announcement .mui-card-content")[0].onclick = function() {
+					window.location.href = "/src/views/noticeAnnouncement/noticeAnnouncementDetail.html"
+				};
+			} 
+
+			// 企业名录
+			if(mui('.business-directory .mui-card-content')[0]) {
+				mui('.business-directory .mui-card-content')[0].innerHTML = templateHtml;
+				
+				$('.business-directory .mui-card-content time').hide();
+
+				mui(".business-directory .card-title")[0].innerHTML = '企业名录';
+	
+				$(".business-directory .card-button")[0].onclick = function() {
+					window.location.href = "/src/views/enterList/index.html"
+				};
+				$(".business-directory .mui-card-content")[0].onclick = function() {
+					window.location.href = "/src/views/enterList/enterpriseDetail.html"
+				};
+			}
+
+			// 法规标准
+			if(mui('.regulation .mui-card-content')[0]) {
+				mui('.regulation .mui-card-content')[0].innerHTML = templateHtml;
+	
+				mui(".regulation .card-title")[0].innerHTML = '法规标准';
+	
+				$(".regulation .card-button")[0].onclick = function() {
+					window.location.href = "/src/views/lawstandard/index.html"
+				};
+				$(".regulation .mui-card-content")[0].onclick = function() {
+					window.location.href = "/src/views/lawstandard/lawStandardDetail.html"
+				};
+			}
+		});
+	</script>
+</html>

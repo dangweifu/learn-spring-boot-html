@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="viewport"
+		content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<meta charset="UTF-8">
+	<title>首页</title>
+	<link href="../../../static/css/mui/mui.min.css" rel="stylesheet" />
+	<link href="../../../assets/css/common.min.css" rel="stylesheet" />
+	<link href="../../../assets/css/home-new.min.css" rel="stylesheet" />
+
+	<script src="../../../static/js/babel/babel-browser.min.js" type="text/javascript"></script>
+	<script src="../../../static/js/mui/mui.min.js" type="text/javascript"></script>
+	<script src="../../../static/js/jquery/jquery.min.js" type="text/javascript"></script>
+	<script src="../../../static/js/lazyload/jquery.lazyload.min.js" type="text/javascript"></script>
+	<script src="../../../assets/js/home/index.js" type="text/babel"></script>
+	<script type="text/javascript" charset="utf-8">
+		mui.init();
+	</script>
+</head>
+
+<body>
+	<!-- 头部 -->
+	<header>
+		<script>
+			$("header").load("../../common/header.html");
+		</script>
+	</header>
+
+	<!-- 内容 -->
+	<article class="mui-content">
+
+		<!-- banner -->
+		<!-- <img src="../../../assets/img/home/carousel-1.png" alt="" class="banner"> -->
+		<!-- 轮播 -->
+		<div class="mui-slider banner">
+			<div class="mui-slider-group mui-slider-loop">
+				<div class="mui-slider-item"><a href="#"><img src="http://1.119.134.82/file/2019/07/18/90a84bbe9cc2497cad9db3dd964592b3.jpg" /></a></div>
+									<div class="mui-slider-item"><a href="#"><img src="http://1.119.134.82/file/2019/07/18/d210b1513bc54ce28e342804d4cf4460.jpg" /></a></div>
+					<div class="mui-slider-item"><a href="#"><img src="http://1.119.134.82/file/2019/07/18/65ba44d525c44ca1bdbfdc6d2c9499bf.jpg" /></a></div>
+					<div class="mui-slider-item"><a href="#"><img src="http://1.119.134.82/file/2019/07/18/90a84bbe9cc2497cad9db3dd964592b3.jpg" /></a></div>
+			<div class="mui-slider-item"><a href="#"><img src="http://1.119.134.82/file/2019/07/18/d210b1513bc54ce28e342804d4cf4460.jpg" /></a></div>
+			</div>
+			<div class="mui-slider-indicator" id="sliin">
+				<div class="mui-indicator mui-active"></div>
+				<div class="mui-indicator"></div>
+				<div class="mui-indicator"></div>
+				<!-- <div class="mui-indicator"></div> -->
+			</div>
+		</div>
+
+		<!-- 八宫格栏目 -->
+		<ul class="mui-table-view mui-grid-view mui-grid-9 special-column">
+			<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+				<a href="#">
+					<img class="column-icon" src="../../../assets/img/home/special-column-1.png" alt="">
+					<div class="mui-media-body">军委机关</div>
+				</a>
+			</li>
+			<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+				<a href="#">
+					<img class="column-icon" src="../../../assets/img/home/special-column-2.png" alt="">
+					<div class="mui-media-body">陆军专栏</div>
+				</a>
+			</li>
+			<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+				<a href="#">
+					<img class="column-icon" src="../../../assets/img/home/special-column-3.png" alt="">
+					<div class="mui-media-body">海军专栏</div>
+				</a>
+			</li>
+			<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+				<a href="#">
+					<img class="column-icon" src="../../../assets/img/home/special-column-4.png" alt="">
+					<div class="mui-media-body">空军专栏</div>
+				</a>
+			</li>
+			<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+				<a href="#">
+					<img class="column-icon" src="../../../assets/img/home/special-column-7.png" alt="">
+					<div class="mui-media-body">火箭军专栏</div>
+				</a>
+			</li>
+			<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+				<a href="#">
+					<img class="column-icon" src="../../../assets/img/home/special-column-8.png" alt="">
+					<div class="mui-media-body">武警专栏</div>
+				</a>
+			</li>
+			<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+				<a href="#">
+					<img class="column-icon" src="../../../assets/img/home/special-column-6.png" alt="">
+					<div class="mui-media-body">战支专栏</div>
+				</a>
+			</li>
+			<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+				<a href="#">
+					<img class="column-icon" src="../../../assets/img/home/special-column-5.png" alt="">
+					<div class="mui-media-body">军工集团</div>
+				</a>
+			</li>
+		</ul>
+
+		<!-- 要闻动态 -->
+		<div class="card-list news">
+			<div class="mui-card card-title-time">
+				<!--页眉，放置标题-->
+				<div class="mui-card-header card-head-row">
+					<div class="mui-row">
+						<h2 class="card-title mui-col-xs-10">要闻动态</h2>
+						<div class="btn-box mui-col-xs-2">
+							<button type="button" class="mui-btn card-button" onclick="window.location.href = '/src/views/newstrends/index.html'">更多</button>
+						</div>
+
+					</div>
+				</div>
+
+				<!--内容区-->
+				<div class="mui-card-content">
+					<div class="mui-row line-list"  onclick="window.location.href = '/src/views/noticeAnnouncement/noticeAnnouncementDetail.html'">
+						<p class="mui-ellipsis mui-col-xs-9">2019年7月24日新增11条采购需求、195条采购公告、831条军品配套</p>
+						<time class="mui-col-xs-3">2019-7-24</time>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 通知公告 -->
+		<div class="card-list notice-announcement">
+			<div class="mui-card card-title-time">
+				<!--页眉，放置标题-->
+				<div class="mui-card-header card-head-row">
+					<div class="mui-row">
+						<h2 class="card-title mui-col-xs-10">通知公告</h2>
+						<div class="btn-box mui-col-xs-2">
+							<button type="button" class="mui-btn card-button" onclick="window.location.href = '/src/views/noticeannouncement/index.html'">更多</button>
+						</div>
+					</div>
+				</div>
+
+				<!--内容区-->
+				<div class="mui-card-content">
+					<div class="mui-row line-list" onclick="window.location.href = '/src/views/noticeannouncement/noticeAnnouncementDetail.html'">
+						<p class="mui-ellipsis mui-col-xs-9">科研成果资料采编室建设</p>
+						<time class="mui-col-xs-3">2019-7-16</time>
+						<p class="mui-ellipsis mui-col-xs-9">关于征集“第三届军民融合发展高技术装备成果展览暨论坛活动”参展项目的通知</p>
+						<time class="mui-col-xs-3">2019-7-13</time>
+						<p class="mui-ellipsis mui-col-xs-9">“全军装备采购招标代理机构名录”入围单位公示</p>
+						<time class="mui-col-xs-3">2019-7-13</time>
+						<p class="mui-ellipsis mui-col-xs-9">全军装备采购招标代理服务协议签署活动在京举行</p>
+						<time class="mui-col-xs-3">2019-7-13</time>
+						<p class="mui-ellipsis mui-col-xs-9">军委装备发展部科研订购局组织开展首次装备预研共用技术和领域基金指南发布与评审工作网上答疑</p>
+						<time class="mui-col-xs-3">2019-7-13</time>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 采购公告 -->
+		<div class="card-list purchase-announcement">
+			<div class="mui-card card-tag-title-time">
+				<!--页眉，放置标题-->
+				<div class="mui-card-header card-head-row">
+					<div class="mui-row hearder-row">
+						<h2 class="card-title mui-col-xs-10">采购公告</h2>
+						<div class="btn-box mui-col-xs-2">
+							<button type="button" class="mui-btn card-button" onclick="window.location.href = '/src/views/collectSue/index.html'">更多</button>
+						</div>
+					</div>
+				</div>
+
+				<!--内容区-->
+				<div class="mui-card-content">
+					<div class="mui-row line-list" onclick="window.location.href = '/src/views/collectSue/collectSueDetail.html'">
+						<span class="mui-col-xs-2">公开招标</span>
+						<p class="mui-ellipsis mui-col-xs-8">博雅生物：人凝血酶原复合物申报生产注册获受理，进一步提升核心竞争力</p>
+						<time class="mui-col-xs-2">2019-7-5</time>
+						<span class="mui-col-xs-2">1</span>
+						<p class="mui-ellipsis mui-col-xs-8">系统探测效能分析与评估软件开发竞争性谈判采购公告</p>
+						<time class="mui-col-xs-2">2019-7-5</time>
+						<span class="mui-col-xs-2">1</span>
+						<p class="mui-ellipsis mui-col-xs-8">核酸检测仪招标公告（第二次）</p>
+						<time class="mui-col-xs-2">2019-7-5</time>
+						<span class="mui-col-xs-2">1</span>
+						<p class="mui-ellipsis mui-col-xs-8">17种即食类食品保障招标公告</p>
+						<time class="mui-col-xs-2">2019-7-5</time>
+						<span class="mui-col-xs-2">1</span>
+						<p class="mui-ellipsis mui-col-xs-8">GPU高性能计算服务器竞争性谈判采购公告</p>
+						<time class="mui-col-xs-2">2019-7-5</time>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 采购需求 -->
+		<div class="card-list procurement-demand">
+			<div class="mui-card card-multi-line">
+				<!--页眉，放置标题-->
+				<div class="mui-card-header card-head-row">
+					<div class="mui-row">
+						<h2 class="card-title mui-col-xs-10">采购需求</h2>
+						<div class="btn-box mui-col-xs-2">
+							<button type="button" class="mui-btn card-button" onclick="window.location.href = '/src/views/armymilitary/index.html'">更多</button>
+						</div>
+					</div>
+				</div>
+
+				<!--内容区-->
+				<div class="mui-card-content">
+					<div class="line-list" onclick="window.location.href = '/src/views/armymilitary/purchaseRequirementDetail.html'">
+						<p class="list-title multi-line-ellipsis">去问问</p>
+						<div class="mui-row list-other-info">
+							<p class="mui-col-xs-6">已对接<span>5</span>个剩<span>5</span>天</p>
+							<p class="mui-col-xs-6">发布时间：<time>2019-7-15</time></p>
+						</div>
+					</div>
+					<div class="line-list" onclick="window.location.href = '/src/views/armymilitary/purchaseRequirementDetail.html'">
+						<p class="list-title multi-line-ellipsis">XX飞行试验模型研制项目采购需求</p>
+						<div class="mui-row list-other-info">
+							<p class="mui-col-xs-6">已对接<span>5</span>个剩<span>5</span>天</p>
+							<p class="mui-col-xs-6">发布时间：<time>2019-7-13</time></p>
+						</div>
+					</div>
+					<div class="line-list" onclick="window.location.href = '/src/views/armymilitary/purchaseRequirementDetail.html'">
+						<p class="list-title multi-line-ellipsis">车载4G基站设备</p>
+						<div class="mui-row list-other-info">
+							<p class="mui-col-xs-6">已对接<span>5</span>个剩<span>5</span>天</p>
+							<p class="mui-col-xs-6">发布时间：<time>2019-7-8</time></p>
+						</div>
+					</div>
+					<div class="line-list" onclick="window.location.href = '/src/views/armymilitary/purchaseRequirementDetail.html'">
+						<p class="list-title multi-line-ellipsis">重点实验室基金-资源受限网络通信协议设计与验证技术</p>
+						<div class="mui-row list-other-info">
+							<p class="mui-col-xs-6">已对接<span>5</span>个剩<span>5</span>天</p>
+							<p class="mui-col-xs-6">发布时间：<time>2019-7-8</time></p>
+						</div>
+					</div>
+					<div class="line-list" onclick="window.location.href = '/src/views/armymilitary/purchaseRequirementDetail.html'">
+						<p class="list-title multi-line-ellipsis">光学相干合成孔径超分辨率成像技术</p>
+						<div class="mui-row list-other-info">
+							<p class="mui-col-xs-6">已对接<span>5</span>个剩<span>5</span>天</p>
+							<p class="mui-col-xs-6">发布时间：<time>2019-7-8</time></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 产品技术 -->
+		<div class="card-list product-technology">
+			<div class="mui-card card-photo-four">
+				<!--页眉，放置标题-->
+				<div class="mui-card-header card-head-row">
+					<div class="mui-row">
+						<h2 class="card-title mui-col-xs-10"></h2>
+						<div class="btn-box mui-col-xs-2">
+							<button type="button" class="mui-btn card-button" onclick="window.location.href = '/src/views/enterList/index.html'">更多</button>
+						</div>
+					</div>
+				</div>
+
+				<!--内容区-->
+				<div class="mui-card-content mui-row">
+					<div class="line-list mui-col-sm-6 mui-col-xs-6" onclick="window.location.href = '/src/views/enterList/productDetail.html'">
+						<!-- src 方需要懒加载的图片，data-original 放实际的图片路径  -->
+						<div class="image">
+			                <img class="lazy"  src="../../../assets/img/home/carousel-1.png" width="100%" height="auto" data-original="../../../assets/img/photoCard/6.png" alt="">
+			            </div>
+		                <span class="text">高滑油-燃油双联泵滑油双联泵滑油…</span>
+					</div>
+
+					<div class="line-list mui-col-sm-6 mui-col-xs-6" onclick="window.location.href = '/src/views/enterList/productDetail.html'">
+						<!-- src 方需要懒加载的图片，data-original 放实际的图片路径  -->
+						<div class="image">
+			                <img class="lazy"  src="../../../assets/img/home/carousel-1.png" width="100%" height="auto" data-original="../../../assets/img/photoCard/7.png" alt="">
+			            </div>
+		                <span class="text">高滑油-燃油双联泵滑油双联泵滑油…</span>
+					</div>
+
+					<div class="line-list mui-col-sm-6 mui-col-xs-6" onclick="window.location.href = '/src/views/enterList/productDetail.html'">
+						<!-- src 方需要懒加载的图片，data-original 放实际的图片路径  -->
+						<div class="image">
+			                <img class="lazy"  src="../../../assets/img/home/carousel-1.png" width="100%" height="auto" data-original="../../../assets/img/photoCard/8.png" alt="">
+			            </div>
+		                <span class="text">高滑油-燃油双联泵滑油双联泵滑油…</span>
+					</div>
+
+					<div class="line-list mui-col-sm-6 mui-col-xs-6"  onclick="window.location.href = '/src/views/enterList/productDetail.html'">
+						<!-- src 方需要懒加载的图片，data-original 放实际的图片路径  -->
+						<div class="image">
+			                <img class="lazy"  src="../../../assets/img/home/carousel-1.png" width="100%" height="auto" data-original="../../../assets/img/photoCard/9.png" alt="">
+			            </div>
+		                <span class="text">高滑油-燃油双联泵滑油双联泵滑油…</span>
+					</div>
+				</div>
+			</div>
+
+			<script>
+				mui.ready(function(){
+					mui(".product-technology .card-title")[0].innerHTML = '产品技术';
+				})
+			</script>
+		</div>
+
+		<!-- 企业名录 -->
+		<div class="card-list business-directory">
+			<div class="mui-card card-title-time">
+				<!--页眉，放置标题-->
+				<div class="mui-card-header card-head-row">
+					<div class="mui-row">
+						<h2 class="card-title mui-col-xs-10">企业名录</h2>
+						<div class="btn-box mui-col-xs-2">
+							<button type="button" class="mui-btn card-button">更多</button>
+						</div>
+					</div>
+				</div>
+
+				<!--内容区-->
+				<div class="mui-card-content">
+					<div class="mui-row line-list">
+						<p class="mui-ellipsis mui-col-xs-9">某某测试单位</p>
+						<time class="mui-col-xs-3">2019-07-28</time>
+					</div>
+					<div class="mui-row line-list">
+						<p class="mui-ellipsis mui-col-xs-9">中国核工业建设集团公司</p>
+						<time class="mui-col-xs-3">2019-07-27</time>
+					</div>
+					<div class="mui-row line-list">
+						<p class="mui-ellipsis mui-col-xs-9">中国航天科工集团</p>
+						<time class="mui-col-xs-3">2019-07-26</time>
+					</div>
+					<div class="mui-row line-list">
+						<p class="mui-ellipsis mui-col-xs-9">安方高科电磁安全技术（北京）有限公司</p>
+						<time class="mui-col-xs-3">2019-07-26</time>
+					</div>
+					<div class="mui-row line-list">
+						<p class="mui-ellipsis mui-col-xs-9">中国核工业建设集团公司</p>
+						<time class="mui-col-xs-3">2019-07-26</time>
+					</div>
+					<div class="mui-row line-list">
+						<p class="mui-ellipsis mui-col-xs-9">安方高科电磁安全技术（北京）有限公司</p>
+						<time class="mui-col-xs-3">2019-07-26</time>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 查询点 -->
+		<div class="card-list query-points">
+			<div class="mui-card card-photo-one">
+				<!--页眉，放置标题-->
+				<div class="mui-card-header card-head-row">
+					<div class="mui-row">
+						<h2 class="card-title mui-col-xs-10">查询点</h2>
+						<div class="btn-box mui-col-xs-2">
+							<!-- <button type="button" class="mui-btn">更多</button> -->
+						</div>
+					</div>
+				</div>
+
+				<!--内容区-->
+				<div class="mui-card-content mui-row">
+					<div class=" line-list mui-col-sm-6 mui-col-xs-6 goto-list" onclick="window.location.href = '/src/views/querypoint/index.html'">
+						<img src="/assets/img/home/zhongguo.png" alt="" width="100%" height="auto" data-original="../../../assets/img/home/carousel-1.png" >
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 法规标准 -->
+		<div class="card-list regulation">
+			<div class="mui-card card-title-time">
+				<!--页眉，放置标题-->
+				<div class="mui-card-header card-head-row">
+					<div class="mui-row">
+						<h2 class="card-title mui-col-xs-10">法规标准</h2>
+						<div class="btn-box mui-col-xs-2">
+							<button type="button" class="mui-btn card-button" onclick="window.location.href = '/src/views/lawstandard/index.html'">更多</button>
+						</div>
+					</div>
+				</div>
+
+				<!--内容区-->
+				<div class="mui-card-content">
+					<div class="mui-row line-list" onclick="window.location.href = '/src/views/lawstandard/lawStandardDetail.html'">
+						<p class="mui-ellipsis mui-col-xs-9">测试</p>
+						<time class="mui-col-xs-3">2019-07-18</time>
+					</div>
+					<div class="mui-row line-list" onclick="window.location.href = '/src/views/lawstandard/lawStandardDetail.html'">
+						<p class="mui-ellipsis mui-col-xs-9">测试</p>
+						<time class="mui-col-xs-3">2019-07-18</time>
+					</div>
+					<div class="mui-row line-list" onclick="window.location.href = '/src/views/lawstandard/lawStandardDetail.html'">
+						<p class="mui-ellipsis mui-col-xs-9">测试</p>
+						<time class="mui-col-xs-3">2019-07-19</time>
+					</div>
+					<div class="mui-row line-list" onclick="window.location.href = '/src/views/lawstandard/lawStandardDetail.html'">
+						<p class="mui-ellipsis mui-col-xs-9">军品配套科研项目管理实施细则（节选）</p>
+						<time class="mui-col-xs-3">2019-07-20</time>
+					</div>
+					<div class="mui-row line-list" onclick="window.location.href = '/src/views/lawstandard/lawStandardDetail.html'">
+						<p class="mui-ellipsis mui-col-xs-9">竞争性装备采购管理规定（节选）</p>
+						<time class="mui-col-xs-3">2019-07-24</time>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+
+		<!-- 成果推广 -->
+		<div class="card-list achievements-popularization">
+			<div class="mui-card card-multi-line">
+				<!--页眉，放置标题-->
+				<div class="mui-card-header card-head-row">
+					<div class="mui-row">
+						<h2 class="card-title mui-col-xs-10">成果推广</h2>
+						<div class="btn-box mui-col-xs-2">
+							<button type="button" class="mui-btn card-button" onclick="window.location.href = '/src/views/outcomepromotion/index.html'">更多</button>
+						</div>
+					</div>
+				</div>
+
+				<!--内容区-->
+				<div class="mui-card-content">
+					<div class="line-list" onclick="window.location.href = '/src/views/outcomepromotion/outcomePromotionDetail.html'">
+						<p class="list-title multi-line-ellipsis">加固显示器、加固键盘鼠标</p>
+						<div class="mui-row list-other-info">
+							<p class="mui-col-xs-6">发布时间：<time>2019-07-24</time></p>
+						</div>
+					</div>
+					<div class="line-list" onclick="window.location.href = '/src/views/outcomepromotion/outcomePromotionDetail.html'">
+						<p class="list-title multi-line-ellipsis">线阵静态红外地球敏感器1</p>
+						<div class="mui-row list-other-info">
+							<p class="mui-col-xs-6">发布时间：<time>2019-07-20</time></p>
+						</div>
+					</div>
+					<div class="line-list" onclick="window.location.href = '/src/views/outcomepromotion/outcomePromotionDetail.html'">
+						<p class="list-title multi-line-ellipsis">深海潜标数据无线实时传输系统</p>
+						<div class="mui-row list-other-info">
+							<p class="mui-col-xs-6">发布时间：<time>2019-07-20</time></p>
+						</div>
+					</div>
+					<div class="line-list" onclick="window.location.href = '/src/views/outcomepromotion/outcomePromotionDetail.html'">
+						<p class="list-title multi-line-ellipsis">深海潜标数据无线实时传输系统</p>
+						<div class="mui-row list-other-info">
+							<p class="mui-col-xs-6">发布时间：<time>2019-07-20</time></p>
+						</div>
+					</div>
+					<div class="line-list" onclick="window.location.href = '/src/views/outcomepromotion/outcomePromotionDetail.html'">
+						<p class="list-title multi-line-ellipsis">近岸执法快艇</p>
+						<div class="mui-row list-other-info">
+							<p class="mui-col-xs-6">发布时间：<time>2019-07-20</time></p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</article>
+
+	<!-- 底部 -->
+	<footer>
+		<script>
+			$("footer").load("../../common/footer.html");
+		</script>
+	</footer>
+
+	<script>
+		mui.ready(function () {
+			var gallery = mui('.mui-slider');
+			gallery.slider({
+				interval: 3000//自动轮播周期，若为0则不自动播放，默认为0；
+			});
+		});
+
+		// 懒加载
+		$("img.lazy").lazyload({
+			// threshold : 200,
+			effect : "fadeIn"
+		});
+	</script>
+</body>
+
+</html>

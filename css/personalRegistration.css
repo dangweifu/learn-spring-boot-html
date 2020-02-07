@@ -1,0 +1,266 @@
+.pr-banner-wrapper {
+  width: 100%;
+  height: 200px;
+  padding-top: 72px;
+  text-align: center;
+  background-image: url("../img/personalRegistration-banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.pr-banner-wrapper h2 {
+  margin-top: 0;
+  margin-bottom: 9px;
+  font-size: 34px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: white;
+}
+
+.pr-banner-wrapper p {
+  font-size: 16px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: white;
+}
+
+.pr-content-wrapper {
+  padding-bottom: 83px;
+  background-color: #F5F5F5;
+}
+
+.pr-content-wrapper .pr-nav-arrow {
+  width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.pr-content-wrapper .pr-nav-arrow .breadcrumb {
+  background-color: #F5F5F5;
+}
+
+.pr-content-wrapper .pr-form-wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 59px;
+  padding-bottom: 87px;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.pr-content-wrapper .pr-form-wrapper .pr-form-title {
+  margin-bottom: 83px;
+  text-align: center;
+}
+
+.pr-content-wrapper .pr-form-wrapper .pr-form-title a {
+  display: inline-block;
+  font-size: 22px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #333333;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.pr-content-wrapper .pr-form-wrapper .pr-form-title span {
+  display: inline-block;
+  width: 1px;
+  height: 20px;
+  margin: 0 50px;
+  background: #e5e5e5;
+}
+
+.pr-content-wrapper .pr-form-wrapper .pr-form-title .form-title-active {
+  position: relative;
+  color: #025AB3;
+}
+
+.pr-content-wrapper .pr-form-wrapper .pr-form-title .form-title-active::after {
+  position: absolute;
+  top: 46px;
+  left: 50%;
+  display: block;
+  content: ' ';
+  width: 30px;
+  height: 4px;
+  background: #025ab3;
+  border-radius: 1px;
+  transform: translateX(-50%);
+}
+
+.pr-content-wrapper .pr-form-wrapper .col-xs-2 {
+  padding-right: 0px;
+}
+
+.pr-content-wrapper .pr-form-wrapper .form-group label {
+  text-align: right;
+  font-size: 18px;
+  line-height: 42px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: inherit;
+}
+
+.pr-content-wrapper .pr-form-wrapper .form-group label span {
+  color: red;
+}
+
+.pr-content-wrapper .pr-form-wrapper .form-group .fileinput-wrapper {
+  margin-right: 30px;
+  position: relative;
+  width: 276px;
+  height: 190px;
+  background: #f4f4f4;
+  text-align: center;
+  font-size: 16px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #999999;
+}
+
+.pr-content-wrapper .pr-form-wrapper .form-group .fileinput-wrapper input {
+  width: 276px;
+  height: 133px;
+  opacity: 0;
+  z-index: 10;
+  position: relative;
+}
+
+.pr-content-wrapper .pr-form-wrapper .form-group .fileinput-wrapper::after {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  content: '';
+  display: block;
+  height: 52px;
+  width: 2px;
+  background: #cccccc;
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.pr-content-wrapper .pr-form-wrapper .form-group .fileinput-wrapper::before {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  content: '';
+  display: block;
+  width: 52px;
+  height: 2px;
+  background: #cccccc;
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.pr-content-wrapper .pr-form-wrapper .form-group .fileinput-wrapper img {
+  width: 276px;
+  height: 190px;
+  margin-top: -185px;
+  margin-left: -15px;
+  position: relative;
+  z-index: 9;
+}
+
+.pr-content-wrapper .pr-form-wrapper .form-group .fileinput-wrapper img[src=""], .pr-content-wrapper .pr-form-wrapper .form-group .fileinput-wrapper img:not([src]) {
+  opacity: 0;
+}
+
+.pr-content-wrapper .pr-form-wrapper .form-group .short-message {
+  color: #025ab3;
+  border-left: 1px solid;
+  padding: 0 20px;
+  position: absolute;
+  right: 0;
+  top: 17px;
+  cursor: pointer;
+}
+
+.pr-content-wrapper .pr-form-wrapper .form-group .short-message.disabled {
+  color: #757a80;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.pr-content-wrapper .pr-form-wrapper .form-group .idCard {
+  float: right;
+  margin-top: 10px;
+}
+
+.pr-content-wrapper .pr-form-wrapper .dropdown select {
+  box-sizing: border-box;
+  height: 52px;
+  font-size: 16px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  text-align: left;
+  color: #999999;
+  background: #f4f4f4;
+  border: 0;
+  box-shadow: 0 0 0 0;
+  border-radius: 0;
+}
+
+.pr-content-wrapper .pr-form-wrapper .address-dropdown-wrapper {
+  display: inline-block;
+  text-align-last: left;
+}
+
+.pr-content-wrapper .pr-form-wrapper .address-dropdown-wrapper:nth-child(2) {
+  margin-left: 0;
+}
+
+.pr-content-wrapper .pr-form-wrapper .address-dropdown-wrapper button, .pr-content-wrapper .pr-form-wrapper .address-dropdown-wrapper ul {
+  width: 170px;
+}
+
+.pr-content-wrapper .pr-form-wrapper .checkbox {
+  padding-left: 431px;
+}
+
+.pr-content-wrapper .pr-form-wrapper .checkbox input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  opacity: 0;
+  z-index: 2;
+}
+
+.pr-content-wrapper .pr-form-wrapper .checkbox input[type="checkbox"]:checked + label::after {
+  background: url("../img/personalRegistration-selected.png") no-repeat;
+}
+
+.pr-content-wrapper .pr-form-wrapper .checkbox label {
+  position: relative;
+  font-size: 18px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #333333;
+}
+
+.pr-content-wrapper .pr-form-wrapper .checkbox label::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: -20px;
+  bottom: 2px;
+  width: 20px;
+  height: 20px;
+  background: url("../img/personalRegistration-unselected.png") no-repeat;
+}
+
+.pr-content-wrapper .pr-form-wrapper .submit-btn {
+  margin-top: 81px;
+  text-align: center;
+}
+
+.pr-content-wrapper .pr-form-wrapper .submit-btn button {
+  width: 250px;
+  height: 60px;
+  background: #025ab3;
+  font-size: 18px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: white;
+  border-color: transparent;
+  border-radius: 0;
+}

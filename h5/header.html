@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+	<style>
+		html{
+			height: 100%;
+		}
+
+		body{
+			font-family: MicrosoftYaHei;
+			min-height: 100%;
+			margin: 0;
+			padding: 0;
+			position: relative;
+		}
+
+		header{
+			position: fixed;
+			top: 0;
+			z-index: 99;
+		}
+
+		.mui-content{
+			padding: 40px 0 125px 0;
+		}
+
+		.head-content{
+			font-size: 0;
+			background: rgba(2, 90, 179, 1);
+		}
+
+		.head-content .tab-btn{
+		    padding: 0 18px;
+
+			color: rgba(255,255,255,1);
+		}
+
+		.head-content .tab-btn .mui-control-item{
+			font-size: 14px;
+			border-color: transparent;
+			transition: all .2s;
+		}
+
+		.head-content .tab-btn .mui-active{
+			font-size: 15px;
+			color: rgba(255,255,255,1)!important;
+			border-color: rgba(255,255,255,1)!important;
+			font-weight: bold;
+		}
+
+		.head-content .slide-btn{
+			height: 40px;
+		    text-align: center;
+		    line-height: 58px;
+		}
+
+		.slide-btn{
+			box-shadow: 0px -2px 6px rgba(0,0,0,.6);
+		}
+
+		.slide-btn .mui-icon{
+			font-size: 28px;
+			color: rgba(255,255,255,1);
+		}
+		.head-wrap{
+			display:none;
+			padding:0 15px;
+			background:white;
+			position:fixed;
+			z-index:99999;
+			top:40px;
+			width:100%;
+			height:100%;
+		}
+		.head-wrap-title{
+			width:144px;
+			font-size:18px;
+			color:rgba(51,51,51,1);
+			padding-top:30px;
+			padding-bottom:20px;
+		}
+		.head-wrap-ulo .head-wrap-ulo-li{
+			border-radius:2px;
+			background:#F0F0F0;
+			width:48%;
+			display:inline-block;
+			line-height:40px;
+			font-size:15px;
+			height:40px;
+			text-align:center;
+			margin-bottom:10px;
+			color:#666666;
+		}
+		.head-wrap-ulo div.active {
+			background-color: #025AB3;
+			color: #ffffff;
+		}
+		.head-wrap-ulo .head-wrap-ulo-li:nth-child(2n){
+			float:right;
+		}
+	</style>
+	<div class="mui-row head-content">
+		<div class="mui-col-xs-10 tab-btn">
+	    <div class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+	        <a class="mui-control-item mui-active head-tab" data-btn="item1" href="#item1">首页</a>
+	        <a class="mui-control-item head-tab" data-btn="item2" href="#item2">采购公告</a>
+	        <a class="mui-control-item head-tab" data-btn="item3" href="#item3">集中采购</a>
+	        <a class="mui-control-item head-tab" data-btn="item4" href="#item4">预研指南</a>
+	    </div>
+		</div>
+		<div class="mui-col-xs-2 slide-btn">
+			<span class="mui-icon mui-icon-arrowup" style="display:none;"></span>
+			<span class="mui-icon mui-icon-arrowdown"></span>
+		</div>
+		<div class="head-wrap">
+			<p class="head-wrap-title">点击进入栏目板块</p>
+			<div class="head-wrap-ulo">
+				<div class="head-wrap-ulo-li active head-tab">首页</div>
+				<div class="head-wrap-ulo-li head-tab">采购公告</div>
+				<div class="head-wrap-ulo-li head-tab">集中采购</div>
+				<div class="head-wrap-ulo-li head-tab">预研指南</div>
+				<div class="head-wrap-ulo-li head-tab">采购需求</div>
+				<div class="head-wrap-ulo-li head-tab">通用装备</div>
+				<div class="head-wrap-ulo-li head-tab">装备实验</div>
+				<!-- <div class="head-wrap-ulo-li head-tab">试验鉴定</div> -->
+				<div class="head-wrap-ulo-li head-tab">成果推广</div>
+				<div class="head-wrap-ulo-li head-tab">法规标准</div>
+				<div class="head-wrap-ulo-li head-tab">装备市场准入</div>
+				<div class="head-wrap-ulo-li head-tab">企业及产品</div>
+				<div class="head-wrap-ulo-li head-tab">服务指南</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		var i=0;
+		$(".slide-btn").on("click",function(){
+			$(this).find("span").eq(i).show().siblings().hide();
+			i++;
+			if(i>1){
+				i=0;
+			}
+			$(".head-wrap").stop().slideToggle()
+		})
+
+		$(".head-tab").on("click",function(){
+			$(this).addClass("mui-active").siblings().removeClass("mui-active")
+			// 蓝色选中效果
+			$(this).addClass("active").siblings().removeClass("active");
+			var _this=$(this);
+			// Ui 想看点击有 下变白线的效果 所以加了 延时函数
+			setTimeout(function(){
+				if($(_this).text()=='首页'){
+					window.location.href="/src/views/home/index.html"
+				}
+				if($(_this).text()=='采购公告'){
+					window.location.href="/src/views/collectSue/index.html"
+				}
+				if($(_this).text()=='集中采购'){
+					window.location.href="/src/views/centpurchasing/index.html"
+				}
+				if($(_this).text()=='预研指南'){
+					window.location.href="/src/views/preparatoryguide/index.html"
+				}	
+				if($(_this).text()=='采购需求'){
+					window.location.href="/src/views/armymilitary/index.html"
+				}
+				if($(_this).text()=='通用装备'){
+					window.location.href="/src/views/generalequipment2/index.html"
+				}
+				if($(_this).text()=="装备实验"){
+					window.location.href="/src/views/generalequipment/index.html"
+				}
+				if($(_this).text()=='成果推广'){
+					window.location.href="/src/views/outcomepromotion/index.html"
+				}
+				if($(_this).text()=='法规标准'){
+					window.location.href="/src/views/lawstandard/index.html"
+				}
+				if($(_this).text()=='装备市场准入'){
+					window.location.href="/src/views/marketaccess/index.html"
+				}
+				if($(_this).text()=='企业及产品'){
+					window.location.href="/src/views/enterList/index.html"
+				}
+				if($(_this).text()=='服务指南'){
+					window.location.href="/src/views/service/index.html"
+				}
+			},200)
+		})
+	</script>
+</html>
+

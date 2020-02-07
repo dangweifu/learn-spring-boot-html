@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>装备市场准入</title>
+
+    <link href="/h5/static/css/mui/mui.min.css" rel="stylesheet"/>
+	<link href="/h5/assets/css/common.min.css" rel="stylesheet"/>
+	<link rel="stylesheet" href="/h5/assets/css/queryPoint.css">
+    <link rel="stylesheet" href="/h5/assets/css/head.css">
+    <style>
+        .left-block {
+            float: left;
+            text-align: left;
+        }
+    </style>
+
+	<script src="/h5/static/js/babel/babel-browser.min.js" type="text/javascript"></script>
+	<script src="/h5/static/js/mui/mui.min.js" type="text/javascript"></script>
+  	<script src="/h5/static/js/jquery/jquery.min.js" type="text/javascript"></script>
+  	<script src="/h5/assets/js/home/index.js" type="text/babel"></script>
+    <script type="text/javascript" charset="utf-8">
+      	mui.init();
+    </script>
+</head>
+<body>
+    <header>
+
+
+        <div class="heades heades-search-text">
+            <div class="mui-icon mui-icon-arrowleft icons back-icons backs"></div>
+            <div class="heades-title"></div>
+            <div class="searchs">
+                <span class="mui-icon mui-icon-search icons serar-icons"></span>
+            </div>
+        </div>
+        <!-- //搜索 -->
+        <div class="heades heades-search-box">
+            <div class="mui-icon mui-icon-arrowleft icons back-icons searchs_back"></div>
+            <input type="text" placeholder="请输入搜索关键字" class="heades-searc">
+            <span class="serarch-btn fr">搜索</span>
+        </div>
+        <!-- 搜索历史 -->
+        <div class="history-mark">
+            <p class="history-mark-title">搜素历史 <span class="mui-icon mui-icon-trash fr"></span></p>
+            <div class="history-mark-ulo">
+                <div class="history-mark-ulo-li">军械员工具箱等十型设...</div>
+                <div class="history-mark-ulo-li">军械员工具箱等十型设...</div>
+                <div class="history-mark-ulo-li">军械员工具箱等十型设...</div>
+                <div class="history-mark-ulo-li">军械员工具箱等十型设...</div>
+                <div class="history-mark-ulo-li">军械员工具箱等十型设...</div>
+                <div class="history-mark-ulo-li">军械员工具箱等十型设...</div>
+                <div class="history-mark-ulo-li">军械员工具箱等十型设...</div>
+                <div class="history-mark-ulo-li">军械员工具箱等十型设...</div>
+            </div>
+        </div>
+        <script>
+            //获取标题
+            $(".heades-title").text(document.title);
+            //回退
+            $(".backs").on("click",function(){
+                window.history.back();
+            })
+            //点击搜索条件显示
+            $(".searchs").on("click",function(){
+                $(".heades-search-text").hide()
+                $(".heades-search-box").show();
+                $(".history-mark").show();
+            });
+            //开始搜索
+            $(".serarch-btn").on("click",function(){
+                $(".heades-search-text").show()
+                $(".heades-search-box").hide();
+                $(".history-mark").hide();
+                $.ajax({
+                    type:"GET",
+                    url:"",
+                    data:{title:$(".heades-searc").val()},
+                    success:function(res){
+
+                    }
+                })
+            })
+            //开始搜索回退
+            $(".searchs_back").on("click",function(){
+                $(".heades-search-text").show()
+                $(".heades-search-box").hide();
+                $(".history-mark").hide();
+            })
+        </script>
+    </header>
+    <div class="tabs">
+        <p><a href="javscript:;" class="cur">百问百答</a></p>
+        <p><a href="javscript:;">准入法则</a></p>
+        <p><a href="javscript:;">专家观点</a></p>
+        <p><a href="javscript:;">处罚公告</a></p>
+    </div>
+	<!-- 内容 -->
+	<article class="mui-content mian list">
+
+        <div class="main-list">
+            <!-- 下拉 end -->
+            <a href="/h5//views/lawStandard/lawStandardDetail.html">
+                <div>
+                    <p class="title">百问百答百问百答百问百答百问百答百问百答百问百答百问百答</p>
+                    <p class="times">
+                        <span class="fr left-block">发布时间：2019-7-23 </span>
+                    </p>
+                </div>
+            </a>
+        </div>
+    </article>
+    <!-- 内容 -->
+	<article class="mui-content mian list2" style="display:none;">
+        <div class="main-list">
+            <!-- 下拉 end -->
+            <a href="/h5//views/lawStandard/lawStandardDetail.html">
+                <div>
+                    <p class="title">准入法则准入法则准入法则准入法则准入法则准入法则准入法则</p>
+                    <p class="times">
+                        <span class="fr left-block">发布时间：2019-7-23 </span>
+                    </p>
+                </div>
+            </a>
+        </div>
+    </article>
+    <!-- 内容 -->
+	<article class="mui-content mian list3" style="display:none;">
+        <div class="main-list">
+            <!-- 下拉 end -->
+            <a href="/h5//views/lawStandard/lawStandardDetail.html">
+                <div>
+                    <p class="title">专家观点专家观点专家观点专家观点专家观点专家观点专家观点</p>
+                    <p class="times">
+                        <span class="fr left-block">发布时间：2019-7-23 </span>
+                    </p>
+                </div>
+            </a>
+        </div>
+    </article>
+    <!-- 内容 -->
+	<article class="mui-content mian list4" style="display:none;">
+        <div class="main-list">
+            <!-- 下拉 end -->
+            <a href="/h5//views/lawStandard/lawStandardDetail.html">
+                <div>
+                    <p class="title">关于第四届军民融合发展高技术装备成果展览暨论坛活动征文</p>
+                    <p class="times">
+                        <span class="fr left-block">发布时间：2019-7-23 </span>
+                    </p>
+                </div>
+            </a>
+        </div>
+    </article>
+</body>
+<script>
+    $(document).ready(function(){
+        $(".tabs p").on("click",function(){
+            $(this).find("a").addClass("cur").parent().siblings().find("a").removeClass("cur");
+            $(".mian").eq($(this).index()).show().siblings(".mian").hide();
+        })
+    })
+</script>
+</html>

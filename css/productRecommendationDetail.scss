@@ -1,0 +1,446 @@
+.top {
+  padding-top: 25px !important;
+
+  .breadcrumb {
+    background: none !important;
+  }
+
+  .breadcrumb li a,
+  .breadcrumb li {
+    color: #fff !important;
+  }
+
+  .breadcrumb>li+li:before {
+    color: #CCCCCC !important;
+    content: "/ " !important;
+    padding: 0 5px;
+  }
+}
+
+.purchase-bg {
+  p {
+    font-size: 18px;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    margin: 0px;
+    padding-top: 38px;
+  }
+}
+
+.requirementDetail {
+  min-height: 1000px;
+  background: #fff;
+  margin-top: 30px;
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 40px 40px;
+
+  p#nonSecretTitle {
+    font-size: 20px;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .nav {
+    background: #f6f6f6;
+    margin-top: 32px;
+    width: 1100px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 14px;
+
+    .nav-ceil {
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: box;
+      display: flexbox;
+      display: flex;
+      float: left;
+      padding-left: 12px;
+
+      .txt-ceil,
+      .ceil {
+        padding-right: 10px;
+      }
+
+      .txt-ceil {
+        width: 90px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+
+    .ceil {
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: box;
+      display: flexbox;
+      display: flex;
+
+      span {
+        padding-right: 0px 6px;
+      }
+
+      .demandTypeName,
+      .demandPublishUnit {
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 90px;
+      }
+    }
+
+    .right {
+      display: flex;
+      align-items: center;
+      float: right;
+      height: 60px;
+      line-height: 60px;
+      padding-right: 12px;
+
+      .consult {
+        border-radius: 4px;
+        color: #fff;
+        background: #468cd3;
+        padding: 6px 8px;
+        margin-right: 10px;
+        cursor: pointer;
+        height: auto;
+        line-height: initial;
+        float: left;
+
+        img {
+          margin-right: 8px;
+          width: 20px;
+          height: 17px;
+        }
+      }
+
+      .imgCollect {
+        background-image: url(../img/collect.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 39px;
+        height: 32px;
+        border-radius: 5px;
+        border: 1px solid #cccccc;
+
+        &:hover {
+          background-image: url(../img/select_collect.png);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .detail {
+    border: 1px dashed #CCCCCC;
+    margin-top: 34px;
+    /* display: flex;
+        justify-content: space-between; */
+    width: 1100px;
+    padding: 20px 20px 0;
+    color: #333;
+
+    .ceil p {
+      margin: 0px;
+      padding: 0px;
+      font-size: 16px;
+      padding-bottom: 20px;
+      font-weight: bold;
+
+      span {
+        font-weight: 500;
+
+        &.zlxx_span {
+          font-weight: bold;
+          display: inline-block;
+          text-align: right;
+        }
+      }
+    }
+  }
+
+  .content {
+    width: 100%;
+
+    p {
+      padding: 20px 0 10px;
+      border-bottom: 1px solid #cccccc;
+
+      span {
+        margin-left: 10px;
+        font-size: 16px;
+        font-weight: bold;
+      }
+    }
+
+    .txt {
+      margin-top: 10px;
+      font-size: 16px;
+      line-height: 36px;
+      color: #333;
+
+      // span{
+      //   color:#468cd3;
+      // }
+      span {
+        color: black;
+      }
+
+      .col-xs-12 div {
+        margin-bottom: 30px;
+        display: inline-block;
+        // width: 49%;
+        padding-left: 50px;
+        font-family: "微软雅黑 Regular", 微软雅黑;
+        font-weight: 400;
+        font-style: normal;
+
+        font-size: 16px span {
+          // margin-left: 60px;
+        }
+      }
+
+      img {
+        margin-bottom: 40px;
+        width: 28%;
+        margin-left: 2%;
+        height: 190px;
+      }
+
+      video {
+        width: 50%;
+        height: 190px;
+      }
+    }
+  }
+
+  .demandDocking {
+    border: 1px solid #f2f2f2;
+    border-top: none;
+    min-height: 1300px;
+    margin-top: 50px;
+    width: 100%;
+
+    .demand-nav {
+      height: 60px;
+      background: #f6f6f6;
+      position: relative;
+      margin-bottom: 60px;
+
+      .title {
+        position: absolute;
+        color: #666;
+        padding: 14px 24px;
+        background: #fff;
+        font-size: 16px;
+        bottom: 0px;
+        left: 10px;
+      }
+    }
+
+    .form-group {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 30px;
+
+      input {
+        width: 384px;
+        background: #fff;
+        border: 1px solid #ccc;
+      }
+
+      .control-label {
+        width: 130px;
+        text-align: right;
+        font-weight: 500;
+        font-size: 16px;
+
+        span {
+          color: #ff0000;
+        }
+      }
+
+      textarea.form-control {
+        width: 928px;
+        // height: 52px;
+      }
+    }
+
+    .form-fileupload {
+      a {
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      span {
+        margin-left: 10px;
+        font-size: 16px;
+      }
+
+      h5 {
+        color: #ccc;
+      }
+
+      .file {
+        display: flex;
+        align-items: center;
+      }
+
+      .btn_addPic {
+        display: inline-block;
+        position: relative;
+        width: 140px;
+        height: 46px;
+        line-height: 46px;
+        overflow: hidden;
+        border: 1px solid #ccc;
+        background: #fff;
+        color: #999;
+        text-align: center;
+        font-size: 14px;
+      }
+
+      .filePrew {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 140px;
+        height: 46px;
+        font-size: 16px;
+        opacity: 0;
+        filter: alpha(opacity=0);
+        cursor: pointer;
+      }
+    }
+
+    .submit-btn {
+      text-align: center;
+      margin: 110px 0 80px 0;
+
+      .btn {
+        width: 224px;
+        height: 56px;
+        font-size: 16px;
+        border-radius: 0px;
+        margin-right: 20px;
+        cursor: pointer;
+      }
+
+      .submit {
+        background: #025AB3;
+        color: #fff;
+        border: none;
+      }
+
+      .save {
+        background: #fff;
+        color: #025AB3;
+        border: 1px solid #025AB3;
+
+        &:hover {
+          background: #025AB3;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+.relation {
+  margin-top: 10px;
+
+  .ceil {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h5 {
+      display: flex;
+      align-items: center;
+
+      .marker {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: #666666;
+        opacity: 0.5;
+        margin-right: 10px;
+      }
+
+      a {
+        color: #666666;
+        font-size: 16px;
+        text-decoration: underline;
+      }
+
+      .tag {
+        color: #025AB3;
+        margin-right: 20px;
+      }
+    }
+  }
+
+}
+
+.subTime {
+  padding: 10px 20px;
+
+  h3 {
+    font-size: 16px;
+  }
+}
+
+// 文件上传
+.form-fileupload {
+  cursor: pointer;
+
+  .file {
+    display: flex;
+    align-items: center;
+
+    a {
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .btn_addPic {
+      display: inline-block;
+      position: relative;
+      width: 140px;
+      height: 46px;
+      line-height: 46px;
+      overflow: hidden;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .filePrew {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 140px;
+      height: 46px;
+      font-size: 16px;
+      opacity: 0;
+      filter: alpha(opacity=0);
+      cursor: pointer;
+    }
+  }
+
+}

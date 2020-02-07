@@ -1,0 +1,100 @@
+.content {
+  background: #fff;
+  padding: 40px;
+  margin-bottom: 80px;
+}
+
+.table-wrapper {
+  padding: 0 20px;
+
+  .table-bordered {
+    border: 1px solid #ddd;
+  }
+
+  thead tr th {
+    border: 1px solid #ddd;
+    font-weight: 400;
+    height: 80px;
+    line-height: 80px;
+    font-size: 13px;
+    padding: 0;
+    text-align: center;
+  }
+
+  tbody tr td {
+    border: 1px solid #ddd;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  .img-aptitude {
+    width: 120px;
+
+    img {
+      float: left;
+      width: 57px;
+      height: 35px;
+    }
+  }
+
+  .name {
+    width: 100px;
+  }
+  .type{
+    width: 120px;
+  }
+  .grade {
+    width: 80px;
+  }
+  .number{
+    width: 50px;
+  }
+  .synopsis{
+    text-align: left;
+  }
+  .a-operation {
+    width: 100px;
+    a {
+      text-decoration: none;
+    }
+  }
+
+ 
+}
+.big-img{
+  position: relative;
+  .wrap-img{
+    position: absolute;
+    width: 333px;
+    height: 245px;
+    background-color: rgba(242, 242, 242, 242);
+    left: 188px;
+    bottom: 430px;
+    img{
+      width: 333px;
+      height: 200px;
+    }
+  }
+}
+.big-img-show{
+  display: block;
+}
+.big-img-hidd{
+  display: none;
+}
+.look{
+  border: 1px solid #e2e2e2;
+  width: 100px;
+  text-align: center;
+  a{
+    display: block;
+    text-decoration: none;
+    padding: 6px 0;
+    .look-btn{
+      width: 80px;
+    }
+  }
+}
+.dropdown-menu{
+  min-width: 120px;
+}

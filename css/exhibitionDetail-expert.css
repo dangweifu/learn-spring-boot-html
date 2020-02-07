@@ -1,0 +1,47 @@
+.radio-item-frist {
+  margin-left: 29px;
+}
+
+.radio-item {
+  margin-right: 42px;
+}
+
+.radio-item input[type="radio"] {
+  position: absolute;
+  top: 6px;
+  left: 13px;
+  width: 16px;
+  height: 16px;
+  z-index: 2;
+  opacity: 0;
+}
+
+.radio-item input[type="radio"]:checked + label::after {
+  background: url("../img/radio-select.png") no-repeat;
+  background-position: center center;
+}
+
+.radio-item label {
+  position: relative;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #333333;
+}
+
+.radio-item label::after {
+  content: '';
+  display: block;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  left: -28px;
+  bottom: 0px;
+  border-radius: 50%;
+  border: solid 1px #025AB3;
+}
+
+.sh-wrapper label {
+  width: auto !important;
+}

@@ -1,0 +1,576 @@
+.armyDemand {
+  height: 60px;
+  line-height: 60px;
+  padding: 0px;
+  position: absolute;
+  bottom: 3px;
+  margin: 0;
+}
+
+.armyDemand li {
+  list-style-type: none;
+  float: left;
+  margin-right: 40px;
+  font-size: 18px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+}
+
+.armyDemand li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.armyDemand .active {
+  border-bottom: 4px solid #fff;
+}
+
+.armyDemand .active a {
+  color: #fff;
+}
+
+.army, .purchase {
+  margin-top: 20px;
+  background: #fff;
+  margin-bottom: 20px;
+}
+
+.army .form-control, .purchase .form-control {
+  height: 40px;
+}
+
+.demandform {
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: space-between; */
+  padding: 20px 34px 0;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+}
+
+.demandform .form-control {
+  width: 153px;
+  height: 40px;
+  margin-right: 20px;
+  background: #F4F4F4;
+  border: none;
+  box-shadow: none;
+  font-size: 14px;
+  color: #999999;
+}
+
+.demandform .control-label {
+  margin-bottom: 0px;
+  font-size: 16px;
+  color: #333333;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+}
+
+.demandform .inputStyle {
+  height: 40px;
+  width: 230px;
+  color: #999999;
+  font-size: 14px;
+  background: #F4F4F4;
+  border: none;
+  padding: 12px;
+  margin-right: 18px;
+}
+
+.demandform .enterprisesSel{
+  width: 260px;
+  margin-right: 0;
+}
+.keyWord .control-label{
+  width: 80px;
+  text-align: right;
+}
+.keyWord .inputStyle{
+  margin-right: auto;
+  width: 700px;
+}
+
+.demandform .checkbox-position {
+  display: inline-block;
+  margin-right: 45px;
+  margin-top: 0;
+  margin-bottom: 19px;
+}
+
+.demandform .checkbox-position input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  opacity: 0;
+  z-index: 2;
+}
+
+.demandform .checkbox-position input[type="checkbox"]:checked + label::after {
+  background-image: url("../img/personalRegistration-selected.png") no-repeat;
+}
+
+.demandform .checkbox-position:nth-child(6), .demandform .checkbox-position:nth-child(12) {
+  margin-right: 0px;
+}
+
+.demandform .checkbox-position:nth-child(10) {
+  margin-right: 12px;
+}
+
+.demandform .search {
+  width: 80px;
+  height: 40px;
+  background: #025AB3;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  /* margin-left: 14px; */
+  /* margin-left: -45px; */
+  float: right;
+}
+
+.demandform .more-txt {
+  font-size: 16px;
+  color: #666666;
+  cursor: pointer;
+}
+
+.demandform .show {
+  margin-left: 20px;
+}
+
+.checkbox-group {
+  margin-top: 10px;
+  margin-left: 14px;
+}
+
+.checkbox-group .control-title {
+  display: inline-block;
+  margin-right: 23px;
+  margin-left: 20px;
+  font-size: 16px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #333333;
+  line-height: 38px;
+  vertical-align: top;
+}
+
+.checkbox-group .checkbox-right {
+  display: inline-block;
+  width: 87%;
+}
+
+.checkbox-group .checkbox-right .checkbox-position {
+  display: inline-block;
+  margin-right: 55px;
+  margin-bottom: 30px;
+}
+
+.checkbox-group .checkbox-right .checkbox-position:nth-child(5), .checkbox-group .checkbox-right .checkbox-position:nth-child(10) {
+  margin-right: 0px;
+}
+
+.checkbox-group .checkbox-right .checkbox-position label {
+  min-width: 129px;
+  text-align: left;
+  font-size: 16px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #333333;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.checkbox {
+  text-align: center;
+}
+
+.checkbox input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  opacity: 0;
+  z-index: 2;
+}
+
+.checkbox input[type="checkbox"]:checked + label::after {
+  background: url("../img/personalRegistration-selected.png") no-repeat;
+}
+
+.checkbox label {
+  padding-left: 17px;
+  position: relative;
+  font-size: 16px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #333333;
+}
+
+.checkbox label::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: -20px;
+  bottom: 2px;
+  width: 20px;
+  height: 20px;
+  background: url("../img/personalRegistration-unselected.png") no-repeat;
+}
+
+.retract, .dockingretract {
+  display: none;
+}
+
+.retract input, .dockingretract input {
+  background: #f5f5f5;
+  border: none;
+  box-shadow: none;
+}
+
+.retract .date, .dockingretract .date {
+  float: right;
+  width: 200px;
+}
+
+.retract .date .input-group-addon, .dockingretract .date .input-group-addon {
+  background: #f5f5f5;
+  border: solid 1px #F5F5F5;
+}
+
+.retract .timeTxt, .dockingretract .timeTxt {
+  padding: 0 20px;
+}
+
+.retract .form-line-two, .dockingretract .form-line-two {
+  padding: 0 34px;
+}
+
+.retract .form-line-two label, .dockingretract .form-line-two label {
+  float: left;
+  font-size: 16px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #333333;
+  line-height: 38px;
+}
+
+.retract .form-line-two .date, .dockingretract .form-line-two .date {
+  float: left;
+  width: 180px;
+  height: 40px;
+  box-sizing: border-box;
+  background: #F5F5F5;
+}
+
+.retract .form-line-two .date input, .dockingretract .form-line-two .date input {
+  height: 40px;
+}
+
+.retract .form-line-two .date .input-group-addon, .dockingretract .form-line-two .date .input-group-addon {
+  background: #f5f5f5;
+  border: solid 1px #F5F5F5;
+}
+
+.retract .form-line-two .text, .dockingretract .form-line-two .text {
+  margin: 0 10px;
+  float: left;
+  font-size: 16px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #333333;
+  line-height: 38px;
+}
+
+.list {
+  margin-top: 20px;
+}
+
+.reset {
+  width: 80px;
+  height: 40px;
+  background: #fff;
+  border: 1px solid #025AB3;
+  font-size: 16px;
+  color: #025AB3;
+  margin-left: 10px;
+  float: right;
+}
+#toggle{
+  margin-left: 30px;
+  float: right;
+  height: 40px;
+  line-height: 40px;
+}
+.form-group {
+  display: inline-block;
+  margin-bottom: 0px;
+  display: flex;
+}
+
+
+
+.page {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.page .pagination {
+  line-height: 27px;
+}
+
+.page .pagination .g-input {
+  height: 32px;
+  width: 40px;
+  margin: 0 4px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.page .pagination .jump {
+  background: #025AB3;
+  border: none;
+  color: #fff;
+  font-size: 13px;
+  margin-left: 4px;
+}
+
+.page .pagination > .active > a, .page .pagination > li > a {
+  margin-right: 5px;
+  border-radius: 4px;
+}
+
+.page .pagination > li:first-child > a {
+  border-radius: 4px;
+}
+
+
+.content{
+  padding: 10px 40px;
+}
+
+.first_f{
+  height: 60px;
+  border-bottom:1px solid #E5E5E5;
+}
+
+p{
+  margin: 0;
+  padding: 0;
+}
+
+.ascending{
+  float: left;
+  text-align: right;
+  width: 92%;
+}
+
+.ascending div{
+  display: inline-block;
+  text-align: right;
+  margin-right: 12px;
+}
+
+.ascending p{
+  display: inline-block;
+  text-align: right;
+  margin-top: 5px;
+}
+
+.first_f button{
+  display: inline-block;
+  float: right;
+  margin-top: 5px;
+}
+
+.first_f button a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.thumbs,.consultation{
+  font-size:14px;
+  font-family:MicrosoftYaHei;
+  font-weight:400;
+  color:#025AB3;
+  line-height:38px;
+}
+
+.follow{
+  font-size:14px;
+  font-family:MicrosoftYaHei;
+  font-weight:400;
+  color:#999999;
+  line-height:38px;
+}
+
+.first_f button{
+  width:80px;
+  height:40px;
+  background:#2AC579;
+  border:2px solid #2AC579;
+  color: #fff;
+}
+
+.second_f{
+  margin-top: 30px;
+}
+
+.list_p ul{
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+.list_p ul li{
+ list-style: none;
+  width: 200px;
+  float: left;
+  /* margin-right: 30px; */
+  margin-right: 22px;
+  margin-bottom: 30px;
+  position: relative;
+}
+.list_p ul li:nth-child(5n){
+  margin-right: 0px;
+}
+
+.first_k{
+  border: 1px solid #E5E5E5;
+}
+
+.first_k:hover{
+  box-shadow:0px 10px 23px #ccc ;
+  cursor: pointer;
+}
+
+.list_p ul li .big_list{
+  width: 200px;
+  height: 200px;
+}
+
+.list_p ul li p{
+  width: 200px;
+  font-size:16px;
+  color: #333;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
+  padding: 10px 20px;
+}
+.fixed_list{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 200px;
+  line-height: 32px;
+  height: 32px;
+  background: inherit;
+  background-color: rgba(2, 90, 179, 0.349019607843137);
+  border: none;
+  border-radius: 0px;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  color: #fff;
+  font-size: 14px;
+  padding-left: 10px;
+  padding-right: 10px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.dificon{
+  padding: 0 20px;
+  padding-bottom: 10px;
+  height: 28px;
+}
+
+.one_p img,.two_p img{
+  width: 15px;
+  height: 15px;
+}
+
+.one_p,.two_p{
+  display: inline-block;
+}
+
+.one_p:hover img{
+  content: url("../img/zan_h.png");
+  cursor: pointer;
+}
+
+.two_p:hover img{
+  content: url("../img/star_h.png");
+  cursor: pointer;
+}
+
+.staus_o{
+  width:42px;
+  height:14px;
+  font-size:14px;
+  font-family:MicrosoftYaHei;
+  font-weight:400;
+  color:#2AC579;
+  float: right;
+}
+
+.staus_t{
+  width:42px;
+  height:14px;
+  font-size:14px;
+  font-family:MicrosoftYaHei;
+  font-weight:400;
+  color:#FE0000;
+  float: right;
+}
+
+.staus_s{
+  width:42px;
+  height:14px;
+  font-size:14px;
+  font-family:MicrosoftYaHei;
+  font-weight:400;
+  color:#FDA923;
+  float: right;
+}
+
+.two_p{
+  margin-left: 12px;
+}
+.productList{
+  background: #fff;
+  border-top: 20px solid #f6f6f6
+}
+
+.delate{
+  width: 200px;
+  height: 36px;
+  background: #f5f5f5;
+  line-height: 36px;
+  padding: 0 20px;
+}
+
+.delate_o{
+  display: inline-block;
+}
+
+.delate_o:hover,.delate_t:hover{
+  cursor: pointer;
+}
+
+.one_p img,.two_p img{
+  float: left;
+}
+
+.one_p span,.two_p span{
+  float: left;
+  margin-left: 5px;
+}
+
+.delate_t{
+  display: inline-block;
+  float: right;
+}

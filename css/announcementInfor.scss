@@ -1,0 +1,382 @@
+.tab-wrapper {
+  display: block;
+  padding:14px 20px 0;
+  margin: 0px ;
+  background: #fff;
+  // text-align: left;
+  // text-align-last: left;
+  border-bottom: 1px solid #e2e2e2;
+  li {
+    display: inline-block;
+    padding: 0 20px;
+    list-style: none;
+    font-family: '微软雅黑 Regular', '微软雅黑';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    color: rgba(51, 51, 51, 0.647058823529412);
+    text-align: left;
+    line-height: 22px;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .active {
+    color: rgb(2, 90, 179);
+    border-bottom: 1px solid;
+    padding-bottom: 14px;
+  }
+}
+
+.import {
+  padding: 0px 30px 30px 30px;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: box;
+  display: flexbox;
+  display: flex;
+  justify-content: space-between;
+
+  div {
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: box;
+    display: flexbox;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  img {
+    width: 20px;
+    height: 18px;
+    margin-right: 10px;
+  }
+
+  span {
+    padding-right: 28px;
+    font-size: 16px;
+  }
+
+  a {
+    font-size: 16px;
+    color: #333333;
+    text-decoration: none;
+  }
+
+  .time {
+    color: #025AB3;
+    padding-right: 10px;
+  }
+
+  .notice {
+    width: 92px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    background: #2AC579;
+    border: none;
+    margin-left: 30px;
+    color: #fff;
+    cursor: pointer;
+
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+
+  .detail {
+    font-size: 16px;
+
+    .lookDetail {
+      font-size: 14px;
+      color: #025AB3;
+      border-bottom: 1px solid;
+      margin: 0px;
+    }
+  }
+}
+
+.relation {
+  padding: 0 30px;
+  margin-bottom: 100px;
+
+  .ceil {
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: box;
+    display: flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h5 {
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: box;
+      display: flexbox;
+      display: flex;
+      align-items: center;
+
+      .marker {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: #666666;
+        opacity: 0.5;
+        margin-right: 10px;
+      }
+
+      a {
+        color: #666666;
+        font-size: 16px;
+        text-decoration: underline;
+      }
+
+      .tag {
+        color: #025AB3;
+        margin-right: 20px;
+      }
+    }
+  }
+
+}
+
+
+.demand-table,
+.docking-table {
+  padding: 0 30px;
+  min-height: 500px;
+
+  .title-table {
+    background: rgba(2, 90, 179, 0.15);
+
+    th {
+      color: #333333;
+      font-family: MicrosoftYaHei;
+      font-weight: 400;
+      text-align: center;
+      font-size: 16px;
+      border: none;
+    }
+  }
+
+  .table-striped>tbody>tr:nth-of-type(odd) {
+    background-color: #fff;
+  }
+
+  .checkboxOne {
+    padding-left: 10px;
+
+    input[type="checkbox"] {
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      opacity: 0;
+      z-index: 2;
+
+      &:checked+label::after {
+        background-image: url('../img/personalRegistration-selected.png');
+        border: none;
+        cursor: pointer;
+      }
+    }
+
+    label {
+      position: relative;
+      font-size: 18px;
+      font-family: MicrosoftYaHei;
+      font-weight: 400;
+      color: rgba(51, 51, 51, 1);
+
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: -9px;
+        bottom: -7px;
+        width: 20px;
+        height: 20px;
+        border: 1px solid #BCBCBC;
+        border-radius: 2px;
+        // background-image: url('../img/personalRegistration-unselected.png');
+        padding-left: 10px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .table th,
+  .table tr td {
+    border: none;
+  }
+
+  .title {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    // width: 345px;
+    border: none;
+  }
+
+  table,
+  tr th {
+    border: none;
+    text-align: center;
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  tr td {
+    text-align: center;
+    border: none;
+    font-size: 14px;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+
+    img {
+      margin-right: 20px;
+      cursor: pointer;
+
+      &:last-child {
+        margin-right: 0px;
+      }
+    }
+  }
+
+  input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+  }
+
+  .page {
+    text-align: center;
+    padding-bottom: 80px;
+
+    .pagination {
+      line-height: 27px;
+    }
+
+    .pagination>.active>a,
+    .pagination>li>a {
+      margin-right: 5px;
+      border-radius: 4px;
+    }
+
+    .pagination>li:first-child>a {
+      border-radius: 4px;
+    }
+
+    .pagination .g-input {
+      height: 32px;
+      width: 40px;
+      margin: 0 4px;
+      border: 1px solid #ddd;
+      text-align: center;
+    }
+
+    .pagination .jump {
+      background: #025AB3;
+      border: none;
+      color: #fff;
+      font-size: 13px;
+      margin-left: 4px;
+    }
+  }
+}
+
+.table {
+  background-color: #f5f5f5;
+}
+
+.modal-footer {
+  border-top: none;
+  text-align: center;
+  padding: 0 30px 30px;
+
+  .btn+.btn {
+    margin-left: 20px;
+  }
+
+  .btn-default {
+    width: 140px;
+    height: 40px;
+    background: #025AB3;
+    border: 1px solid #025AB3;
+    font-size: 16px;
+    color: #ffffff;
+    border-radius: 2px;
+  }
+
+  .btn-primary {
+    width: 140px;
+    height: 40px;
+    background: #ffffff;
+    color: #025AB3;
+    font-size: 16px;
+    border-radius: 2px;
+  }
+}
+
+body .form-group input[type='radio'] {
+  display: inline-block;
+  width: auto;
+  height: inherit;
+  margin-left: 20px;
+}
+
+.examineOk {
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.user-nav {
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: box;
+  display: flexbox;
+  display: flex;
+
+  .ceil {
+    padding: 0 43px;
+    -ms-flex: 1;
+    /* IE 10 */
+    -webkit-flex: 1;
+    flex: 1;
+    /* for uc */
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -ms-flex: 1;
+  }
+}
+
+.timepicker .control-label {
+  width: 80px;
+}
+
+#myModalDetail {
+  .modal-dialog {
+    margin-left: -380px;
+    margin-top: -300px;
+    width: 800px;
+    height: 800px;
+    .modal-body {
+      height: 800px;
+      overflow-y: scroll;
+    }
+  }
+}

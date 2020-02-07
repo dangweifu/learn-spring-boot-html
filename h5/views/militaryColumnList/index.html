@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>军委专栏</title>
+    
+    <link href="../../../static/css/mui/mui.min.css" rel="stylesheet"/>
+	<link href="../../../assets/css/common.min.css" rel="stylesheet"/>
+	<link rel="stylesheet" href="../../../assets/css/queryPoint.css">
+
+	<script src="../../../static/js/babel/babel-browser.min.js" type="text/javascript"></script>
+	<script src="../../../static/js/mui/mui.min.js" type="text/javascript"></script>
+  	<script src="../../../static/js/jquery/jquery.min.js" type="text/javascript"></script>
+  	<script src="../../../assets/js/home/index.js" type="text/babel"></script>
+    <script type="text/javascript" charset="utf-8">
+      	mui.init();
+    </script>
+</head>
+<body>
+    <header>
+        <script>
+            $("header").load("../../common/head-back-search/index.html");//
+        </script>
+    </header>
+    <div class="tabs tabb">
+        <p><a href="javscript:;" class="cur">军队公告</a></p>
+        <p><a href="javscript:;">军队需求</a></p>
+        <p><a href="javscript:;">专题发布</a></p>
+    </div>
+	<!-- 内容 军队公告-->
+	<article class="mui-content mian list">
+        <script>
+            $(".list").load("./list/list-jdgg.html");
+        </script>
+    </article>
+    <!-- 内容 军队需求-->
+	<article class="mui-content mian list2" style="display:none;">
+        <script>
+            $(".list2").load("./list/list-jdxq.html");
+        </script>
+    </article>
+    <!-- 内容 专题发布-->
+	<article class="mui-content mian list3" style="display:none;">
+        <script>
+            $(".list3").load("./list/list-ztfb.html");
+        </script>
+    </article>
+    
+</body>
+<script>
+    //
+    $(document).ready(function(){
+        $(".tabs p").on("click",function(){
+            $(this).find("a").addClass("cur").parent().siblings().find("a").removeClass("cur");
+            $(".mian").eq($(this).index()).show().siblings(".mian").hide();
+        })
+    })
+</script>
+</html>

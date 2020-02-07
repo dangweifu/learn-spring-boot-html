@@ -1,0 +1,522 @@
+@charset "UTF-8";
+.pr-banner-wrapper {
+    width: 100%;
+    height: 200px;
+    padding-top: 72px;
+    text-align: center;
+    background-image: url("../img/Product_recommendation.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin-top: -3px;
+}
+
+.pr-banner-wrapper h2 {
+    margin-top: 0;
+    margin-bottom: 9px;
+    font-size: 34px;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: white;
+}
+
+.pr-banner-wrapper p {
+    font-size: 16px;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: white;
+}
+
+.pr-content-wrapper {
+    padding-bottom: 83px;
+    /*background-color: #fff*/
+    background-color: #F5F5F5;
+}
+
+.pr-content-wrapper .pr-nav-arrow {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.pr-content-wrapper .pr-nav-arrow .breadcrumb {
+    background-color: #F5F5F5;
+}
+
+.pr-content-wrapper .pr-nav-arrow .breadcrumb li a {
+    font-size: 16px;
+}
+
+.pr-content-wrapper .pr-form-wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: #f5f5f5;
+}
+
+.product{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.product .self{
+    width: 200px;
+    height: 60px;
+    color: #fff;
+    background: #025AB3;
+    text-align: center;
+    line-height: 60px;
+    display: inline-block;
+    font-size: 18px;
+}
+
+.product .solicitation{
+    width: 200px;
+    height: 60px;
+    color: #025AB3;
+    background: #fff;
+    text-align: center;
+    line-height: 60px;
+    display: inline-block;
+    font-size: 18px;
+    margin-left: -5px;
+}
+
+.product .solicitation:hover{
+    cursor: pointer;
+    color: #fff;
+    background: #025AB3;
+}
+
+.pr-form-wrapper .first_strip{
+    height: 160px;
+    background-color: #ffffff;
+    /* margin-top: 26px; */
+    margin-bottom: 20px;
+    padding: 30px 34px;
+}
+.pr-form-wrapper .first_strip .form-group{
+    margin-bottom: 5px;
+}
+.pr-form-wrapper .first_strip .complainTitle{
+    margin-right: 20px;
+    width: 250px;
+    height:40px
+}
+.pr-form-wrapper .first_strip .form-left{
+    float: left;
+}
+.pr-form-wrapper .first_strip .form-left .control-label{
+    font-size: 16px;
+    color: #333333;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    margin: 0px;
+}
+.input-wrapper{
+    display: inline-block;
+    vertical-align: middle;
+    height: 40px;
+}
+.input-wrapper .form-control{
+    width: 250px;
+}
+
+.input-wrapper input{
+    box-sizing: border-box;
+    width: 400px;
+    height: 40px;
+    padding: 6px 12px;
+    font-size: 16px;
+    color: #999999;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    background: #f4f4f4;
+    border-color: transparent;
+    box-shadow: 0 0 0 0 !important;
+    border-radius: 0;
+}
+
+.productName{
+    vertical-align: middle;
+    font-size: 16px;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: inherit;
+    display: inline-block;
+}
+
+.audit_status{
+    vertical-align: middle;
+    font-size: 16px;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: inherit;
+    display: inline-block;
+}
+
+.dropdown select {
+    box-sizing: border-box;
+    width: 399px;
+    height: 40px;
+    font-size: 16px;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    text-align: left;
+    color: #999999;
+    background: #f4f4f4;
+    border: 0;
+    box-shadow: 0 0 0 0;
+    border-radius: 0;
+}
+
+/* .product_form{
+    padding: 30px 50px;
+} */
+
+.product_time{
+    height: 40px;
+    margin-top: 16px;
+    display: inline-block;
+}
+
+.product_time .date {
+    float: left;
+    width: 180px;
+    height: 40px;
+    box-sizing: border-box;
+    background: #F5F5F5;
+}
+.product_time .date .form-control{
+    border:none;
+}
+.product_time .date .form-control:focus{
+    border:none;
+    background: #F1F7FF;
+}
+
+.product_time .date input {
+    height: 40px;
+}
+
+.product_time .date .input-group-addon {
+    background: #f5f5f5;
+    border: solid 1px #F5F5F5;
+}
+
+.product_one{
+    vertical-align: middle;
+    font-size: 16px;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: inherit;
+    display: inline-block;
+    float: left;
+    line-height: 40px;
+}
+
+.product_time .text {
+    margin: 0 10px;
+    float: left;
+    font-size: 16px;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: #333333;
+    line-height: 38px;
+}
+
+.form-control{
+    box-sizing: border-box;
+    width: 400px;
+    height: 52px;
+    padding: 6px 12px;
+    font-size: 16px;
+    color: #999999;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    background: #f4f4f4;
+    border-color: transparent;
+    box-shadow: 0 0 0 0 !important;
+    border-radius: 0;
+}
+
+.checked{
+    /* display: inline-block; */
+    float: right;
+    /* margin-top: 20px; */
+}
+
+.query{
+    font-size: 16px;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: white;
+    background: #025ab3;
+    border: 2px solid #025ab3;
+}
+
+.reset_t{
+    font-size: 16px;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: #025ab3;
+    background: #ffffff;
+    border: 1px solid #025ab3;
+}
+
+.checked button{
+    margin-left: 10px;
+    display: inline-block;
+    vertical-align: top;
+    width: 80px;
+    height: 40px;
+    border-radius: 0;
+    box-shadow: 0 0 0 0;
+}
+
+.newAdd{
+    width:80px;
+    height:40px;
+    background:#2AC579;
+    border:2px solid #2AC579;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    float: right;
+    margin: 20px 34px 20px 0;
+}
+
+.newAdd a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/*导出模块*/
+.productList{
+    /*margin-top: 26px;*/
+    background: #fff;
+    padding-bottom: 30px;
+}
+
+.export{
+    float: left;
+    width: 100%;
+    padding: 0 40px;
+}
+
+.export a{
+    vertical-align: middle;
+    font-size: 16px;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: inherit;
+    display: inline-block;
+    line-height: 40px;
+    text-decoration: none;
+}
+
+/*列表样式*/
+.demand-table, .docking-table {
+    padding: 0 34px;
+}
+
+.demand-table .title-table, .docking-table .title-table {
+    background: rgba(2, 90, 179, 0.15);
+}
+
+.demand-table .title-table th, .docking-table .title-table th {
+    color: #333333;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    text-align: center;
+    font-size: 16px;
+    border: none;
+}
+
+.demand-table .table-striped > tbody > tr:nth-of-type(odd), .docking-table .table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: #fff;
+}
+
+.demand-table .checkboxOne, .docking-table .checkboxOne {
+    padding-left: 10px;
+}
+
+.demand-table .checkboxOne input[type="checkbox"], .docking-table .checkboxOne input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    opacity: 0;
+    z-index: 2;
+}
+
+.demand-table .checkboxOne input[type="checkbox"]:checked + label::after, .docking-table .checkboxOne input[type="checkbox"]:checked + label::after {
+    background-image: url("../img/personalRegistration-selected.png");
+    border: none;
+    cursor: pointer;
+}
+
+.demand-table .checkboxOne label, .docking-table .checkboxOne label {
+    position: relative;
+    font-size: 18px;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: #333333;
+}
+
+.demand-table .checkboxOne label::after, .docking-table .checkboxOne label::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: -9px;
+    bottom: -7px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #BCBCBC;
+    border-radius: 2px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.demand-table .table th, .demand-table .table tr td, .docking-table .table th, .docking-table .table tr td {
+    border: none;
+}
+
+.demand-table .title, .docking-table .title {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 345px;
+    border: none;
+}
+
+.demand-table table, .demand-table tr th, .docking-table table, .docking-table tr th {
+    border: none;
+    text-align: center;
+}
+
+.demand-table tr td, .docking-table tr td {
+    text-align: center;
+    border: none;
+    font-size: 14px;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+}
+
+.demand-table tr td img, .docking-table tr td img {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.demand-table tr td img:last-child, .docking-table tr td img:last-child {
+    margin-right: 0px;
+}
+
+.demand-table input[type="checkbox"], .docking-table input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}
+
+.demand-table .page, .docking-table .page {
+    text-align: center;
+}
+
+.demand-table .page .pagination > .active > a, .demand-table .page .pagination > li > a, .docking-table .page .pagination > .active > a, .docking-table .page .pagination > li > a {
+    margin-right: 5px;
+    border-radius: 4px;
+}
+
+.demand-table .page .pagination > li:first-child > a, .docking-table .page .pagination > li:first-child > a {
+    border-radius: 4px;
+}
+
+/*查看详情页面*/
+.wenben{
+    min-height: 350px;
+    background-color: #ffffff;
+    vertical-align: middle;
+    font-size: 16px;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: inherit;
+    display: inline-block;
+}
+
+.wenben p{
+    text-align: center;
+}
+
+.produce{
+    padding: 0 70px;
+    line-height: 40px;
+}
+
+.pr-wrapper{
+    min-height: 500px;
+    height: auto;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.name,.nubmer{
+    display: inline-block;
+}
+
+.conct{
+    font-size:18px;
+    font-family:MicrosoftYaHei;
+    font-weight:400;
+    color:#333333;
+    line-height:38px;
+}
+
+.phone{
+    width: 50%;
+    display: inline;
+    margin-left: 50px;
+    /*text-align: right;*/
+    float: right;
+}
+
+.submit-btn{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.submit{
+    width:250px;
+    height:60px;
+    background: #025AB3;
+    color: #fff;
+    font-size: 16px;
+    background-color: #025AB3;
+    border-radius: 2px;
+    border: none;
+}
+
+.save{
+    width:250px;
+    height:60px;
+    background: #FDA923;
+    color: #fff;
+    font-size: 16px;
+    background-color: #FDA923;
+    border-radius: 2px;
+    border: none;
+    margin-left:80px;
+}
+.prompt{
+    width:150px;
+    height:50px;
+    position: fixed;
+    top:70px;
+    left:0;
+    right:0;
+    margin:auto;
+    background:rgba(0,0,0,0.5);
+    font-size:16px;
+    text-align:center;
+    line-height: 50px;
+    border-radius:40px;
+    color:white;
+    display:none;
+}

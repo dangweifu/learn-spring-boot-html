@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<style>
+		.card-multi-line {
+		    padding: 10px 13px;
+		    margin: 0;
+		    box-shadow: none;
+		}
+
+		.card-multi-line .line-list{
+			margin-bottom: 10px;
+		}
+
+		.card-multi-line .list-title {
+			font-size: 14px;
+			color: rgba(51, 51, 51, 1);
+			margin-bottom: 0;
+		}
+
+		.card-multi-line .list-other-info {
+			color: rgba(153, 153, 153, 1);
+			height: 28px;
+			line-height: 28px;
+		}
+
+		.card-multi-line .list-other-info p:nth-child(1) span{
+			color: rgba(255, 0, 0, 1);
+		}
+
+		.card-multi-line .list-other-info p:nth-child(2){
+			text-align: right;
+		}
+	</style>
+
+	<div class="mui-card card-multi-line">
+		<!--页眉，放置标题-->
+		<div class="mui-card-header card-head-row">
+			<div class="mui-row">
+				<h2 class="card-title mui-col-xs-10"></h2>
+				<div class="btn-box mui-col-xs-2">
+					<button type="button" class="mui-btn card-button">更多</button>
+				</div>
+			</div>
+		</div>
+
+		<!--内容区-->
+		<div class="mui-card-content">
+			<div class="line-list">
+				<p class="list-title multi-line-ellipsis"></p>
+
+				<div class="mui-row list-other-info">
+					<p class="mui-col-xs-6">已对接<span>5</span>个剩<span>5</span>天</p>
+					<p class="mui-col-xs-6">发布时间：<time>2019-6-8</time></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		mui.ready(function(){
+			var dataArr = [
+				{ 'docking-num': 5, 'residue-day' : 5,  text : '成果展览暨论坛活动承展服务成果展览暨论坛活动承展服务成果展览暨论坛活动承展服务成果展览暨论坛活动承展服务成果展览暨论坛活动承展服务成果展览暨论坛活动承展服务', time : '2019-9-8' },
+				{ 'docking-num': 5, 'residue-day' : 5,  text : '成果展览暨论坛活动承展服务成果展览暨论坛活动承展服务成果展览暨论坛活动承展服务成果展览暨论坛活动承展服务成果展览暨论坛活动承展服务成果展览暨论坛活动承展服务', time : '2019-9-8' },
+				{ 'docking-num': 5, 'residue-day' : 5,  text : '成果展览暨论坛活动承展服务成果展览暨论坛活动承展服务成果展览暨论坛活动承展服务成果展览暨论坛活动承展服务成果展览暨论坛活动承展服务成果展览暨论坛活动承展服务', time : '2019-9-8' }
+			];
+
+			var templateHtml = '';
+
+			mui.each(dataArr, function(index, item){
+				templateHtml +=
+					`
+						<div class="line-list">
+							<p class="list-title multi-line-ellipsis">${item.text}</p>
+
+							<div class="mui-row list-other-info">
+								<p class="mui-col-xs-6">已对接<span>&ensp;${item['docking-num']}&ensp;</span>个剩<span>&ensp;${item['residue-day']}&ensp;</span>天</p>
+								<p class="mui-col-xs-6">发布时间：<time>${item.time}</time></p>
+							</div>
+						</div>
+					`
+			});
+
+			// 采购需求
+			if(mui('.procurement-demand .mui-card-content')[0]) {
+				mui('.procurement-demand .mui-card-content')[0].innerHTML = templateHtml;
+	
+				mui(".procurement-demand .card-title")[0].innerHTML = '采购需求';
+	
+				$(".procurement-demand .card-button")[0].onclick = function() {
+					window.location.href = "/src/views/armymilitary/index.html"
+				}
+				$(".procurement-demand .mui-card-content")[0].onclick = function() {
+					window.location.href = "/src/views/armymilitary/purchaseRequirementDetail.html"
+				}
+			}
+
+			if(mui('.achievements-popularization .mui-card-content')[0]) {
+				// 成果推广
+				mui('.achievements-popularization .mui-card-content')[0].innerHTML = templateHtml;
+				
+				$('.achievements-popularization .mui-card-content .list-other-info p:nth-child(1)').hide()
+
+				$('.achievements-popularization .mui-card-content .list-other-info p:nth-child(2)').css("text-align", "left")
+
+				mui(".achievements-popularization .card-title")[0].innerHTML = '成果推广';
+
+				$(".achievements-popularization .card-button")[0].onclick = function() {
+					window.location.href = "/src/views/outcomepromotion/index.html"
+				}
+				$(".achievements-popularization .mui-card-content")[0].onclick = function() {
+					window.location.href = "/src/views/outcomepromotion/outcomePromotionDetail.html"
+				}
+			}
+
+			// $(".achievements-popularization .list-other-info p:nth-child(1)").remove();
+		});
+
+
+	</script>
+</html>

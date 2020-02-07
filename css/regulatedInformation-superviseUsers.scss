@@ -1,0 +1,39 @@
+.tab-content {
+    padding-top: 10px;
+    .edit-info {
+        margin: 0px auto;
+        width: 98%;
+        height: 32px;
+        font-family: "Microsoft YaHei Regular", "Microsoft YaHei";
+        font-weight: 400;
+        font-style: normal;
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.647);
+        line-height: 22px;    
+        background-color: #fffbe6;
+        border-width: 1px;
+        border-style: solid;
+        border-color: rgb(255, 229, 143);
+        border-radius: 4px;
+        text-align: center;
+        .icon {
+            display:inline-block;
+            width: 15px;
+            height: 15px;
+            background: url("../img/tips.png") no-repeat;
+            background-size: contain;
+            vertical-align: middle;
+        }
+        .txt {
+            font-family: 'Microsoft YaHei Regular', 'Microsoft YaHei';
+            font-weight: 400;
+            font-style: normal;
+            font-size: 14px;
+            color: rgba(0, 0, 0, 0.647058823529412);
+            line-height: 32px;
+        }
+    }
+}
+.user-nav .ceil {
+    flex: 0 0 auto;
+  }

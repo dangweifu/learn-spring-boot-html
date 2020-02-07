@@ -1,0 +1,15 @@
+.mui-table-view-cell .list-view p {
+  display: flex;
+}
+.mui-table-view-cell .list-view p span:nth-child(1) {
+  width: 27%;
+  text-align: justify;
+  text-align-last: justify;
+  text-justify: distribute-all-lines;
+}
+.mui-table-view-cell .list-view p span:nth-child(2) {
+  width: 73%;
+}
+.mui-table-view-cell .list-view p .mui-table-view-cell.mui-active {
+  background: #fff!important;
+}

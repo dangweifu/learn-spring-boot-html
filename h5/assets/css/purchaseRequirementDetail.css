@@ -1,0 +1,68 @@
+.mui-content {
+  padding-top: 44px;
+}
+.mui-content .content {
+  background: #fff;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding: 14px 14px 50px 14px;
+  font-family: MicrosoftYaHei;
+}
+.mui-content .content h4 {
+  font-size: 23px;
+  margin: 0px;
+  line-height: 33px;
+  font-weight: 400;
+}
+.mui-content .content .law-ceil {
+  padding: 14px 0;
+  border-bottom: 1px solid #E5E5E5;
+}
+.mui-content .content .law-ceil .ceil {
+  color: #000000;
+  padding-bottom: 10px;
+  font-size: 16px;
+  font-family: 'MicrosoftYaHei';
+  overflow: hidden;
+}
+.mui-content .content .law-ceil .ceil:last-child {
+  padding-bottom: 0px;
+}
+.mui-content .content .law-ceil .ceil .left {
+  float: left;
+}
+.mui-content .content .law-ceil .ceil .right {
+  float: right;
+  text-align: right;
+}
+.mui-content .content h5 {
+  color: #333333;
+  font-size: 17px;
+  line-height: 28px;
+  margin: 0px;
+  padding: 10px 0;
+}
+.mui-content .content .enclosure {
+  padding: 15px 0 60px;
+}
+.mui-content .content .enclosure .requireImg {
+  width: 15px;
+  height: 17px;
+  margin-right: 6px;
+}
+.mui-content .content .btn {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 50px;
+  padding-right: 14px;
+}
+.mui-content .content .btn .docking {
+  width: 200px;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  text-align: center;
+  background-color: #025AB3;
+  border-radius: 22px;
+}

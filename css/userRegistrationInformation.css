@@ -1,0 +1,857 @@
+@charset "UTF-8";
+.pr-banner-wrapper {
+  width: 100%;
+  height: 200px;
+  padding-top: 72px;
+  text-align: center;
+  background-image: url("../img/personalRegistration-banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.pr-banner-wrapper h2 {
+  margin-bottom: 9px;
+  font-size: 34px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: white;
+}
+
+.pr-banner-wrapper p {
+  font-size: 16px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: white;
+}
+
+.pr-content-wrapper {
+  padding-bottom: 83px;
+  background-color: #F5F5F5;
+}
+
+.pr-content-wrapper .pr-nav-arrow {
+  width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.pr-content-wrapper .pr-nav-arrow .breadcrumb {
+  background-color: #F5F5F5;
+}
+
+.pr-content-wrapper .pr-form-wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 58px 21px 58px 21px;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.pr-content-wrapper .pr-form-wrapper .user-authentication-wrapper {
+  position: relative;
+  width: 100%;
+  padding: 0 45px 0 70px;
+  overflow: hidden;
+}
+
+.pr-content-wrapper .pr-form-wrapper .user-authentication-wrapper .left {
+  margin-left: 30px;
+  float: left;
+  text-align: center;
+}
+
+.pr-content-wrapper .pr-form-wrapper .user-authentication-wrapper .left .icon {
+  display: block;
+  margin: 12px auto 22px auto;
+  width: 31px;
+  height: 34px;
+  background: url("../img/user-information-authentication-unselect.png") no-repeat;
+  background-size: contain;
+}
+
+.pr-content-wrapper .pr-form-wrapper .user-authentication-wrapper .line {
+  position: absolute;
+  left: 50%;
+  top: 47px;
+  display: inline-block;
+  width: 472px;
+  height: 1px;
+  transform: translateX(-50%);
+  background: #e5e5e5;
+}
+
+.pr-content-wrapper .pr-form-wrapper .user-authentication-wrapper .right {
+  margin-right: 30px;
+  float: right;
+  text-align: center;
+}
+
+.pr-content-wrapper .pr-form-wrapper .user-authentication-wrapper .right .icon {
+  display: block;
+  margin: 12px auto 22px auto;
+  width: 31px;
+  height: 34px;
+  background: url("../img/user-information-unselect.png") no-repeat;
+  background-size: contain;
+}
+
+.pr-content-wrapper .pr-form-wrapper .user-authentication-wrapper .left-active h3 {
+  color: #025AB3;
+}
+
+.pr-content-wrapper .pr-form-wrapper .user-authentication-wrapper .left-active .icon {
+  background: url("../img/user-information-authentication-select.png") no-repeat;
+  background-size: contain;
+}
+
+.pr-content-wrapper .pr-form-wrapper .user-authentication-wrapper .right-active h3 {
+  color: #025AB3;
+}
+
+.pr-content-wrapper .pr-form-wrapper .user-authentication-wrapper .right-active .icon {
+  background: url("../img/user-information-select.png") no-repeat;
+  background-size: contain;
+}
+
+.pr-content-wrapper .pr-form-wrapper .user-authentication-wrapper h3 {
+  margin: 0;
+  font-size: 20px;
+  font-family: MicrosoftYaHei;
+  font-weight: 500;
+}
+
+.pr-content-wrapper .pr-form-wrapper .user-authentication-wrapper p {
+  font-size: 16px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #999999;
+  line-height: 30px;
+}
+
+.pr-content-wrapper .pr-form-wrapper .user-authentication-wrapper p .sign {
+  text-decoration: underline;
+  color: #025AB3;
+}
+
+.pr-content-wrapper .pr-form-wrapper .state {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 65px;
+  margin-top: 35px;
+  padding: 16px 40px 6px;
+  background-color: #F5F5F5;
+}
+
+.pr-content-wrapper .pr-form-wrapper .state p {
+  font-size: 16px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #999;
+}
+
+.pr-content-wrapper .pr-form-wrapper .state ul {
+  padding: 0px;
+}
+
+.pr-content-wrapper .pr-form-wrapper .state ul li {
+  font-size: 16px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #999;
+  list-style: none;
+  padding-bottom: 10px;
+}
+
+.pr-content-wrapper .pr-form-wrapper .state ul li:last-child {
+  display: block;
+}
+
+.pr-content-wrapper .pr-form-wrapper .state ul li .certificate {
+  padding: 6px;
+  color: #fff;
+  background: #FDA923;
+  margin-left: 10px;
+}
+
+.pr-content-wrapper .pr-form-wrapper .state ul li a {
+  border-bottom: 1px solid;
+}
+
+.pr-content-wrapper .pr-form-wrapper .state ul li .certificate-img {
+  width: 800px;
+  position: relative;
+}
+
+.pr-content-wrapper .pr-form-wrapper .state ul li .certificate-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.pr-content-wrapper .pr-form-wrapper .state ul li .certificate-img p {
+  position: absolute;
+  left: 25%;
+  top: 53%;
+}
+
+.pr-content-wrapper .pr-form-wrapper .state ul li .certificate-img p .certificate-txt {
+  display: block;
+  padding-bottom: 20px;
+  font-size: 19px;
+  font-weight: 550;
+  font-family: '宋体';
+  color: #666666;
+}
+
+.pr-content-wrapper .pr-form-wrapper .state ul li .certificate-img h4 {
+  position: absolute;
+  bottom: 17%;
+  right: 8%;
+  color: #666666;
+  font-size: 16px;
+  font-family: 'STSongti-SC-Regular';
+}
+
+.pr-content-wrapper .pr-form-wrapper .state ul li .certificate-img h3 {
+  position: absolute;
+  bottom: 12%;
+  right: 20.2%;
+}
+
+.pr-content-wrapper .pr-form-wrapper .state ul li .certificate-img h3 .txt {
+  display: block;
+}
+
+.pr-content-wrapper .pr-form-wrapper .state ul li .certificate-img h3 .time {
+  font-size: 14px;
+  color: #666666;
+  padding-left: 8px;
+  font-family: STSongti-SC-Regular;
+}
+
+.pr-content-wrapper .pr-form-wrapper .state .apply {
+  text-decoration: none;
+  color: #FDA923;
+}
+
+.pr-content-wrapper .pr-form-wrapper .state .pass {
+  display: inline-block;
+  color: #FF0000;
+}
+
+.pr-content-wrapper .pr-form-wrapper .pr-form-title {
+  margin-left: 59px;
+  padding-bottom: 19px;
+  border-bottom: solid 2px #F5F5F5;
+}
+
+.pr-content-wrapper .pr-form-wrapper .pr-form-title a {
+  margin-right: 103px;
+  display: inline-block;
+  font-size: 20px;
+  font-family: MicrosoftYaHei;
+  font-weight: 500;
+  color: #999999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.pr-content-wrapper .pr-form-wrapper .pr-form-title .form-title-active {
+  position: relative;
+  color: #025AB3;
+}
+
+.pr-content-wrapper .pr-form-wrapper .pr-form-title .form-title-active::after {
+  position: absolute;
+  top: 46px;
+  left: 50%;
+  display: block;
+  content: ' ';
+  width: 30px;
+  height: 4px;
+  background: #025ab3;
+  border-radius: 1px;
+  transform: translateX(-50%);
+}
+
+.pr-content-wrapper .pr-form-wrapper .form {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.pr-content-wrapper .pr-form-wrapper .first-accordion-inner {
+  font-size: 0;
+  padding-top: 30px;
+}
+
+.pr-content-wrapper .pr-form-wrapper .first-accordion-inner .form-group {
+  text-align: right;
+}
+
+.pr-content-wrapper .pr-form-wrapper .form-group {
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.pr-content-wrapper .pr-form-wrapper .form-group label {
+  vertical-align: middle;
+  font-size: 16px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: inherit;
+  margin-right: 10px;
+  text-align: right;
+}
+
+.pr-content-wrapper .pr-form-wrapper .form-group label span {
+  color: red;
+}
+
+.pr-content-wrapper .pr-form-wrapper .form-group .input-wrapper {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.pr-content-wrapper .pr-form-wrapper .form-group .radio-item-frist {
+  margin-left: 29px;
+}
+
+.pr-content-wrapper .pr-form-wrapper .form-group .radio-item {
+  margin-right: 42px;
+}
+
+.pr-content-wrapper .pr-form-wrapper .form-group .radio-item input[type="radio"] {
+  position: absolute;
+  top: 6px;
+  left: 13px;
+  width: 16px;
+  height: 16px;
+  z-index: 2;
+  opacity: 0;
+}
+
+.pr-content-wrapper .pr-form-wrapper .form-group .radio-item input[type="radio"]:checked + label::after {
+  background: url("../img/radio-select.png") no-repeat;
+  background-position: center center;
+}
+
+.pr-content-wrapper .pr-form-wrapper .form-group .radio-item label {
+  position: relative;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #333333;
+}
+
+.pr-content-wrapper .pr-form-wrapper .form-group .radio-item label::after {
+  content: '';
+  display: block;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  left: -28px;
+  bottom: 0px;
+  border-radius: 50%;
+  border: solid 1px #025AB3;
+}
+
+.pr-content-wrapper .pr-form-wrapper .form-group .fileinput-wrapper {
+  margin-right: 30px;
+  position: relative;
+  width: 276px;
+  height: 190px;
+  background: #f4f4f4;
+  text-align: center;
+  font-size: 16px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #999999;
+}
+
+.pr-content-wrapper .pr-form-wrapper .form-group .fileinput-wrapper:last-child {
+  margin-right: 0px;
+}
+
+.pr-content-wrapper .pr-form-wrapper .form-group .fileinput-wrapper .relative-img {
+  position: absolute;
+  left: 0;
+  width: 276px;
+  height: 190px;
+  top: 0;
+  z-index: 2;
+}
+
+.pr-content-wrapper .pr-form-wrapper .form-group .fileinput-wrapper input {
+  width: 276px;
+  height: 133px;
+  opacity: 0;
+}
+
+.pr-content-wrapper .pr-form-wrapper .form-group .fileinput-wrapper::after {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  content: '';
+  display: block;
+  height: 52px;
+  width: 2px;
+  background: #cccccc;
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.pr-content-wrapper .pr-form-wrapper .form-group .fileinput-wrapper::before {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  content: '';
+  display: block;
+  width: 52px;
+  height: 2px;
+  background: #cccccc;
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.pr-content-wrapper .pr-form-wrapper .form-group .fileinput-wrapper button,.pr-content-wrapper .pr-form-wrapper .form-group .fileinput-wrapper a {
+  margin: 50px auto 0 auto;
+  width: 100px;
+  height: 30px;
+  background: #025ab3;
+  border-radius: 15px;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #fefefe;
+  border-color: transparent;
+}
+
+.pr-content-wrapper .pr-form-wrapper .form-group .fileinput-wrapper img[src=""], .pr-content-wrapper .pr-form-wrapper .form-group .fileinput-wrapper img:not([src]) {
+  opacity: 0;
+}
+
+.pr-content-wrapper .pr-form-wrapper .date {
+  float: right;
+  width: 399px;
+}
+
+.pr-content-wrapper .pr-form-wrapper .date .input-group-addon {
+  background: #f5f5f5;
+  border: solid 1px #F5F5F5;
+}
+
+.pr-content-wrapper .pr-form-wrapper .text-left {
+  text-align: left !important;
+}
+
+.pr-content-wrapper .pr-form-wrapper .checkbox {
+  text-align: center;
+}
+
+.pr-content-wrapper .pr-form-wrapper .checkbox input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  opacity: 0;
+  z-index: 2;
+}
+
+.pr-content-wrapper .pr-form-wrapper .checkbox input[type="checkbox"]:checked + label::after {
+  background: url("../img/personalRegistration-selected.png") no-repeat;
+}
+
+.pr-content-wrapper .pr-form-wrapper .checkbox label {
+  padding-left: 17px;
+  position: relative;
+  font-size: 16px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #333333;
+}
+
+.pr-content-wrapper .pr-form-wrapper .checkbox label::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: -20px;
+  bottom: 2px;
+  width: 20px;
+  height: 20px;
+  background: url("../img/personalRegistration-unselected.png") no-repeat;
+}
+
+.pr-content-wrapper .pr-form-wrapper .dropdown select {
+  box-sizing: border-box;
+  width: 399px;
+  height: 56px;
+  font-size: 16px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  text-align: left;
+  color: #999999;
+  background: #f4f4f4;
+  border: 0;
+  box-shadow: 0 0 0 0;
+  border-radius: 0;
+}
+
+.pr-content-wrapper .pr-form-wrapper .one-select select {
+  width: 400px;
+}
+
+.pr-content-wrapper .pr-form-wrapper .fileinput-three div {
+  text-align: left;
+}
+
+.pr-content-wrapper .pr-form-wrapper .fileinput-three span {
+  display: inline-block;
+  color: #999999;
+  font-size: 12px;
+}
+
+.pr-content-wrapper .pr-form-wrapper .fileinput-three .form-group {
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.pr-content-wrapper .pr-form-wrapper .fileinput-three .fileinput-wrapper {
+  margin-top: 10px;
+}
+
+.pr-content-wrapper .pr-form-wrapper .fileinput-three .file-name-input {
+  height: 40px;
+  width: 276px;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.pr-content-wrapper .pr-form-wrapper .accordion-group {
+  padding: 0;
+  text-align: left;
+}
+
+.pr-content-wrapper .pr-form-wrapper .accordion-group .accordion-heading {
+  margin: 0 auto;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 20px 21px 20px 9px;
+  border-bottom: solid 1px #e5e5e5;
+}
+
+.pr-content-wrapper .pr-form-wrapper .accordion-group .accordion-heading a {
+  font-size: 20px;
+  font-family: MicrosoftYaHei;
+  font-weight: 500;
+  color: #025ab3;
+  line-height: 38px;
+  text-decoration: none;
+}
+
+.pr-content-wrapper .pr-form-wrapper .accordion-group .accordion-heading .toggle-icon {
+  display: block;
+  margin-top: 5px;
+  width: 27px;
+  height: 27px;
+  float: right;
+  background: url("../img/collapse-close.png") no-repeat;
+  transform: rotate(180deg);
+}
+
+.pr-content-wrapper .pr-form-wrapper .accordion-group .accordion-heading .collapsed {
+  transform: rotate(0deg);
+}
+
+.pr-content-wrapper .pr-form-wrapper .accordion-group .accordion-inner {
+  font-size: 0;
+  padding-top: 30px;
+}
+
+.pr-content-wrapper .pr-form-wrapper .accordion-group .accordion-inner .checkbox-group {
+  margin-left: 47px;
+}
+
+.pr-content-wrapper .pr-form-wrapper .accordion-group .accordion-inner .checkbox-group .control-title {
+  display: inline-block;
+  margin-right: 30px;
+  margin-left: 6px;
+  font-size: 16px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #333333;
+  line-height: 38px;
+  vertical-align: top;
+}
+
+.pr-content-wrapper .pr-form-wrapper .accordion-group .accordion-inner .checkbox-group .checkbox-right {
+  display: inline-block;
+  width: 87%;
+}
+
+.pr-content-wrapper .pr-form-wrapper .accordion-group .accordion-inner .checkbox-group .checkbox-right .checkbox-position {
+  display: inline-block;
+  margin-right: 55px;
+  margin-bottom: 30px;
+}
+
+.pr-content-wrapper .pr-form-wrapper .accordion-group .accordion-inner .checkbox-group .checkbox-right .checkbox-position:nth-child(5), .pr-content-wrapper .pr-form-wrapper .accordion-group .accordion-inner .checkbox-group .checkbox-right .checkbox-position:nth-child(10) {
+  margin-right: 0px;
+}
+
+.pr-content-wrapper .pr-form-wrapper .accordion-group .accordion-inner .checkbox-group .checkbox-right .checkbox-position label {
+  min-width: 129px;
+  text-align: left;
+  font-size: 16px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #333333;
+}
+
+.pr-content-wrapper .pr-form-wrapper .accordion-group .accordion-inner .text-right {
+  text-align: right;
+}
+
+.pr-content-wrapper .pr-form-wrapper .accordion-group .accordion-inner .text-left {
+  text-align: left;
+}
+
+.pr-content-wrapper .pr-form-wrapper .accordion-group .accordion-inner .input-wrapper input, .pr-content-wrapper .pr-form-wrapper .accordion-group .accordion-inner .input-wrapper select {
+  width: 399px;
+}
+
+.pr-content-wrapper .pr-form-wrapper .accordion-group .accordion-inner .input-wrapper ul {
+  width: 399px;
+}
+
+.pr-content-wrapper .pr-form-wrapper .accordion-group .accordion-inner .keyword-input-wrapper {
+  display: inline-block;
+  position: relative;
+  width: 106px;
+  background-color: #F5F5F5;
+  border-radius: 15px;
+}
+
+.pr-content-wrapper .pr-form-wrapper .accordion-group .accordion-inner .keyword-input-wrapper .keyword-input {
+  width: 86px;
+  height: 30px;
+  border-radius: 15px;
+  outline: none;
+}
+
+.pr-content-wrapper .pr-form-wrapper .accordion-group .accordion-inner .keyword-input-wrapper .keyword-input-icon {
+  position: absolute;
+  right: 12px;
+  bottom: 9px;
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: url("../img/delete.png") no-repeat;
+  background-position: center center;
+  transform: rotateZ(45deg);
+}
+
+.pr-content-wrapper .pr-form-wrapper .accordion-group .accordion-inner .keyword-item {
+  display: inline-block;
+  position: relative;
+  margin-right: 30px;
+  height: 30px;
+  padding: 0 32px 0 12px;
+  background-color: #F5F5F5;
+  border-radius: 15px;
+  line-height: 30px;
+  font-size: 16px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #999999;
+}
+
+.pr-content-wrapper .pr-form-wrapper .accordion-group .accordion-inner .keyword-item .keyword-item-delete {
+  position: absolute;
+  right: 12px;
+  bottom: 9px;
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: url("../img/delete.png") no-repeat;
+  background-position: center center;
+}
+
+.pr-content-wrapper .pr-form-wrapper .accordion-group .accordion-inner .form-textarea label {
+  vertical-align: top;
+}
+
+.pr-content-wrapper .pr-form-wrapper .accordion-group .accordion-inner .form-textarea .textarea-bg {
+  width: 977px;
+  background-color: #F5F5F5;
+  border-color: transparent;
+  box-shadow: 0 0 0 0;
+  outline: none;
+}
+
+.pr-content-wrapper .pr-form-wrapper .accordion-group .accordion-inner .address-dropdown-wrapper {
+  margin-left: 20px;
+}
+
+.pr-content-wrapper .pr-form-wrapper .accordion-group .accordion-inner .address-dropdown-wrapper:nth-child(2) {
+  margin-left: 0;
+}
+
+.pr-content-wrapper .pr-form-wrapper .accordion-group .accordion-inner .form-group {
+  box-sizing: border-box;
+}
+
+.pr-content-wrapper .pr-form-wrapper .accordion-group .accordion-inner .form-group .with-text-input {
+  box-sizing: border-box;
+  width: 400px;
+  padding-right: 16px;
+  background-color: #F5F5F5;
+  font-size: 16px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #333333;
+}
+
+.pr-content-wrapper .pr-form-wrapper .accordion-group .accordion-inner .form-group .with-text-input input {
+  box-sizing: border-box;
+  width: 345px !important;
+}
+
+.pr-content-wrapper .pr-form-wrapper .accordion-group .accordion-inner .fileinput-left label {
+  vertical-align: top;
+  margin-left: 46px;
+}
+
+.pr-content-wrapper .pr-form-wrapper .accordion-group .accordion-inner .fileinput-left div {
+  display: inline-block;
+}
+
+.pr-content-wrapper .pr-form-wrapper .accordion-group .accordion-inner .fileinput-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.pr-content-wrapper .pr-form-wrapper .accordion-group .accordion-inner .three-select select {
+  width: 310px;
+}
+
+.pr-content-wrapper .pr-form-wrapper .margin-agree {
+  text-align: left !important;
+  margin-left: 166px;
+  margin-top: 33px;
+}
+
+.pr-content-wrapper .pr-form-wrapper .btn-wrapper {
+  margin-top: 81px;
+  text-align: center;
+}
+
+.pr-content-wrapper .pr-form-wrapper .btn-wrapper button {
+  position: relative;
+  width: 250px;
+  height: 60px;
+  background: #025ab3;
+  font-size: 18px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: white;
+  border-color: transparent;
+  border-radius: 0;
+  outline: none;
+}
+
+.pr-content-wrapper .pr-form-wrapper .btn-wrapper .back-btn a {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.pr-content-wrapper .pr-form-wrapper .btn-wrapper .confirm-btn {
+  margin-left: 20px;
+  background: #fda923;
+}
+
+.pr-content-wrapper .preview {
+  border: 1px solid #e2e2e2;
+  width: 100px;
+  text-align: center;
+}
+
+.pr-content-wrapper .confirm-dialog {
+  width: 480px;
+  height: 231px;
+  background: white;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.4);
+  border-radius: 0;
+  opacity: 0.99;
+  text-align: center;
+}
+
+.pr-content-wrapper .confirm-dialog .modal-header {
+  text-align: left;
+}
+
+.pr-content-wrapper .confirm-dialog .modal-header h4 {
+  font-size: 18px;
+  font-family: MicrosoftYaHei;
+  font-weight: 500;
+  color: #333333;
+}
+
+.pr-content-wrapper .confirm-dialog .confirm-dialog-content {
+  margin: 40px 0;
+  padding: 0;
+  font-size: 20px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #333333;
+}
+
+.pr-content-wrapper .confirm-dialog .confirm-dialog-cancel {
+  margin-right: 20px;
+  width: 140px;
+  height: 40px;
+  background: white;
+  border: 1px solid #025ab3;
+  border-radius: 2px;
+  color: #025ab3;
+}
+
+.pr-content-wrapper .confirm-dialog .confirm-dialog-determine {
+  width: 140px;
+  height: 40px;
+  background: #025ab3;
+  border-radius: 2px;
+}
+
+.pr-content-wrapper .authentication-dialog {
+  padding-top: 60px;
+  width: 480px;
+  height: 292px;
+  background: white;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.4);
+  border-radius: 0;
+  opacity: 0.99;
+  text-align: center;
+}
+
+.pr-content-wrapper .authentication-dialog .authentication-dialog-content {
+  margin: 30px 0 20px 0;
+  padding: 0;
+  font-size: 18px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #333333;
+}
+
+.pr-content-wrapper .authentication-dialog .authentication-dialog-back {
+  width: 160px;
+  height: 40px;
+  background: #025ab3;
+  border-radius: 2px;
+  font-size: 16px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: white;
+}

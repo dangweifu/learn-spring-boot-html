@@ -1,0 +1,72 @@
+.demand-table {
+  padding-top: 40px;
+}
+
+.modal-dialog {
+  width: 778px;
+  height: 266px;
+}
+
+.modal-body {
+  width: 778px;
+  height: 266px;
+  overflow: auto;
+}
+
+.modal-body .form-group {
+  margin-bottom: 10px;
+}
+
+.modal-body .form-group .checkbox {
+  display: inline-block;
+  padding-left: 30px;
+  margin: 0;
+  vertical-align: top;
+  min-width: 25%;
+}
+
+.modal-body .form-group .checkbox input {
+  vertical-align: top;
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.modal-body .form-group .checkbox label {
+  user-select: none;
+  font-size: 18px;
+  color: #024F9D;
+  font-family: 'Arial Normal', 'Arial';
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  line-height: 18px;
+}
+
+.modal-footer .checkbox {
+  float: left;
+  padding-left: 30px;
+  margin: 15px 0 0 50px;
+}
+
+.modal-footer .checkbox input {
+  vertical-align: top;
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.modal-footer .checkbox label {
+  user-select: none;
+  font-size: 18px;
+  color: #024F9D;
+  font-family: 'Arial Normal', 'Arial';
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  line-height: 18px;
+}

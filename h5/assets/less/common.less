@@ -1,0 +1,57 @@
+/* 多行文本截取 */
+.multi-line-ellipsis{
+	white-space:normal!important;
+	 display:-webkit-box; /*将对象作为弹性伸缩盒子模型显示*/
+	-webkit-line-clamp:2; /*限制盒子的显示行数*/
+	-webkit-box-orient:vertical; /*设置排列方式*/
+	overflow: hidden;
+}
+
+/* 卡片头部标题栏 */
+.card-head-row{
+	&.mui-card-header{
+		padding: 0;
+		&:after{
+			display: none;
+		}
+	}
+
+	.mui-row {
+		width: 100%;
+		h2 {
+			padding-left: 13px;
+			margin: 0;
+			font-size: 20px;
+			font-weight: bold;
+			color: rgba(51,51,51,1);
+			position: relative;
+			&:before{
+				content: '';
+				display: block;
+				width: 3px;
+				height: 16px;
+				background: rgba(2,90,179,1);
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				margin: auto 0;
+				left: 0;
+			}
+		}
+		.btn-box {
+			text-align: right;
+			button {
+			    width: 40px;
+			    height: 20px;
+			    line-height: 20px;
+			    padding: 0;
+			    border: none;
+			    border-radius: 10px;
+			    font-size: 12px;
+			    background: linear-gradient(87deg, rgba(3,108,215,1) 0%, rgba(107,181,255,1) 100%);
+			    color: rgba(255, 255, 255, 1);
+			    text-align: center;
+			}
+		}
+	}
+}

@@ -1,0 +1,135 @@
+.statuteStandard{
+  margin-bottom: 80px;
+  .statute{
+    margin-top: 20px;
+    .ceil{
+      height: 50px;
+      line-height: 50px;
+      display: flex;
+      justify-content: space-between;
+      // padding: 0 20px;
+      margin: 0px;
+      font-family:MicrosoftYaHei;
+      font-weight:400;
+      color: #333333;
+      font-size:18px;
+      .img-txt{
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+        background: rgba(2, 90, 179, 1);
+        color: #fff;
+        img{
+          margin-right: 10px;
+          width: 22px;
+        }
+      }
+      .recommendation{
+        background: #025AB3;
+        color: #fff;
+        font-size: 16px;
+        padding: 4px;
+        margin-right: 10px;
+      }
+    }
+    .statute-right{
+      display: flex;
+      align-items: center;
+    }
+    .nav-statute{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 2px solid #025AB3; 
+      a{
+        text-decoration: none;
+        color: #999999;
+        font-size: 16px;
+        cursor: pointer;
+        padding-right: 20px;
+      }
+    }
+    .nav-tabs{
+      border-bottom:none;
+    }
+    .nav-tabs>li>a:hover{
+      // border:none;
+      // margin-right:0px;
+      // line-height:0px;
+      // border-radius:0px;
+    }
+    .nav>li>a{
+      padding: 13px 15px;
+    }
+    .nav-tabs>li.active>a{
+      border:none;
+      background: #fff;
+      color: #025AB3;
+      position: relative;
+    }
+    .nav-tabs>li>a{
+      font-size:16px;
+      font-family:MicrosoftYaHei;
+      font-weight:400;
+      color:rgba(102,102,102,1);
+      border:none;
+    }
+    .nav-tabs>li.active>.line{
+      width:30px;
+      height:4px;
+      background: #025AB3;
+      position: absolute;
+      left: 35%;
+    }
+    .generalEquipment{
+      margin: 0px 0 10px 0;
+      padding: 30px 20px;
+      display: flex;
+      justify-content: space-between;
+      background: #fff;
+      .content-ceil{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        font-size:14px;
+        font-family:PingFangSC-Regular;
+        font-weight:400;
+        color: #666666;
+        h3{
+          font-size: 14px;
+          margin: 0px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 20px;
+          width: 530px;
+          .left{
+            display: flex;
+            align-items: center;
+          }
+          .shape{
+            width: 8px;
+            height: 8px;
+            background: #025AB3;
+            margin: 0px;
+          }
+          .text{
+            margin-left: 14px;
+            font-size: 16px;
+            color: #666666;
+            display:block;
+            white-space:nowrap; 
+            overflow:hidden; 
+            text-overflow:ellipsis;
+            width: 410px;
+            text-decoration: none;
+            cursor: pointer;
+            &:hover{
+              color: #025AB3;
+            }
+          }
+        }
+      }
+    }
+  }
+}

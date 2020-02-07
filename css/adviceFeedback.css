@@ -1,0 +1,8 @@
+tr>td>div{
+    max-width: 300px!important;
+    overflow:hidden; 
+    text-overflow:ellipsis; 
+    white-space:nowrap;
+    margin: 0 auto;
+    cursor: pointer;
+}

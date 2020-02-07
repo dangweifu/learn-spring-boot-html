@@ -1,0 +1,77 @@
+.user-nav {
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: box;
+  display: flexbox;
+  display: flex;
+}
+
+.user-nav .ceil {
+  padding: 0 24px;
+}
+
+.chart {
+  padding: 30px 20px;
+  background: #fff;
+  margin-bottom: 80px;
+}
+
+.chart h3 {
+  text-align: center;
+  margin: 0px;
+}
+
+.chart .col-lg-6 {
+  padding-right: 30px;
+  padding-bottom: 50px;
+}
+
+.chart-super {
+  padding: 30px 20px;
+  background: #fff;
+  margin-bottom: 80px;
+}
+
+.chart-super h3 {
+  text-align: center;
+  margin: 0px;
+}
+
+.chart-super .title {
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.chart-super .title h4 {
+  float: left;
+  margin: 0px;
+}
+
+.chart-super .title a {
+  cursor: pointer;
+}
+
+.chart-super .title .more {
+  float: right;
+  color: #157EDF;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.chart-super .col-lg-6 {
+  padding-bottom: 50px;
+}
+
+.chart-super .ceil {
+  height: 686px;
+  background: #f6f6f6;
+  padding-top: 10px;
+}
+
+.chart-super .ceil2 {
+  padding-top: 10px;
+  height: 300px;
+  background: #f6f6f6;
+}

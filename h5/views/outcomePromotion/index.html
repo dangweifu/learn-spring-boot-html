@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>成果推广</title>
+
+    <link href="../../../static/css/mui/mui.min.css" rel="stylesheet"/>
+	<link href="../../../assets/css/common.min.css" rel="stylesheet"/>
+	<link rel="stylesheet" href="../../../assets/css/outcomePromotion.css">
+
+	<script src="../../../static/js/babel/babel-browser.min.js" type="text/javascript"></script>
+	<script src="../../../static/js/mui/mui.min.js" type="text/javascript"></script>
+  	<script src="../../../static/js/jquery/jquery.min.js" type="text/javascript"></script>
+  	<script src="../../../assets/js/home/index.js" type="text/babel"></script>
+    <script type="text/javascript" charset="utf-8">
+      	mui.init();
+    </script>
+    <style>
+        .card-photo {
+            height: 100%;
+            padding: 10px 14px 20px 14px;
+            margin: 0;
+            box-shadow: none;
+        }
+
+        .card-photo .mui-card-content .line-card {
+            position: relative;
+            margin-bottom: 11px;
+            box-sizing: content-box;
+            height: 175px;
+        }
+
+        .card-photo .mui-card-content .line-card img {
+            width: 100%;
+            height: 100%;
+            border-radius: 2px;
+        }
+
+        .card-photo .mui-card-content .line-card .title {
+            position: absolute;
+            bottom: 0;
+            padding-left: 11px;
+            width: 100%;
+            height: 46px;
+            background: rgba(7, 60, 119, .7);
+        }
+
+        .card-photo .mui-card-content .line-card .title h3 {
+            font-size: 17px;
+            font-family: MicrosoftYaHei;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 1);
+            line-height: 33px;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <!-- 头部 -->
+	<header>
+		<script>
+            $("header").load("../../common/head-back-search/index.html");
+            $(".heades-title").text()
+		</script>
+    </header>
+
+    <!-- 内容 -->
+	<article class="mui-content mian">
+        <div class="mui-card card-photo">
+
+            <div class="mui-card-content mui-row">
+                <div class="line-card mui-col-sm-12 mui-col-xs-12">
+                    <img src="../../../assets/img/home/carousel-1.png" alt="">
+                    <div class="title">
+                        <h3>这是标题</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!-- <script type="text/babel"> -->
+    <script>
+        mui.ready(function () {
+            var dataArr = [
+                { img: '../../../assets/img/home/carousel-1.png', title: '国产元器件' },
+                { img: '../../../assets/img/home/carousel-1.png', title: '技术成果' },
+                { img: '../../../assets/img/home/carousel-1.png', title: '预研成果' },
+            ];
+
+            var templateHtml = '';
+
+            mui.each(dataArr, function (index, item) {
+                templateHtml +=
+                    `
+                <div class="line-card mui-col-sm-12 mui-col-xs-12">
+                    <img src="${item.img}" alt="">
+                    <div class="title">
+                        <h3>${item.title}</h3>
+                    </div>
+                </div>
+                `
+            });
+
+            // 产品技术
+            mui('.mian .mui-card-content')[0].innerHTML = templateHtml;
+            $(".mian .mui-card-content")[0].onclick = function() {
+                window.location.href = "/src/views/outcomepromotion/outcomePromotionDetail.html"
+            }
+        });
+    </script>
+
+    <!-- 底部 -->
+	<!-- <footer>
+		<script>
+			$("footer").load("../../common/footer.html");
+		</script>
+	</footer> -->
+</body>
+</html>

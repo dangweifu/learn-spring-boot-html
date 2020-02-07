@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="viewport"
+		content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<meta charset="UTF-8">
+	<title>首页</title>
+	<link href="../../../static/css/mui/mui.min.css" rel="stylesheet" />
+	<link href="../../../assets/css/common.min.css" rel="stylesheet" />
+	<link href="../../../assets/css/home.min.css" rel="stylesheet" />
+
+	<script src="../../../static/js/babel/babel-browser.min.js" type="text/javascript"></script>
+	<script src="../../../static/js/mui/mui.min.js" type="text/javascript"></script>
+	<script src="../../../static/js/jquery/jquery.min.js" type="text/javascript"></script>
+	<script src="../../../static/js/lazyload/jquery.lazyload.min.js" type="text/javascript"></script>
+	<script src="../../../assets/js/home/index.js" type="text/babel"></script>
+	<script type="text/javascript" charset="utf-8">
+		mui.init();
+	</script>
+</head>
+
+<body>
+	<!-- 头部 -->
+	<header>
+		<script>
+			$("header").load("../../common/header.html");
+		</script>
+	</header>
+	
+	<!-- 内容 -->
+	<article class="mui-content">
+
+		<!-- banner -->
+		<!-- <img src="../../../assets/img/home/carousel-1.png" alt="" class="banner"> -->
+		<!-- 轮播 -->
+		<div class="mui-slider banner">
+			<div class="mui-slider-group mui-slider-loop">
+				<div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="../../../assets/img/home/banner3.jpg" /></a></div>
+				<div class="mui-slider-item"><a href="#"><img src="../../../assets/img/home/banner1.jpg" /></a></div>
+				<div class="mui-slider-item"><a href="#"><img src="../../../assets/img/home/banner2.jpg" /></a></div>
+				<div class="mui-slider-item"><a href="#"><img src="../../../assets/img/home/banner3.jpg" /></a></div>
+				<div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="../../../assets/img/home/banner1.jpg" /></a></div>
+			</div>
+			<div class="mui-slider-indicator" id="sliin">
+				<div class="mui-indicator mui-active"></div>
+				<div class="mui-indicator"></div>
+				<div class="mui-indicator"></div>
+				<!-- <div class="mui-indicator"></div> -->
+			</div>
+		</div>
+
+		<!-- 八宫格栏目 -->
+		<ul class="mui-table-view mui-grid-view mui-grid-9 special-column">
+			<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+				<a href="#">
+					<img class="column-icon" src="../../../assets/img/home/special-column-1.png" alt="">
+					<div class="mui-media-body">军委机关</div>
+				</a>
+			</li>
+			<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+				<a href="#">
+					<img class="column-icon" src="../../../assets/img/home/special-column-2.png" alt="">
+					<div class="mui-media-body">陆军专栏</div>
+				</a>
+			</li>
+			<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+				<a href="#">
+					<img class="column-icon" src="../../../assets/img/home/special-column-3.png" alt="">
+					<div class="mui-media-body">海军专栏</div>
+				</a>
+			</li>
+			<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+				<a href="#">
+					<img class="column-icon" src="../../../assets/img/home/special-column-4.png" alt="">
+					<div class="mui-media-body">空军专栏</div>
+				</a>
+			</li>
+			<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+				<a href="#">
+					<img class="column-icon" src="../../../assets/img/home/special-column-7.png" alt="">
+					<div class="mui-media-body">火箭军专栏</div>
+				</a>
+			</li>
+			<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+				<a href="#">
+					<img class="column-icon" src="../../../assets/img/home/special-column-8.png" alt="">
+					<div class="mui-media-body">武警专栏</div>
+				</a>
+			</li>
+			<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+				<a href="#">
+					<img class="column-icon" src="../../../assets/img/home/special-column-6.png" alt="">
+					<div class="mui-media-body">战支专栏</div>
+				</a>
+			</li>
+			<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+				<a href="#">
+					<img class="column-icon" src="../../../assets/img/home/special-column-5.png" alt="">
+					<div class="mui-media-body">军工集团</div>
+				</a>
+			</li>
+		</ul>
+
+		<!-- 要闻动态 -->
+		<div class="card-list news">
+			<style>
+				.card-title-time{
+					padding: 10px 13px;
+					margin: 0;
+					box-shadow: none;
+				}
+
+				.card-title-time .line-list{
+					height: 30px;
+					line-height: 30px;
+				}
+
+				.card-title-time .line-list p{
+					color: rgba(51,51,51,1);
+					margin-bottom: 0;
+				}
+
+				.card-title-time .line-list time{
+					font-size: 13px;
+					color: rgba(102, 102, 102, 1);
+					text-align: right;
+				}
+			</style>
+
+			<div class="mui-card card-title-time">
+				<!--页眉，放置标题-->
+				<div class="mui-card-header card-head-row">
+					<div class="mui-row">
+						<h2 class="card-title mui-col-xs-10"></h2>
+						<div class="btn-box mui-col-xs-2">
+							<button type="button" class="mui-btn card-button">更多</button>
+						</div>
+					</div>
+				</div>
+
+				<!--内容区-->
+				<div class="mui-card-content">
+					<div class="mui-row line-list">
+						<p class="mui-ellipsis mui-col-xs-9"></p>
+						<time class="mui-col-xs-3"></time>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- 通知公告 -->
+		<div class="card-list notice-announcement">
+			<script>
+				$(".notice-announcement").load('../../common/card-list/card-title-time.html');
+			</script>
+		</div>
+
+		<!-- 采购公告 -->
+		<div class="card-list purchase-announcement">
+			<script>
+				$(".purchase-announcement").load('../../common/card-list/card-tag-title-time.html');
+			</script>
+		</div>
+
+		<!-- 采购需求 -->
+		<div class="card-list procurement-demand">
+			<script>
+				$(".procurement-demand").load('../../common/card-list/card-multi-line.html');
+			</script>
+		</div>
+
+		<!-- 产品技术 -->
+		<div class="card-list product-technology">
+			<script>
+				$(".product-technology").load('../../common/card-list/card-photo-four.html');
+			</script>
+		</div>
+
+		<!-- 企业名录 -->
+		<div class="card-list business-directory">
+			<script>
+				$(".business-directory").load('../../common/card-list/card-tag-title-time.html');
+			</script>
+		</div>
+
+		<!-- 查询点 -->
+		<div class="card-list query-points">
+			<script>
+				$(".query-points").load('../../common/card-list/card-photo-one.html');
+			</script>
+		</div>
+
+		<!-- 法规标准 -->
+		<div class="card-list regulation">
+			<script>
+				$(".regulation").load('../../common/card-list/card-title-time.html');
+			</script>
+		</div>
+
+		<!-- 成果推广 -->
+		<div class="card-list achievements-popularization">
+			<script>
+				$(".achievements-popularization").load('../../common/card-list/card-multi-line.html');
+			</script>
+		</div>
+	</article>
+
+	<!-- 底部 -->
+	<footer>
+		<script>
+			$("footer").load("../../common/footer.html");
+		</script>
+	</footer>
+
+	<script>
+		mui.ready(function () {
+			var gallery = mui('.mui-slider');
+			gallery.slider({
+				interval: 3000//自动轮播周期，若为0则不自动播放，默认为0；
+			});
+		})
+	</script>
+</body>
+
+</html>

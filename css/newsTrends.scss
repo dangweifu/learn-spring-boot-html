@@ -1,0 +1,129 @@
+
+.form-group {
+    display: inline-block;
+    margin-bottom: 30px;
+    display: flex;
+}
+
+.army,
+.newstrends {
+    margin-top: 20px;
+    background: #fff;
+    margin-bottom: 20px;
+
+}
+
+.demandform {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 34px;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+
+    .form-control {
+        width: 200px;
+        height: 40px;
+        background: #F4F4F4;
+        border: none;
+        box-shadow: none;
+        font-size: 14px;
+        color: #999999;
+    }
+
+    .search {
+        width: 80px;
+        height: 40px;
+        background: #025AB3;
+        border: none;
+        color: #fff;
+        font-size: 16px;
+    }
+
+    .more-txt {
+        font-size: 16px;
+        color: #666666;
+        cursor: pointer;
+    }
+
+    .show {
+        margin-left: 20px;
+    }
+}
+
+.retract,
+.dockingretract {
+    display: none;
+
+    input {
+        background: #f5f5f5;
+        border: none;
+        box-shadow: none;
+    }
+
+    .timepicker .control-label {
+        width: 82px;
+    }
+}
+
+.list {
+    margin-top: 20px;
+}
+
+.reset {
+    width: 80px;
+    height: 40px;
+    background: #fff;
+    border: 1px solid #025AB3;
+    font-size: 16px;
+    color: #025AB3;
+    margin-left: 10px;
+}
+
+.newstrends-list {
+    border-top: 20px solid #f6f6f6;
+
+    .newstrends-ceil {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0px;
+        margin: 0 20px;
+        font-size: 18px;
+        color: #333333;
+        border-bottom: 1px solid #e1dede;
+
+        .ceil {
+            display: flex;
+            align-items: center;
+            .square {
+                width: 10px;
+                height: 10px;
+                background: #ebeaea;
+                margin: 0px;
+            }
+
+            .txt {
+                padding-left: 10px;
+                cursor: pointer;
+
+                a {
+                    text-decoration: none;
+                    color: #333333;
+                }
+            }
+
+            .number {
+                color: #FF0000;
+                padding: 0 4px;
+            }
+
+            .state {
+                padding-left: 20px;
+                margin: 0px;
+                color: #666666;
+                font-size: 16px;
+            }
+        }
+
+    }
+}

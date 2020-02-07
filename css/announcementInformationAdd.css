@@ -1,0 +1,236 @@
+.content {
+  background: #fff;
+  padding: 30px 40px 50px;
+  overflow: hidden;
+  margin-bottom: 80px;
+}
+
+.content .pr-form-title {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.content .pr-form-title .left {
+  padding-bottom: 10px;
+  color: #205AB3;
+  font-size: 20px;
+  border-bottom: 3px solid;
+}
+
+.content .pr-form-title a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #666666;
+  margin: 0px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.content .pr-form-title a .right {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: url(../img/collapse-close.png) no-repeat;
+  background-position: center center;
+  transform: rotateZ(90deg);
+  transform-origin: center;
+  font-size: 16px;
+  color: #666666;
+  margin-right: 10px;
+}
+
+.content .tips {
+  font-size: 16px;
+  color: red;
+  padding: 30px 0 60px 30px;
+}
+
+.content .form-group {
+  display: inline-block;
+  margin-bottom: 30px;
+  display: flex;
+}
+
+.content .form-group input {
+  color: #999999;
+}
+
+.content .form-group label {
+  vertical-align: middle;
+  font-size: 16px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100px;
+}
+
+.content .form-group label span {
+  color: red;
+}
+
+.content .form-group .input-wrapper {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* 上传图片样式 */
+.form-group .fileinput-wrapper {
+  margin-right: 30px;
+  position: relative;
+  width: 276px;
+  height: 171px;
+  background: #f4f4f4;
+  /* text-align: center; */
+  font-size: 16px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #999999;
+}
+
+.form-group .fileinput-wrapper input {
+  width: 276px;
+  height: 133px;
+  opacity: 0;
+}
+
+.form-group .fileinput-wrapper::after {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  content: '';
+  display: block;
+  height: 52px;
+  width: 2px;
+  background: #cccccc;
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.form-group .fileinput-wrapper::before {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  content: '';
+  display: block;
+  width: 52px;
+  height: 2px;
+  background: #cccccc;
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.form-group .fileinput-wrapper button {
+  margin: 30px auto 0 auto;
+  width: 100px;
+  height: 30px;
+  background: #025ab3;
+  border-radius: 15px;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #fefefe;
+  border-color: transparent;
+}
+
+.content .form-group .dropdown select {
+  box-sizing: border-box;
+  width: 399px;
+  height: 52px;
+  font-size: 16px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  text-align: left;
+  color: #999999;
+  background: #f4f4f4;
+  border: 0;
+  box-shadow: 0 0 0 0;
+  border-radius: 0;
+}
+
+.content .one-select select {
+  width: 400px;
+}
+
+.content .date {
+  float: right;
+  width: 399px;
+}
+
+.content .date .input-group-addon {
+  background: #f5f5f5;
+  border: solid 1px #F5F5F5;
+}
+
+.content .date .form-control {
+  color: #999999;
+}
+
+.content .form-textarea label {
+  vertical-align: top;
+}
+
+.content .form-textarea .input-wrapper {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.content .text-right {
+  text-align: right;
+}
+
+.content .form-fileupload {
+  cursor: pointer;
+}
+
+.content .form-fileupload a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.content .form-fileupload .btn_addPic {
+  display: inline-block;
+  position: relative;
+  width: 140px;
+  height: 46px;
+  line-height: 46px;
+  overflow: hidden;
+  background: #025AB3;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+}
+
+.content .form-fileupload .filePrew {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 140px;
+  height: 46px;
+  font-size: 16px;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  cursor: pointer;
+}
+
+.content .submit-btn {
+  margin-top: 81px;
+  text-align: center;
+}
+
+.content .submit-btn button {
+  margin-right: 10px;
+  width: 250px;
+  height: 60px;
+  background: #025ab3;
+  font-size: 18px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: white;
+  border-color: transparent;
+  border-radius: 0;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<style>
+  .card-photo-six {
+    padding: 0px 1px;
+    margin: 0;
+    box-shadow: none;
+  }
+
+  .card-photo-six .card-title {
+    padding: 15px 0;
+  }
+
+  .card-photo-six .line-list img {
+    width: 347px;
+    height: 220px;
+    border-radius: 4px;
+  }
+
+  .card-photo-six ul li {
+    list-style-type: none;
+  }
+  .card-photo-six .smallImg{
+    display: flex;
+    padding: 0;
+    border-radius: 2px;
+    margin: 10px 0px 0px 0px;
+  }
+  .card-photo-six .smallImg .ceil{
+    width: 112px;
+    height: 68px;
+  }
+</style>
+
+<div class="mui-card card-photo-six">
+  <!--页眉，放置标题-->
+  <div class="mui-card-header card-head-row">
+    <div class="mui-row">
+      <h2 class="card-title mui-col-xs-12">展示图</h2>
+      <div class="mui-col-xs-12 line-list" id="bigImg">
+        <img src="../../../assets/img/product/product_1.png" alt="">
+      </div>
+      <ul id="imgList" class="mui-col-xs-12 smallImg">
+        <li class="mui-col-xs-4">
+          <!-- <img src="../../../assets/img/product/product_1.png" alt="" class="ceil">  -->
+          
+          <video controls="" autoplay="" name="media" width="100%" class="ceil">
+              <source src="http://10.18.75.103:8080/files/11.MP4" type="video/mp4">
+          </video>
+        </li >
+        <li class="mui-col-xs-4">
+          <img src="../../../assets/img/product/product_2.png" alt=""  class="ceil">
+        </li>
+        <li class="mui-col-xs-4">
+          <img src="../../../assets/img/product/product_3.png" alt=""  class="ceil">
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- <script type="text/babel"> -->
+<script>
+  $('#imgList li img:first').addClass('active');
+  $("#imgList li img").click(e => {
+    $("#imgList li img.active").removeClass("active");
+    $(e.target).addClass('active');
+    $("#bigImg>img").replaceWith(
+      $(e.target).clone()
+    );
+  });
+  mui.init();
+	mui.plusReady(function(){
+		// 获得传过来的视频地址参数
+		var videourl = plus.webview.currentwebview().videourl;
+		// 动态渲染整个video标签
+		document.getElementById("video").innerHTML = '<video controls="" autoplay="" name="media" width="100%"><source src="'+videourl+'" type="video/mp4"></video>';
+	});
+</script>
+
+</html>

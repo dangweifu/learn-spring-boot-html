@@ -1,0 +1,439 @@
+@charset "UTF-8";
+.content {
+  background: #F5F5F5;
+}
+.content .container{
+    background-color: #fff;
+    padding: 0 48px;
+}
+.content .header{
+    font-size: 22px;
+    text-align: center;
+    color:#333;
+    font-family: "微软雅黑 Bold", "微软雅黑 Regular", 微软雅黑;
+    font-weight: 700;
+    padding-top:66px; 
+    padding-bottom: 24px;
+    position: relative;
+}
+.content .header .imgCollect {
+    background-image: url(../img/collect.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    right: 0;
+    width: 39px;
+    height: 32px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+  }
+  
+  .content .header .imgCollect:hover {
+    background-image: url(../img/select_collect.png);
+    cursor: pointer;
+  }
+  .contentPart .contentHead{
+      padding: 24px 0;
+      margin: 0 62px;
+      border-bottom: 1px solid #E5E5E5;
+  }
+  .contentPart .contentHead div{
+    position: relative;
+  }
+  .contentPart .contentHead span:nth-of-type(1){
+    color: rgb(2, 90, 179);
+    font-family: "微软雅黑 Regular", 微软雅黑;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .contentPart .contentHead span:nth-of-type(2){
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      font-size: 13px;
+      color:rgb(51, 51, 51);
+      position: absolute;
+      right: 0;
+      border:1px solid rgb(51, 51, 51);
+      text-align: center;
+      line-height: 20px;
+  }
+  .contentPart .contentHead span:nth-of-type(2):hover{
+      cursor: pointer;
+  }
+  /* 第一部分表格样式 */
+  table{
+      margin-top:24px;
+      margin-bottom: 14px;
+      width: 100%;
+  }
+  tr{
+      height: 50px;
+      vertical-align:middle;
+  }
+  td,th{
+      border: 1px solid #E4E4E4;
+      font-family: "微软雅黑 Regular", 微软雅黑;
+      font-weight: 400;
+      padding: 6px 10px;
+      font-size: 16px;
+  }
+  th{
+      text-align: right;
+  }
+  td{
+      text-align:left;
+  }
+
+  /* 选项卡样式 */
+  #myTab li{
+      margin-right: 8px;
+  }
+  #myTab li a{
+      background-color: #FAFAFA;
+      color:#585858;
+      border: 1px solid #EBEBEB;
+  }
+  #myTab li.active a{
+      background-color: #fff;
+      color:#1890FF;
+      border-bottom: 1px solid transparent;
+  }
+  .centerTable tr,.centerTable th,.centerTable td{
+      text-align: center!important;
+      font-size: 13px;
+  }
+  .appraiseTable{
+      width: 66%!important;
+      margin: 24px auto 14px;
+  }
+  .starClass{
+      display: inline-block;
+      width: 50%;
+  }
+  .contentBody .starTable tr,.contentBody .starTable td{
+      font-size: 13px !important;
+      height: 40px;
+  }
+  .filterDiv{
+      margin-top: 24px;
+      padding-top:14px;
+      padding-bottom: 38px;
+      border-bottom: 1px solid #E1E1E1;
+  }
+  .filterDiv button{
+      width: 100px;
+      height: 30px;
+      color: #025AB3;
+      border-color: #025AB3;
+      padding:5px auto;
+      /* line-height: 20px; */
+      font-size: 12px;
+      margin-left: 14px;
+  }
+  .filterDiv span{
+      font-size: 16px;
+      margin-left:8px;
+  }
+  ul,li{ 
+      padding:0;
+      margin:0;
+      list-style:none
+    }
+.appraiseDetail > ul >li{
+    border-bottom:1px solid #E1E1E1;
+}
+.appraiseDetail .row > div{
+    padding-left: 40px;
+    padding-top: 26px;
+}
+.appraiseDetail .row .appraiseDetailTitle{
+    color: rgb(30, 30, 30);
+    font-family: "微软雅黑 Regular", 微软雅黑;
+    font-size: 20px;
+    font-weight: 400;
+    overflow-wrap: break-word;
+    text-align: left;
+    padding-bottom: 26px;
+}
+.appraiseDetail .row ul li{
+    padding-bottom: 18px;
+}
+.appraiseDetail .row ul li span{
+    color: rgb(51, 51, 51);
+    font-family: "微软雅黑 Regular", 微软雅黑;
+    font-size: 16px;
+    font-weight: 400;
+    overflow-wrap: break-word;
+    text-align: left;
+}
+.appraiseDetail .row ul li span:first-of-type{
+    display: inline-block;
+    width: 50%;
+}
+.appraiseDetail .row .appraiseDetailRight1 span{
+    color: rgb(51, 51, 51);
+    font-family: "微软雅黑 Regular", 微软雅黑;
+    font-size: 16px;
+    font-weight: 400;
+    overflow-wrap: break-word;
+    text-align: left;
+}
+.appraiseDetail .row .appraiseDetailRight1 span:first-of-type{
+    margin-right: 32px;
+}
+.appraiseDetail .row .appraiseDetailRight1 span:nth-of-type(2){
+    margin-right: 10px;
+}
+.appraiseDetail .row .appraiseDetailRight1 span:nth-of-type(3){
+    font-size: 14px;
+}
+.appraiseDetail .row .appraiseDetailRight1 span:last-of-type{
+    float: right;
+    color: rgb(153, 153, 153);
+}
+.appraiseDetail .row .appraiseDetailRight2{
+    color: rgb(51, 51, 51);
+    font-family: 微软雅黑;
+    font-size: 16px;
+    font-weight: 400;
+    overflow-wrap: break-word;
+    text-align: left;
+    padding-top: 32px;
+    min-height: 152px;
+}
+.appraiseDetail .row .appraiseDetailRight3{
+    color: rgb(51, 51, 51);
+    font-family: "微软雅黑 Regular", 微软雅黑;
+    font-size: 16px;
+    font-weight: 400;
+    overflow-wrap: break-word;
+    text-align: left;
+}
+.appraiseDetail .row .appraiseDetailRight3 span:first-of-type{
+    margin-right: 88px;
+}
+.formBox{
+    padding-top:40px;
+}
+#myTab1{
+    height: 60px;
+    background-color: #F2F2F2;
+    padding-top: 7px;
+    padding-left: 12px;
+    border:none;
+}
+#myTab1 li a{
+    color: rgb(51, 51, 51);
+    cursor: pointer;
+    font-family: "微软雅黑 Bold", "微软雅黑 Regular", 微软雅黑;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: left;
+    visibility: visible;
+    white-space: nowrap;
+}
+#myTab1 li a{
+    height: 53px;
+    width: 123px;
+    text-align: center;
+    line-height: 31px;
+}
+#myTab1 li a:hover{
+    border: none;
+    height: 53px;
+    width: 123px;
+    text-align: center;
+    line-height: 31px;
+    background-color: #F2F2F2;
+}
+#myTab1 li.active a{
+    background-color: #fff;
+    color:#025AB3;
+    border: none;
+}
+#myTabContent1>div>div:first-of-type{
+    height: 30px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.647);
+    font-family: "Microsoft YaHei Regular", "Microsoft YaHei";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    overflow-wrap: break-word;
+    border: 1px solid #FFE58F;
+    background-color: #FFFBE6;
+    border-radius: 4px;
+    margin: 10px auto;
+}
+#myTabContent1>div>div:first-of-type img{
+    margin-right:12px;
+    vertical-align: middle;
+}
+
+
+/* 五行评分样式 */
+.star-box{
+    display:inline-block;
+    height: 22px;
+    position: relative;
+    top: 8px;
+    margin-right: 14px;
+}
+.star-box label{
+    float:right;
+    width: 28px;
+    height: 18px;
+    background:url(../img/starForResource2.png) no-repeat center center;
+    background-size:17px 18px;
+    -moz-background-size:17px 18px;
+    -moz-background-size:17px 18px;
+    -o-background-size:17px 18px;
+}
+.star-box input:checked~label,.star-box label:hover~label,.star-box label:hover{
+    background:url(../img/starForResource1.png) no-repeat center center;
+    background-size:17px 18px;
+    -moz-background-size:17px 18px;
+    -moz-background-size:17px 18px;
+    -o-background-size:17px 18px;
+}
+.control > div{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.control > div >label:first-of-type{
+    color: rgb(51, 51, 51);
+    font-family: "微软雅黑 Regular", 微软雅黑;
+    font-size: 16px;
+    font-weight: 400;
+    overflow-wrap: break-word;
+    text-align: right;
+    width: 182px;
+}
+.control > div >label:nth-of-type(2){
+    color: rgb(51, 51, 51);
+    font-family: "微软雅黑 Regular", 微软雅黑;
+    font-size: 16px;
+    font-weight: 400;
+    overflow-wrap: break-word;
+    text-align: right;
+    width: 140px;
+}
+.control > div >label.control-label::before{
+    content: '*';
+    color:red;
+    margin-right:10px;
+}
+.control > div >input[type='text']{
+    width: 358px;
+    height: 56px;
+    font-size: 16px;
+    text-indent: 1em;
+    background-color: #fff;
+    outline: none;
+    border:1px solid #e5e5e5;
+}
+.control > div >input[type='text']:focus{
+    background-color: #F0F7FF;
+    outline: none;
+    border:1px solid #E5E5E5;
+    box-shadow: none;
+}
+.control > div >select{
+    width: 358px;
+    height: 56px;
+    font-size: 16px;
+    text-indent: 1em;
+    background-color: #fff;
+}
+.control > div >select>option{
+    text-indent: 1em;
+    height: 20px;
+}
+.control > div >select:focus{
+    background-color: #F0F7FF;
+    outline: none;
+    border:1px solid #E5E5E5;
+}
+.control > div > textarea{
+    width: 864px;
+    height: 300px;
+    background-color: #fff;
+    text-indent: 1em;
+    font-size: 16px;
+    resize: none;
+    border:1px solid #E5E5E5;
+}
+.control > div >textarea:focus{
+    background-color: #F0F7FF;
+    outline: none;
+    border:1px solid #E5E5E5;
+}
+label.topLabel{
+    vertical-align: top;
+}
+label.middleLabel{
+    vertical-align: top;
+}
+#btn-file {
+    display: inline-block;
+    width: 149px;
+    height: 56px;
+    background: url(../img/down.png) no-repeat 30px center;
+    text-align: left;
+    line-height: 56px;
+    overflow: hidden;
+    border:1px solid #E5E5E5;
+    text-indent: 58px;
+    color:#A2A2A2;
+    font-size: 14px;
+}
+#btn-file:hover{
+    cursor: pointer;
+}
+#file{
+    display: none;
+}
+#file~span{
+    vertical-align: top;
+    color: rgb(51, 51, 51);
+    font-family: "微软雅黑 Regular", 微软雅黑;
+    font-size: 16px;
+    font-weight: 400;
+    overflow-wrap: break-word;
+    text-align: left;
+}
+#file+span{
+    margin-left: 18px;
+}
+#file+span+span{
+    float: right;
+    margin-right:56px;
+}
+#submit{
+    text-align: center;
+}
+#submit button{
+    width: 224px;
+    height: 56px;
+    color: #fff;
+    background-color: #025AB3;
+    font-size: 16px;
+    font-weight: 400;
+    outline: none;
+    border: none;
+    margin:10px auto 50px;
+}
+
+.time{
+    display: inline-block;
+    height: 56px;
+}
+
+.time input{
+    height: 56px;
+}
+
+.input-group{
+    margin-top: 20px;
+}

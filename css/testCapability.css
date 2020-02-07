@@ -1,0 +1,135 @@
+@charset "UTF-8";
+.notice-nav {
+  overflow: hidden;
+}
+
+.demandform input {
+  width: 300px !important;
+}
+
+.demandform button {
+  float: none !important;
+}
+
+.demand-table {
+  padding-top: 40px;
+}
+
+.demand-table .tree {
+  display: inline-block;
+  width: 222px;
+  height: 478px;
+  padding-left: 10px;
+  background: inherit;
+  background-color: white;
+  box-sizing: border-box;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #cccccc;
+  border-radius: 0px;
+}
+
+.demand-table .tree h3, .demand-table .tree ul, .demand-table .tree li {
+  list-style: none;
+  font-family: '微软雅黑 Regular', '微软雅黑';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.demand-table .tree h3 {
+  margin-bottom: 8px;
+  padding-left: 14px;
+}
+
+.demand-table .tree li {
+  padding-top: 8px;
+  padding-left: 40px;
+}
+
+.demand-table .tree ul {
+  padding: 0;
+}
+
+.demand-table .tree .icon {
+  display: inline-block;
+  vertical-align: top;
+  width: 14px;
+  height: 14px;
+  background: url("../img/tree-unselect.png") no-repeat;
+  background-position: center center;
+}
+
+.demand-table .right {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 10px;
+}
+
+.demand-table .table {
+  width: 830px;
+}
+
+/* 上传图片样式 */
+.form-group .fileinput-wrapper {
+  margin-right: 30px;
+  position: relative;
+  width: 276px;
+  height: 171px;
+  background: #f4f4f4;
+  /* text-align: center; */
+  font-size: 16px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #999999;
+}
+
+.form-group .fileinput-wrapper input {
+  width: 276px;
+  height: 133px;
+  opacity: 0;
+}
+
+.form-group .fileinput-wrapper::after {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  content: '';
+  display: block;
+  height: 52px;
+  width: 2px;
+  background: #cccccc;
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.form-group .fileinput-wrapper::before {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  content: '';
+  display: block;
+  width: 52px;
+  height: 2px;
+  background: #cccccc;
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.form-group .fileinput-wrapper button {
+  margin: 30px auto 0 auto;
+  width: 100px;
+  height: 30px;
+  background: #025ab3;
+  border-radius: 15px;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #fefefe;
+  border-color: transparent;
+}
+.modal-dialog .modal-body .form-group{
+  justify-content: left;
+  padding-left: 0;
+  padding-right: 0;
+}

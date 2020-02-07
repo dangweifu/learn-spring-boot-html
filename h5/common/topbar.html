@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<style>
+  .mui-bar-nav {
+    background-color: #025AB3;
+  }
+
+  .mui-title {
+    color: #fff;
+    font-size: 18px;
+  }
+
+  .mui-bar-nav.mui-bar .mui-icon {
+    color: #fff;
+  }
+</style>
+
+<div class="mui-bar mui-bar-nav mui-bar-nav-bg">
+  <a id="icon-menu" class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left backs"></a>
+  <h1 class="mui-title"></h1>
+</div>
+<script>
+  $(".mui-title").text(document.title)
+  $(".backs").on("click",function(){
+    window.history.back();
+  })
+</script>
+
+</html>

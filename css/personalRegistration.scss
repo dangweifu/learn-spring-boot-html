@@ -1,0 +1,240 @@
+.pr-banner-wrapper {
+    width: 100%;
+    height: 200px;
+    padding-top: 72px;
+    text-align: center;
+    background-image: url('../img/personalRegistration-banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    h2 {
+        margin-top: 0;
+        margin-bottom: 9px;
+        font-size:34px;
+        font-family:MicrosoftYaHei;
+        font-weight:400;
+        color:rgba(255,255,255,1);
+    }
+    p {
+        font-size:16px;
+        font-family:MicrosoftYaHei;
+        font-weight:400;
+        color:rgba(255,255,255,1);
+    }
+}
+.pr-content-wrapper {
+    padding-bottom: 83px;
+    background-color: #F5F5F5;
+    .pr-nav-arrow {
+        width: 1200px;
+        margin: 0 auto;
+        overflow: hidden;
+        .breadcrumb {
+            background-color: #F5F5F5;
+        }
+    }
+    .pr-form-wrapper {
+        width: 1200px;
+        margin: 0 auto;
+        padding-top: 59px;
+        padding-bottom: 87px;
+        overflow: hidden;
+        background-color: #ffffff;
+        .pr-form-title {
+            margin-bottom: 83px;
+            text-align: center;
+            a {
+                display: inline-block;
+                font-size:22px;
+                font-family:MicrosoftYaHei;
+                font-weight:400;
+                color:rgba(51,51,51,1);
+                text-decoration: none;
+                cursor: pointer;
+            }
+            span {
+                display: inline-block;
+                width:1px;
+                height:20px;
+                margin: 0 50px;
+                background:rgba(229,229,229,1);
+            }
+            .form-title-active {
+                position: relative;
+                color: #025AB3;
+                &::after {
+                    position: absolute;
+                    top: 46px;
+                    left: 50%;
+                    display: block;
+                    content: ' ';
+                    width:30px;
+                    height:4px;
+                    background:rgba(2,90,179,1);
+                    border-radius:1px;
+                    transform: translateX(-50%);
+                }
+            }
+        }
+        .col-xs-2{
+            padding-right: 0px;
+        }
+        .form-group {
+            // margin-bottom: 30px;
+            label {
+                text-align: right;
+                font-size:18px;
+                line-height: 42px;
+                font-family:MicrosoftYaHei;
+                font-weight:400;
+                color: inherit;
+                span {
+                    color:rgba(255,0,0,1);
+                }
+            }
+            .fileinput-wrapper {
+                margin-right: 30px;
+                position: relative;
+                width:276px;
+                height:190px;
+                background:rgba(244,244,244,1);
+                text-align: center;
+                font-size:16px;
+                font-family:MicrosoftYaHei;
+                font-weight:400;
+                color:rgba(153,153,153,1);
+                // border: 1px solid #ccc;
+                input {
+                    width:276px;
+                    height:133px;
+                    opacity: 0;
+                    z-index: 10;
+                    position: relative;
+                }
+                &::after {
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    content: '';
+                    display: block;
+                    height: 52px;
+                    width: 2px;
+                    background:rgba(204,204,204,1);
+                    transform: translate3d(-50%,-50%,0);
+                }
+                &::before {
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    content: '';
+                    display: block;
+                    width: 52px;
+                    height: 2px;
+                    background:rgba(204,204,204,1);
+                    transform: translate3d(-50%,-50%,0);
+                }  
+                img {
+                    width: 276px;
+                    height: 190px;
+                    margin-top: -185px;
+                    margin-left: -15px;
+                    position: relative;
+                    z-index: 9;
+                }
+                img[src=""],img:not([src]) {
+                    opacity: 0;
+                }
+            }
+            .short-message{
+                color: #025ab3;
+                border-left: 1px solid;
+                padding: 0 20px;
+                position: absolute;
+                right: 0;
+                top: 17px;
+                cursor: pointer;
+                &.disabled{
+                    color: #757a80;
+                    cursor: not-allowed;
+                    pointer-events:none
+                }
+            }
+            .idCard{
+                float: right;
+                margin-top: 10px;
+            }
+        }
+        .dropdown {
+            select {
+                box-sizing: border-box;
+                height:52px;
+                font-size:16px;
+                font-family:MicrosoftYaHei;
+                font-weight:400;
+                text-align: left;
+                color: #999999;
+                background:rgba(244,244,244,1);
+                border: 0;
+                box-shadow: 0 0 0 0;
+                border-radius: 0;
+            }
+        }
+        .address-dropdown-wrapper {
+            display: inline-block;
+            // margin-left: 20px;
+            text-align-last: left;
+            &:nth-child(2) {
+                margin-left: 0;
+            }
+            button,ul {
+                width: 170px;
+            }
+        }
+        .checkbox {
+            padding-left: 431px;
+            input[type="checkbox"] {
+                width: 20px;
+                height: 20px;
+                position: absolute;
+                opacity: 0;
+                z-index: 2;
+                &:checked +label::after{
+                    background: url('../img/personalRegistration-selected.png') no-repeat;
+                }
+            }
+            label {
+                position: relative;
+                font-size:18px;
+                font-family:MicrosoftYaHei;
+                font-weight:400;
+                color:rgba(51,51,51,1);
+                &::after {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    left: -20px;
+                    bottom: 2px;
+                    width: 20px;
+                    height: 20px;
+                    background: url('../img/personalRegistration-unselected.png') no-repeat;
+                }
+            }
+        }
+        .submit-btn {
+            margin-top: 81px;
+            text-align: center;
+            button {
+                width:250px;
+                height:60px;
+                background:rgba(2,90,179,1);
+                font-size:18px;
+                font-family:MicrosoftYaHei;
+                font-weight:400;
+                color:rgba(255,255,255,1);
+                border-color: transparent;
+                border-radius: 0;
+            }
+        }
+    }
+}
+

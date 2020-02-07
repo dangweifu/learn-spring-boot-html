@@ -1,0 +1,135 @@
+//表单
+.demandform{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 34px;
+  font-family:MicrosoftYaHei;
+  font-weight:400;
+  .form-control{
+    width: 153px;
+    height: 40px;
+    margin-right: 20px;
+    background: #F4F4F4;
+    border:none;
+    box-shadow:none;
+    font-size:14px;
+    color: #999999;
+  }
+  .control-label{
+    margin-bottom: 0px;
+    font-size:16px;
+    color: #333333;
+    font-family:MicrosoftYaHei;
+    font-weight:400;
+  }
+  .inputStyle{
+    height:40px;
+    width: 230px;
+    // line-height: 40px;
+    color:#999999;
+    font-size: 14px;
+    background: #F4F4F4;
+    border:none;
+    padding: 12px;
+    margin-right: 18px;
+  }
+  .checkbox-position {
+    display: inline-block;
+    margin-right: 45px;
+    margin-top: 0;
+    margin-bottom: 19px;
+    input[type="checkbox"] {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        opacity: 0;
+        z-index: 2;
+        &:checked +label::after{
+          background-image: url('../img/personalRegistration-selected.png') no-repeat;
+        }
+    }
+    &:nth-child(6),&:nth-child(12) {
+        margin-right: 0px;
+    }
+    &:nth-child(10) {
+        margin-right: 12px;
+    }
+  }
+  .search{
+    width:80px;
+    height:40px;
+    background: #025AB3;
+    border:none;
+    color: #fff;
+    font-size: 16px;
+    margin-left: 14px;
+  }
+  .more-txt{
+    font-size: 16px;
+    color: #666666;
+    cursor: pointer;
+  }
+  .show{
+    margin-left: 20px;
+  }
+}
+//表格
+.table-wrapper{
+  padding: 0 26px 0 26px;
+  text-align: center;
+  thead{
+    tr{
+      border: 1px solid #ddd;
+      th{
+        border: 1px solid #ddd;
+      }
+      }
+    }
+  tbody{
+      tr{      
+       td{ 
+        border: 1px solid #ddd;
+      }
+      }
+      } 
+  }
+td .img-aptitude{
+ width: 120px;
+ img{
+  float: left;
+  width: 57px;
+  height: 35px;
+}
+.a-operation{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    line-height: 100px;
+    p{
+        flex: 1;
+        width: 50%;
+        display: inline-block;
+        a{
+            span{
+                color: rgb(0, 0, 255);
+              }
+              }
+              }
+              }
+            }
+//大图片显示
+.big-img{
+
+  wrap-img{
+
+    width: 300px;
+    height: 300px;
+
+  }
+
+  }
+
+  .content .generalEquipment:first-child {
+    border-right: 1px dotted #333333;
+  }

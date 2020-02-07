@@ -1,0 +1,32 @@
+body .form-group textarea{
+    box-sizing: border-box;
+    padding: 6px 12px;
+    font-size: 16px;
+    color: #999999;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    background: #f4f4f4;
+    border-color: transparent;
+    box-shadow: 0 0 0 0 !important;
+    border-radius: 0;
+    resize: none;
+  }
+  body .form-group textarea:focus {
+    background: #F1F7FF;
+    box-shadow: 0 0 0 0 !important;
+    border-color: transparent;
+    outline: none;
+  }
+  /* 验证码校验错误提示位置错误 */
+.getcode-errors{
+  position: relative;
+}
+.pr-content-wrapper .form-horizontal .getcode-errors .getcode{
+  position: absolute;
+  right: 99px;
+  top: 18px;
+  border-left: 1px solid #E5E5E5;
+  padding-left: 10px;
+  color: #025AB3;
+  cursor: pointer;
+}

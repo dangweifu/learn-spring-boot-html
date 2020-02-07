@@ -1,0 +1,291 @@
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+ul li{
+    list-style: none;
+}
+
+dl,dt{
+    margin: 0;
+    padding: 0;
+}
+
+.title_list,.title_list ul{
+    width: 1200px;
+    margin: 0 auto;
+    height: 66px;
+}
+
+.title_list ul li{
+    float: left;
+    padding: 0 20px;
+    margin-top: 27px;
+}
+
+.title_list ul li p{
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+}
+
+.heng{
+    width: 75px;
+    height: 5px;
+    background: #fff;
+    margin-top: 8px;
+}
+
+.content_list{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.first_piece{
+    min-height: 120px;
+    background: #fff;
+    margin-top: 20px;
+}
+
+.control-label{
+    margin-bottom: 0px;
+    font-size: 16px;
+    color: #333333;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+}
+
+.inputStyle{
+    height: 40px;
+    width: 230px;
+    color: #999999;
+    font-size: 14px;
+    background: #F4F4F4;
+    border: none;
+    padding: 12px;
+    margin-right: 18px;
+}
+
+.first_title{
+    float: left;
+}
+
+.first_piece form{
+    padding: 36px 20px;
+}
+
+.input-group input{
+    background: #f5f5f5;
+    border: none;
+    box-shadow: none;
+}
+
+.search{
+    width: 80px;
+    height: 40px;
+    background: #025AB3;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    margin-left: 14px;
+    float: left;
+}
+
+.reset{
+    width: 80px;
+    height: 40px;
+    background: #fff;
+    border: 1px solid #025AB3;
+    font-size: 16px;
+    color: #025AB3;
+    margin-left: 10px;
+}
+
+.public_time{
+    float: left;
+}
+
+.form-control{
+    height: 40px;
+}
+
+.product_time{
+    height: 40px;
+    display: inline-block;
+}
+
+.product_one{
+    vertical-align: middle;
+    font-size: 16px;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: inherit;
+    display: inline-block;
+    float: left;
+    line-height: 40px;
+}
+
+.product_time .date{
+    float: left;
+    width: 250px;
+    height: 40px;
+    box-sizing: border-box;
+    background: #F5F5F5;
+}
+
+.product_time .date .input-group-addon{
+    background: #f5f5f5;
+    border: solid 1px #F5F5F5;
+}
+
+.product_time .text{
+    margin: 0 10px;
+    float: left;
+    font-size: 16px;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: #333333;
+    line-height: 38px;
+}
+
+.second_piece{
+    width: 1200px;
+    margin: 0 auto;
+    background:#fff;
+    margin-top: 15px;
+}
+
+.notice_list ul{
+    padding: 30px;
+}
+
+.notice_list ul li{
+    height: 80px;
+    padding: 30px;
+    border-bottom: 1px solid #e1dede;
+    margin: 16px;
+    display: flex;
+}
+
+.notice_list dl{
+    float: left;
+    width: 100%;
+    margin-left: 20px;
+}
+
+.notice_list dl dt{
+    float: left;
+    margin-bottom: 0px;
+    font-size: 16px;
+    color: #333333;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+}
+
+.notice_list dl dd{
+    float: right;
+    margin-bottom: 0px;
+    font-size: 16px;
+    color: #333333;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+}
+
+.square{
+    width: 10px;
+    height: 10px;
+    background: #ebeaea;
+    margin: 0px;
+    margin-top: 5px;
+}
+
+.page {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.page .pagination {
+    line-height: 27px;
+}
+
+.page .pagination .g-input {
+    height: 32px;
+    width: 40px;
+    margin: 0 4px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.page .pagination .jump {
+    background: #025AB3;
+    border: none;
+    color: #fff;
+    font-size: 13px;
+    margin-left: 4px;
+}
+
+.page .pagination > .active > a, .page .pagination > li > a {
+    margin-right: 5px;
+    border-radius: 4px;
+}
+
+.page .pagination > li:first-child > a {
+    border-radius: 4px;
+}
+
+.title_list .active {
+    border-bottom: 4px solid #fff;
+    padding-bottom: 9px;
+}
+
+.title_list .active a {
+    color: #fff;
+}
+
+/*工作动态*/
+.whethe{
+   float: left;
+    display: inherit;
+}
+
+.unit{
+    float: left;
+    margin-left: 20px;
+}
+
+.input-wrapper{
+    display: inline-block;
+}
+
+.dropdown select{
+    box-sizing: border-box;
+    width: 80px;
+    height: 40px;
+    font-size: 16px;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    text-align: left;
+    color: #999999;
+    background: #f4f4f4;
+    border: 0;
+    box-shadow: 0 0 0 0;
+    border-radius: 0;
+}
+
+.demandform .inputStyle{
+  width: 210px !important;
+}
+
+.whethe .control-label{
+    line-height: 40px !important;
+}
+
+.whethe .form-control{
+    width: 120px !important;
+}
+
+.but_r{
+    float: left;
+    margin-left: 30px;
+}

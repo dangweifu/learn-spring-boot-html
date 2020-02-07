@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="viewport"
+		  content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<meta charset="UTF-8">
+	<title>首页</title>
+	<link href="../../../static/css/mui/mui.min.css" rel="stylesheet" />
+	<link href="../../../assets/css/common.min.css" rel="stylesheet" />
+	<link href="../../../assets/css/home-new.min.css" rel="stylesheet" />
+
+	<script src="../../../static/js/babel/babel-browser.min.js" type="text/javascript"></script>
+	<script src="../../../static/js/mui/mui.min.js" type="text/javascript"></script>
+	<script src="../../../static/js/jquery/jquery.min.js" type="text/javascript"></script>
+	<script src="../../../static/js/lazyload/jquery.lazyload.min.js" type="text/javascript"></script>
+	<script src="../../../assets/js/home/index.js" type="text/babel"></script>
+	<script type="text/javascript" charset="utf-8">
+		mui.init();
+	</script>
+</head>
+
+<body>
+<!-- 头部 -->
+<header>
+	<script>
+		$("header").load("../../common/header.html");
+	</script>
+</header>
+
+<!-- 内容 -->
+<article class="mui-content">
+
+	<!-- banner -->
+	<!-- <img src="../../../assets/img/home/carousel-1.png" alt="" class="banner"> -->
+	<!-- 轮播 -->
+	<div class="mui-slider banner">
+		<div class="mui-slider-group mui-slider-loop">
+			<div class="mui-slider-item"><a href="#"><img src="http://1.119.134.82/file/2019/07/18/90a84bbe9cc2497cad9db3dd964592b3.jpg" /></a></div>
+			<#assign advTag = newTag("advTag")>
+			<#assign advList = advTag("{'name':'carousel'}")>
+			<#if advList?exists && advList?size gt 0>
+			<#list advList as adv>
+			<div class="mui-slider-item"><a href="#"><img src="http://1.119.134.82/${adv.rotaryCover!''}" /></a></div>
+		</#list>
+	</#if>
+	<div class="mui-slider-item"><a href="#"><img src="http://1.119.134.82/file/2019/07/18/d210b1513bc54ce28e342804d4cf4460.jpg" /></a></div>
+	</div>
+	<div class="mui-slider-indicator" id="sliin">
+		<div class="mui-indicator mui-active"></div>
+		<div class="mui-indicator"></div>
+		<div class="mui-indicator"></div>
+		<!-- <div class="mui-indicator"></div> -->
+	</div>
+	</div>
+
+	<!-- 八宫格栏目 -->
+	<ul class="mui-table-view mui-grid-view mui-grid-9 special-column">
+		<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+			<a href="#">
+				<img class="column-icon" src="../../../assets/img/home/special-column-1.png" alt="">
+				<div class="mui-media-body">军委机关</div>
+			</a>
+		</li>
+		<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+			<a href="#">
+				<img class="column-icon" src="../../../assets/img/home/special-column-2.png" alt="">
+				<div class="mui-media-body">陆军专栏</div>
+			</a>
+		</li>
+		<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+			<a href="#">
+				<img class="column-icon" src="../../../assets/img/home/special-column-3.png" alt="">
+				<div class="mui-media-body">海军专栏</div>
+			</a>
+		</li>
+		<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+			<a href="#">
+				<img class="column-icon" src="../../../assets/img/home/special-column-4.png" alt="">
+				<div class="mui-media-body">空军专栏</div>
+			</a>
+		</li>
+		<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+			<a href="#">
+				<img class="column-icon" src="../../../assets/img/home/special-column-7.png" alt="">
+				<div class="mui-media-body">火箭军专栏</div>
+			</a>
+		</li>
+		<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+			<a href="#">
+				<img class="column-icon" src="../../../assets/img/home/special-column-8.png" alt="">
+				<div class="mui-media-body">武警专栏</div>
+			</a>
+		</li>
+		<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+			<a href="#">
+				<img class="column-icon" src="../../../assets/img/home/special-column-6.png" alt="">
+				<div class="mui-media-body">战支专栏</div>
+			</a>
+		</li>
+		<li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3">
+			<a href="#">
+				<img class="column-icon" src="../../../assets/img/home/special-column-5.png" alt="">
+				<div class="mui-media-body">军工集团</div>
+			</a>
+		</li>
+	</ul>
+
+	<!-- 要闻动态 -->
+	<div class="card-list news">
+		<div class="mui-card card-title-time">
+			<!--页眉，放置标题-->
+			<div class="mui-card-header card-head-row">
+				<div class="mui-row">
+					<#assign catalogTag=newTag("catalogTag")>
+					<#assign contentSolrTag =newTag("contentSolrTag")>
+					<#assign catalogList=catalogTag("{'levels':'self', 'name':'1141627113732857858'}")>
+					<#if catalogList?exists && catalogList?size gt 0>
+					<h2 class="card-title mui-col-xs-10">${catalogList.name!''}</h2>
+					<div class="btn-box mui-col-xs-2">
+						<button type="button" class="mui-btn card-button" onclick="window.location.href = '/src/views/newstrends/index.html'">更多</button>
+					</div>
+
+				</div>
+			</div>
+
+			<!--内容区-->
+			<div class="mui-card-content">
+				<#assign articleList =contentSolrTag("{'LMID':'1141627113732857858','pageSize':1,'type':'XWGL'}")>
+				<#if articleList?exists && articleList?size gt 0>
+				<#list articleList as article>
+				<div class="mui-row line-list"  onclick="window.location.href = '/src/views/noticeAnnouncement/noticeAnnouncementDetail.html'">
+					<p class="mui-ellipsis mui-col-xs-9">${article.BT!''}</p>
+					<time class="mui-col-xs-3">${article.FBSJ?date('yyyy-MM-dd')}</time>
+				</div>
+			</#list>
+		</#if>
+	</div>
+</#if>
+</div>
+</div>
+
+<!-- 通知公告 -->
+<div class="card-list notice-announcement">
+	<div class="mui-card card-title-time">
+		<!--页眉，放置标题-->
+		<div class="mui-card-header card-head-row">
+			<div class="mui-row">
+				<#assign contentSolrTag =newTag("contentSolrTag")>
+				<#assign catalogTag=newTag("catalogTag")>
+				<#assign catalogList=catalogTag("{'levels':'self', 'name':'1141627300954005505'}")>
+				<#if catalogList?exists && catalogList?size gt 0>
+				<h2 class="card-title mui-col-xs-10">${catalogList.name!''}</h2>
+				<div class="btn-box mui-col-xs-2">
+					<button type="button" class="mui-btn card-button" onclick="window.location.href = '/src/views/noticeannouncement/index.html'">更多</button>
+				</div>
+			</div>
+		</div>
+
+		<!--内容区-->
+		<div class="mui-card-content">
+			<div class="mui-row line-list" onclick="window.location.href = '/src/views/noticeannouncement/noticeAnnouncementDetail.html'">
+				<#assign articleList =contentSolrTag("{'LMID':'${catalogList.id}','pageSize':5,'type':'XWGL'}")>
+				<#if articleList?exists && articleList?size gt 0>
+				<#list articleList as article>
+				<p class="mui-ellipsis mui-col-xs-9">${article.BT}</p>
+				<time class="mui-col-xs-3">${article.FBSJ?date('yyyy-MM-dd')}</time>
+			</#list>
+		</#if>
+	</div>
+</div>
+</#if>
+</div>
+</div>
+
+<!-- 采购公告 -->
+<div class="card-list purchase-announcement">
+	<div class="mui-card card-tag-title-time">
+		<!--页眉，放置标题-->
+		<div class="mui-card-header card-head-row">
+			<div class="mui-row hearder-row">
+				<#assign catalogList=catalogTag("{'levels':'self', 'name':'1097318082776666114'}")>
+				<#if catalogList?exists && catalogList?size gt 0>
+				<#assign catalogChild=catalogTag("{'levels':'self', 'name':'1149231276155707394'}")>
+				<#if catalogChild?exists && catalogChild?size gt 0>
+				<h2 class="card-title mui-col-xs-10">${catalogList.name!''}</h2>
+				<div class="btn-box mui-col-xs-2">
+					<button type="button" class="mui-btn card-button" onclick="window.location.href = '/src/views/collectSue/index.html'">更多</button>
+				</div>
+			</div>
+		</div>
+
+		<!--内容区-->
+		<div class="mui-card-content">
+			<div class="mui-row line-list" onclick="window.location.href = '/src/views/collectSue/collectSueDetail.html'">
+				<#assign articleList =contentSolrTag("{'pageSize':5,'type':'CGGG'}")>
+				<#if articleList?exists && articleList?size gt 0>
+				<#list articleList as article>
+				<span class="mui-col-xs-2">${article.purchaseType!'招标列表'}</span>
+				<p class="mui-ellipsis mui-col-xs-8">${article.nonSecretTitle!''}</p>
+				<time class="mui-col-xs-2">${article.publishTime?date('yyyy-MM-dd')}</time>
+			</#list>
+		</#if>
+	</div>
+</div>
+</#if>
+</#if>
+</div>
+</div>
+
+<!-- 采购需求 -->
+<div class="card-list procurement-demand">
+	<div class="mui-card card-multi-line">
+		<!--页眉，放置标题-->
+		<div class="mui-card-header card-head-row">
+			<div class="mui-row">
+				<#assign catalogList=catalogTag("{'levels':'self', 'name':'HZ287281676ce46401676cf1cead0011'}")>
+				<#if catalogList?exists && catalogList?size gt 0>
+				<#assign catalogChild=catalogTag("{'levels':'self', 'name':'HZ287281676ce46401676cf0975c000e'}")>
+				<#if catalogChild?exists && catalogChild?size gt 0>
+				<h2 class="card-title mui-col-xs-10">${catalogList.name!''}</h2>
+				<div class="btn-box mui-col-xs-2">
+					<button type="button" class="mui-btn card-button" onclick="window.location.href = '/src/views/armymilitary/index.html'">更多</button>
+				</div>
+			</div>
+		</div>
+
+		<!--内容区-->
+		<div class="mui-card-content">
+			<#assign articleList =contentSolrTag("{'LMID':'${catalogChild.id}','pageSize':5,'type':'CGXQ'}")>
+			<#if articleList?exists && articleList?size gt 0>
+			<#list articleList as article>
+			<div class="line-list" onclick="window.location.href = '/src/views/armymilitary/purchaseRequirementDetail.html'">
+				<p class="list-title multi-line-ellipsis">${article.nonSecretTitle!''}</p>
+				<div class="mui-row list-other-info">
+					<p class="mui-col-xs-6">已对接<span>5</span>个剩<span>5</span>天</p>
+					<p class="mui-col-xs-6">发布时间：<time>${article.publishTime?date('yyyy-MM-dd')}</time></p>
+				</div>
+			</div>
+		</#list>
+	</#if>
+</div>
+</#if>
+</#if>
+</div>
+</div>
+
+<!-- 产品技术 -->
+<div class="card-list product-technology">
+	<div class="mui-card card-photo-four">
+		<!--页眉，放置标题-->
+		<div class="mui-card-header card-head-row">
+			<div class="mui-row">
+				<h2 class="card-title mui-col-xs-10"></h2>
+				<div class="btn-box mui-col-xs-2">
+					<button type="button" class="mui-btn card-button" onclick="window.location.href = '/src/views/enterList/index.html'">更多</button>
+				</div>
+			</div>
+		</div>
+
+		<!--内容区-->
+		<div class="mui-card-content mui-row">
+			<div class="line-list mui-col-sm-6 mui-col-xs-6" onclick="window.location.href = '/src/views/enterList/productDetail.html'">
+				<!-- src 方需要懒加载的图片，data-original 放实际的图片路径  -->
+				<div class="image">
+					<img class="lazy"  src="../../../assets/img/home/carousel-1.png" width="100%" height="auto" data-original="../../../assets/img/photoCard/6.png" alt="">
+				</div>
+				<span class="text">高滑油-燃油双联泵滑油双联泵滑油…</span>
+			</div>
+
+			<div class="line-list mui-col-sm-6 mui-col-xs-6" onclick="window.location.href = '/src/views/enterList/productDetail.html'">
+				<!-- src 方需要懒加载的图片，data-original 放实际的图片路径  -->
+				<div class="image">
+					<img class="lazy"  src="../../../assets/img/home/carousel-1.png" width="100%" height="auto" data-original="../../../assets/img/photoCard/7.png" alt="">
+				</div>
+				<span class="text">高滑油-燃油双联泵滑油双联泵滑油…</span>
+			</div>
+
+			<div class="line-list mui-col-sm-6 mui-col-xs-6" onclick="window.location.href = '/src/views/enterList/productDetail.html'">
+				<!-- src 方需要懒加载的图片，data-original 放实际的图片路径  -->
+				<div class="image">
+					<img class="lazy"  src="../../../assets/img/home/carousel-1.png" width="100%" height="auto" data-original="../../../assets/img/photoCard/8.png" alt="">
+				</div>
+				<span class="text">高滑油-燃油双联泵滑油双联泵滑油…</span>
+			</div>
+
+			<div class="line-list mui-col-sm-6 mui-col-xs-6"  onclick="window.location.href = '/src/views/enterList/productDetail.html'">
+				<!-- src 方需要懒加载的图片，data-original 放实际的图片路径  -->
+				<div class="image">
+					<img class="lazy"  src="../../../assets/img/home/carousel-1.png" width="100%" height="auto" data-original="../../../assets/img/photoCard/9.png" alt="">
+				</div>
+				<span class="text">高滑油-燃油双联泵滑油双联泵滑油…</span>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		mui.ready(function(){
+			mui(".product-technology .card-title")[0].innerHTML = '产品技术';
+		})
+	</script>
+</div>
+
+<!-- 企业名录 -->
+<div class="card-list business-directory">
+	<div class="mui-card card-title-time">
+		<!--页眉，放置标题-->
+		<div class="mui-card-header card-head-row">
+			<div class="mui-row">
+				<h2 class="card-title mui-col-xs-10">企业名录</h2>
+				<div class="btn-box mui-col-xs-2">
+					<button type="button" class="mui-btn card-button">更多</button>
+				</div>
+			</div>
+		</div>
+
+		<!--内容区-->
+		<div class="mui-card-content">
+			<#assign enterpriseTag =newTag("enterpriseTag")>
+			<#assign enterpriseList =enterpriseTag("{}")>
+			<#if enterpriseList?exists && enterpriseList?size gt 0>
+			<#list enterpriseList as enterprise>
+			<div class="mui-row line-list">
+				<p class="mui-ellipsis mui-col-xs-9">${enterprise.unitName!''}</p>
+				<time class="mui-col-xs-3">${enterprise.publishTime?string("yyyy-MM-dd")}</time>
+			</div>
+		</#list>
+	</#if>
+</div>
+</div>
+</div>
+
+<!-- 查询点 -->
+<div class="card-list query-points">
+	<div class="mui-card card-photo-one">
+		<!--页眉，放置标题-->
+		<div class="mui-card-header card-head-row">
+			<div class="mui-row">
+				<h2 class="card-title mui-col-xs-10">查询点</h2>
+				<div class="btn-box mui-col-xs-2">
+					<!-- <button type="button" class="mui-btn">更多</button> -->
+				</div>
+			</div>
+		</div>
+
+		<!--内容区-->
+		<div class="mui-card-content mui-row">
+			<div class=" line-list mui-col-sm-6 mui-col-xs-6 goto-list" onclick="window.location.href = '/src/views/querypoint/index.html'">
+				<img src="/assets/img/home/zhongguo.png" alt="" width="100%" height="auto" data-original="../../../assets/img/home/carousel-1.png" >
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- 法规标准 -->
+<div class="card-list regulation">
+	<div class="mui-card card-title-time">
+		<!--页眉，放置标题-->
+		<div class="mui-card-header card-head-row">
+			<div class="mui-row">
+				<#assign catalogList=catalogTag("{'levels':'self', 'name':'1141190677930041345'}")>
+				<#if catalogList?exists && catalogList?size gt 0>
+				<h2 class="card-title mui-col-xs-10">${catalogList.name!''}</h2>
+				<div class="btn-box mui-col-xs-2">
+					<button type="button" class="mui-btn card-button" onclick="window.location.href = '/src/views/lawstandard/index.html'">更多</button>
+				</div>
+			</#if>
+		</div>
+	</div>
+
+	<!--内容区-->
+	<div class="mui-card-content">
+		<#assign articleList =contentSolrTag("{'LMID':'${catalogList.id}','pageSize':5,'type':'XWGL'}")>
+		<#if articleList?exists && articleList?size gt 0>
+		<#list articleList as article>
+		<div class="mui-row line-list" onclick="window.location.href = '/src/views/lawstandard/lawStandardDetail.html'">
+			<p class="mui-ellipsis mui-col-xs-9">${article.BT!''}</p>
+			<time class="mui-col-xs-3">${article.issueTime!'2019-07-04'}</time>
+		</div>
+	</#list>
+</#if>
+</div>
+</div>
+
+
+</div>
+
+<!-- 成果推广 -->
+<div class="card-list achievements-popularization">
+	<div class="mui-card card-multi-line">
+		<!--页眉，放置标题-->
+		<div class="mui-card-header card-head-row">
+			<div class="mui-row">
+				<#assign catalog=catalogTag("{'levels':'self', 'name':'1141190610624045058'}")>
+				<#if catalog?exists && catalog?size gt 0>
+				<h2 class="card-title mui-col-xs-10">${catalog.name!''}</h2>
+				<div class="btn-box mui-col-xs-2">
+					<button type="button" class="mui-btn card-button" onclick="window.location.href = '/src/views/outcomepromotion/index.html'">更多</button>
+				</div>
+			</#if>
+		</div>
+	</div>
+
+	<!--内容区-->
+	<div class="mui-card-content">
+		<#assign articleList =contentSolrTag("{'pageSize':5,'type':'CGTG'}")>
+		<#if articleList?exists && articleList?size gt 0>
+		<#list articleList as article>
+		<div class="line-list" onclick="window.location.href = '/src/views/outcomepromotion/outcomePromotionDetail.html'">
+			<p class="list-title multi-line-ellipsis">${article.promotionTitle!''}</p>
+			<div class="mui-row list-other-info">
+				<p class="mui-col-xs-6">发布时间：<time>${article.publishTime!''}</time></p>
+			</div>
+		</div>
+	</#list>
+</#if>
+</div>
+</div>
+
+</div>
+</article>
+
+<!-- 底部 -->
+<footer>
+	<script>
+		$("footer").load("../../common/footer.html");
+	</script>
+</footer>
+
+<script>
+	mui.ready(function () {
+		var gallery = mui('.mui-slider');
+		gallery.slider({
+			interval: 3000//自动轮播周期，若为0则不自动播放，默认为0；
+		});
+	});
+
+	// 懒加载
+	$("img.lazy").lazyload({
+		// threshold : 200,
+		effect : "fadeIn"
+	});
+</script>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<style>
+		.card-photo-one{
+			padding: 10px 13px;
+			margin: 0;
+            box-shadow: none;
+        }
+
+        .card-photo-one .line-list {
+			position: relative;
+			margin-bottom: 28px;
+			width: 100%;
+			height: 221px;
+			overflow: hidden;
+        }
+        
+        .card-photo-one .line-list img{
+			position: absolute;
+			top: 50%;
+			right: 0;
+			left: 0;
+			transform: translateY(-50%);
+			
+        }
+
+	</style>
+
+	<div class="mui-card card-photo-one">
+		<!--页眉，放置标题-->
+		<div class="mui-card-header card-head-row">
+			<div class="mui-row">
+				<h2 class="card-title mui-col-xs-10"></h2>
+				<div class="btn-box mui-col-xs-2">
+					<!-- <button type="button" class="mui-btn">更多</button> -->
+				</div>
+			</div>
+		</div>
+
+		<!--内容区-->
+		<div class="mui-card-content mui-row">
+			<div class=" line-list mui-col-sm-6 mui-col-xs-6 goto-list">
+                <img class="lazy" src="../../../assets/img/lazyload/default.png" width="100%" height="auto" data-original="../../../assets/img/home/carousel-1.png" >
+			</div>
+		</div>
+	</div>
+
+	<!-- <script type="text/babel"> -->
+	<script>
+		mui.ready(function(){
+			var dataArr = [
+				{img: '../../../assets/img/home/carousel-1.png' }
+			];
+
+			var templateHtml = '';
+
+			mui.each(dataArr, function(index, item){
+				templateHtml +=
+					`
+                    <div class=" line-list mui-col-sm-12 mui-col-xs-12 goto-list">
+                        <img class="lazy" src="../../../assets/img/lazyload/default.png" width="100%" height="auto" data-original="${item.img}" >
+                    </div>
+					`
+			});
+
+			// 产品技术
+			mui('.query-points .mui-card-content')[0].innerHTML = templateHtml;
+
+			mui(".query-points .card-title")[0].innerHTML = '查询点';
+			
+			$(".query-points .goto-list")[0].onclick = function() {
+				window.location.href = "/src/views/querypoint/index.html"
+			}
+
+			//懒加载
+			$("img.lazy").lazyload({
+				// threshold : 200,
+				effect : "fadeIn"
+			});
+		});
+	</script>
+</html>

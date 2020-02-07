@@ -1,0 +1,11 @@
+span.action{
+  border: none;
+  background-color: inherit;
+  color:#0099FF;
+  cursor: pointer;
+  padding:4px 8px;
+  margin-right: 10px;
+}
+.tab-content{
+  min-height: 500px!important;
+}

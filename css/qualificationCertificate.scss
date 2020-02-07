@@ -1,0 +1,173 @@
+.breadcrumb {
+    background: none !important;
+}
+
+.breadcrumb li a,
+.breadcrumb li {
+    color: #fff !important;
+}
+
+.breadcrumb>li+li:before {
+    color: #CCCCCC !important;
+    content: "/ " !important;
+    padding: 0 5px;
+}
+
+
+.requirementDetail {
+    min-height: 600px;
+    background: #fff;
+    margin-top: 30px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 50px 40px;
+
+    p,.content-title {
+        font-size: 20px;
+        padding-top: 32px;
+        margin: 0px;
+        font-weight: bold;
+    }
+    p#nonSecretTitle{
+        font-size:30px;
+    }
+
+    .secret {
+        padding: 0 20px;
+        width: 100%;
+
+        .nav {
+            padding: 32px 20px;
+            background: #f6f6f6;
+            width: 100%;
+            margin-top: 30px;
+            // display: flex;
+            // align-items: center;
+            // justify-content: space-around;
+            div:first-child {
+                float: left;
+                line-height: 32px;
+            }
+            span {
+                padding: 0px 4px;
+            }
+
+            .right {
+                float: right;
+                display: flex;
+                align-items: center;
+
+                .consult {
+                    border-radius: 4px;
+                    color: #fff;
+                    background: #468cd3;
+                    padding: 7px 10px;
+                    margin-right: 10px;
+                    cursor: pointer;
+
+                    img {
+                        margin-right: 8px;
+                        width: 20px;
+                        height: 17px;
+                    }
+                }
+
+                .img {
+                    background-image: url(../img/collect.png);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    width: 39px;
+                    height: 32px;
+                    border-radius: 5px;
+                    border: 1px solid #cccccc;
+
+                    &:hover,
+                    &.active {
+                        background-image: url(../img/select_collect.png);
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        .content {
+            width: 100%;
+
+            #content img{
+              width: auto;
+              max-width: 100%;
+              height: auto;
+            }
+
+            .txt p {
+                border: 0 solid transparent;
+            }
+
+            p {
+                padding: 20px 0 10px;
+                border-bottom: 1px solid #cccccc;
+
+                span {
+                    margin-left: 10px;
+                    font-size: 16px;
+                    font-weight: bold;
+                }
+            }
+
+            .txt {
+                margin-top: 10px;
+                font-size: 16px;
+                line-height: 36px;
+                color: #333;
+
+                span {
+                    color: #468cd3;
+                }
+            }
+        }
+        .report {
+            font-family: "微软雅黑 Regular", 微软雅黑;
+            font-weight: 400;
+            font-style: normal;
+            line-height: 36px;
+            color: #FF0000;
+            font-size: 16px;
+            span {
+                margin-right: 10px;
+            }
+            p {
+                font-size: 16px;
+                display: inline-block;
+            }
+        }
+        .report-txt {
+            h3 {
+                text-align: center;
+            }
+            font-size: 18px;
+            font-family: "微软雅黑 Regular", 微软雅黑;
+            font-weight: 400;
+            font-style: normal;
+            line-height: 36px;
+        }
+        .img-only {
+            text-align: center;
+            img {
+                width: 645px;
+                height: 506px;
+            }
+        }
+        .video-wrapper {
+            width: 970px;
+            margin: 0 auto;
+            video {
+                width: 970px;
+                height: 603px;
+            }
+        }
+    }
+
+
+}

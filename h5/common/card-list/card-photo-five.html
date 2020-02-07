@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<style>
+  .card-photo-five {
+    padding: 0px 1px;
+    margin: 0;
+    box-shadow: none;
+  }
+
+  .card-photo-five .line-list {
+    display: inline-block;
+    margin-bottom: 15px;
+  }
+
+  .card-photo-five .line-list img {
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    padding-right: 10px;
+  }
+
+  .card-photo-five .line-list .text {
+    display: block;
+    padding-top: 6px;
+    font-size: 14px;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: rgba(44, 43, 43, 1);
+    line-height: 20px;
+    text-align: center;
+  }
+</style>
+
+<div class="mui-card card-photo-five">
+  <!--页眉，放置标题-->
+  <div class="mui-card-header card-head-row">
+    <div class="mui-row">
+      <h2 class="card-title mui-col-xs-10"></h2>
+    </div>
+  </div>
+
+  <!--内容区-->
+  <div class="mui-card-content mui-row">
+
+  </div>
+</div>
+
+<!-- <script type="text/babel"> -->
+<script>
+  mui.ready(function () {
+    var dataArr = [{
+        text: '单位展示图1',
+        img: '../../../assets/img/home/carousel-1.png'
+      },
+      {
+        text: '单位展示图2',
+        img: '../../../assets/img/home/carousel-1.png'
+      },
+      {
+        text: '单位展示图3',
+        img: '../../../assets/img/home/carousel-1.png'
+      },
+      {
+        text: '单位展示图4',
+        img: '../../../assets/img/home/carousel-1.png'
+      }
+    ];
+
+    var templateHtml = '';
+
+    mui.each(dataArr, function (index, item) {
+      templateHtml +=
+        `
+                    <div class=" line-list mui-col-sm-6 mui-col-xs-6">
+                        <img src="${item.img}" alt="">
+                        <span class="text">${item.text}</span>
+                    </div>
+					`
+    });
+
+    // 产品技术
+    mui('.showcase .mui-card-content')[0].innerHTML = templateHtml;
+
+    mui(".showcase .card-title")[0].innerHTML = '展示图';
+  });
+</script>
+
+</html>

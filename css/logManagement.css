@@ -1,0 +1,17 @@
+.demandform {
+  overflow: hidden;
+}
+
+.demandform .timepicker {
+  padding: 0 20px !important;
+  float: left;
+}
+
+.demandform .timepicker label {
+  float: left;
+}
+
+.demandform .timepicker .timeTxt {
+  float: left;
+}
+

@@ -1,0 +1,95 @@
+.relation{
+  margin-top: 10px;
+  .ceil{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h5{
+      display: flex;
+      align-items: center;
+      .marker{
+        width: 6px;      
+        height: 6px;          
+        border-radius: 50%;      
+        background-color:#666666;      
+        opacity: 0.5;
+        margin-right: 10px;
+      }
+      a{
+        color: #666666;
+        font-size: 16px;
+        text-decoration: underline;
+      }
+      .tag{
+        color: #025AB3;
+        margin-right: 20px;
+      }
+    }
+  }
+ 
+}
+.subTime{
+  padding: 10px 20px;
+  h3{
+    font-size: 16px;
+  }
+}
+// 文件上传
+.form-fileupload {
+  cursor: pointer;
+  .file{
+    display: flex;
+    align-items: center;
+    a{
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .btn_addPic {
+      display: inline-block;
+      position: relative;
+      margin-left: 15px !important;
+      width: 140px;
+      height:46px;
+      line-height:46px; 
+      overflow: hidden;
+      text-align: center;
+      font-size: 14px;
+      }
+    .filePrew{
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 140px;
+      height:46px;
+      font-size: 16px;
+      opacity: 0;
+      filter: alpha(opacity=0);
+      cursor: pointer;
+    }
+  }
+  
+}
+
+.pr-banner-wrapper{
+  width: 100%;
+  height: 200px;
+  padding-top: 72px;
+  text-align: center;
+  background-image: url(../img/title-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.pr-banner-wrapper h2{
+  margin-top: 0;
+  margin-bottom: 9px;
+  font-size: 34px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: white;
+}
+.demandDocking textarea {
+  width: 943px !important;
+}

@@ -1,0 +1,151 @@
+.breadcrumb {
+    background: none !important;
+  }
+  
+  .breadcrumb li a, .breadcrumb li {
+    color: #fff !important;
+    font-size: 12px;
+  }
+  
+  .breadcrumb > li + li:before {
+    color: #CCCCCC !important;
+    content: "/ " !important;
+    padding: 0 5px;
+  }
+  
+  .purchase-need {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+  }
+  
+  .purchase-need p {
+    font-size: 20px;
+    font-family: MicrosoftYaHei;
+    font-weight: bold;
+  }
+  
+  .purchase-need .search_input {
+    color: #fff;
+  }
+  
+  .purchase-need .search_input input {
+    width: 300px;
+    height: 40px;
+    color: #666666;
+    padding-left: 10px;
+  }
+  
+  .purchase-need .search_input .btn-primary {
+    padding: 10px 20px;
+    background: #025AB3;
+    border: none;
+  }
+  
+  .purchase-need .search_input .btn-primary:active:focus {
+    background: #025AB3;
+    border: none;
+  }
+
+  /* 主体部分样式 */
+  .achievements{
+      padding-top:50px;
+      padding-bottom:50px;
+  }
+  .achievementBox{
+      display: inline-block;
+      width: 370px;
+      height: 744px;
+      border: none;
+      background-color: rgb(255,255,255);
+
+      transition: all 0.5s;
+  }
+  .boxHeader{
+      height: 140px;
+      background-color: rgba(135, 206, 235, 0.4);
+  }
+  .boxTitle{
+    width: 124px;
+    height: 38px;
+    position: relative;
+    top:50%;
+    transform: translateY(-50%);
+    margin-left:auto;
+    margin-right:auto;
+    border-color: rgba(255, 255, 255, 1);
+    background-color:  rgba(135, 206, 235, 0.4);
+    box-sizing: border-box;
+    border-width: 2px;
+    background: inherit;
+    border-style: solid;
+    border-radius: 0px;
+    font-family: '微软雅黑 Regular', '微软雅黑';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: #FFFFFF;
+    line-height: 34px;
+    text-align:center;
+  }
+  .boxList{
+      margin-top:30px;
+      margin-bottom: 30px;
+  }
+  .boxList,.boxList>li{
+      list-style: none;
+      padding: 0;
+  }
+  .boxList>li{
+      height: 40px;
+      line-height: 40px;
+      width: 322px;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 16px;
+      cursor: pointer;
+      overflow: hidden;
+      text-overflow:ellipsis;
+      white-space: nowrap;
+  }
+  .boxList>li>a{
+    color: black;
+  }
+  .boxList>li>a:hover{
+    text-decoration: none;
+  }
+  .detailButton{
+    /* display: inline-block; */
+    width: 98px;
+    height: 34px;
+    margin-left:auto;
+    margin-right:auto;
+    color: #025AB3;
+    border-color: #025AB3;
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 16px;
+    font-family: '微软雅黑 Regular', '微软雅黑';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 32px;
+    text-align:center;
+    cursor: pointer;
+  }
+.detailButton > a:hover{
+  text-decoration: none;
+  color: #025AB3;
+}
+.achievementBox:hover{
+  box-shadow:6px 6px 10px rgba(0,0,0,0.1);
+}
+.achievementBox:hover>.boxHeader{
+  background-color: rgba(2, 90, 179, 0.4);
+}
+.achievementBox:hover>.boxHeader>.boxTitle{
+  background-color: #fff;
+  color: #025AB3;
+}

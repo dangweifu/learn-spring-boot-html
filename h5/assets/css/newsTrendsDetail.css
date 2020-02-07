@@ -1,0 +1,48 @@
+.mui-content {
+  padding-top: 44px;
+}
+.mui-content .content {
+  background: #fff;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding: 14px;
+  font-family: MicrosoftYaHei;
+}
+.mui-content .content h4 {
+  font-size: 23px;
+  margin: 0px;
+  line-height: 33px;
+  font-weight: 400;
+}
+.mui-content .content .law-ceil {
+  padding: 14px 0;
+  border-bottom: 1px solid #E5E5E5;
+}
+.mui-content .content .law-ceil .ceil {
+  color: #999999;
+  padding-bottom: 10px;
+  font-size: 14px;
+  font-family: 'MicrosoftYaHei';
+  overflow: hidden;
+}
+.mui-content .content .law-ceil .ceil:last-child {
+  padding-bottom: 0px;
+}
+.mui-content .content .law-ceil .ceil .left {
+  float: left;
+}
+.mui-content .content .law-ceil .ceil .right {
+  float: right;
+  text-align: right;
+}
+.mui-content .content h5 {
+  color: #333333;
+  font-size: 17px;
+  line-height: 28px;
+  margin: 0px;
+  padding-top: 10px;
+  text-indent: 2em;
+}
+.mui-content .content h5 .table {
+  padding: 10px 0;
+}

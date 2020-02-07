@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <link rel="stylesheet" href="/h5/assets/css/head.css">
+
+    <div class="heades heades-search-text">
+        <div class="mui-icon mui-icon-arrowleft icons back-icons backs"></div>
+        <div class="heades-title"></div>
+        <div class="searchs">
+            <span class="mui-icon mui-icon-search icons serar-icons"></span>
+        </div>
+    </div>
+    <!-- //搜索 -->
+    <div class="heades heades-search-box">
+        <div class="mui-icon mui-icon-arrowleft icons back-icons searchs_back"></div>
+        <input type="text" placeholder="请输入搜索关键字" class="heades-searc">
+        <span class="serarch-btn fr">搜索</span>
+    </div>
+    <!-- 搜索历史 -->
+    <div class="history-mark">
+        <p class="history-mark-title">搜素历史 <span class="mui-icon mui-icon-trash fr"></span></p>
+        <div class="history-mark-ulo">
+            <div class="history-mark-ulo-li">军械员工具箱等十型设...</div>
+            <div class="history-mark-ulo-li">军械员工具箱等十型设...</div>
+            <div class="history-mark-ulo-li">军械员工具箱等十型设...</div>
+            <div class="history-mark-ulo-li">军械员工具箱等十型设...</div>
+            <div class="history-mark-ulo-li">军械员工具箱等十型设...</div>
+            <div class="history-mark-ulo-li">军械员工具箱等十型设...</div>
+            <div class="history-mark-ulo-li">军械员工具箱等十型设...</div>
+            <div class="history-mark-ulo-li">军械员工具箱等十型设...</div>
+        </div>
+    </div>
+<script>
+    //获取标题
+    $(".heades-title").text(document.title);
+    //回退
+    $(".backs").on("click",function(){
+        window.history.back();
+    })
+    //点击搜索条件显示
+    $(".searchs").on("click",function(){
+        $(".heades-search-text").hide()
+        $(".heades-search-box").show();
+        $(".history-mark").show();
+    });
+    //开始搜索
+    $(".serarch-btn").on("click",function(){
+        $(".heades-search-text").show()
+        $(".heades-search-box").hide();
+        $(".history-mark").hide();
+        $.ajax({
+            type:"GET",
+            url:"",
+            data:{title:$(".heades-searc").val()},
+            success:function(res){
+
+            }
+        })
+    })
+    //开始搜索回退
+    $(".searchs_back").on("click",function(){
+        $(".heades-search-text").show()
+        $(".heades-search-box").hide();
+        $(".history-mark").hide();
+    })
+</script>
+</html>

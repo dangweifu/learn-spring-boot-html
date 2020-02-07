@@ -1,0 +1,16 @@
+.demandform {
+    overflow: hidden;
+    .timepicker {
+        padding: 0 20px !important;
+        float: left;
+        label {
+            float: left;
+        }
+        .timeTxt {
+            float: left;
+        }
+    }
+    .search {
+        float: left !important;
+    }
+}

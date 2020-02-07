@@ -1,0 +1,519 @@
+@charset "UTF-8";
+.currency {
+  position: relative;
+  height: 240px;
+}
+
+.currency .container {
+  height: 240px;
+}
+
+.currency .nav-bottom {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.currency .nav-bottom .broadcast-wrapper {
+  width: 1170px;
+  margin: 0 auto;
+  font-family: "微软雅黑 Regular", 微软雅黑;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  color: white;
+}
+
+.currency .nav-bottom .broadcast-wrapper .title-wrapper {
+  margin-right: 40px;
+  float: left;
+  line-height: 50px;
+}
+
+.currency .nav-bottom .broadcast-wrapper .title-wrapper .icon {
+  display: inline-block;
+  vertical-align: middle;
+  height: 24px;
+  width: 22px;
+  background: url("../img/zbsc3.png") no-repeat;
+  background-size: contain;
+}
+
+.currency .nav-bottom .broadcast-wrapper .broadcast {
+  display: inline-block;
+  width: 900px;
+  height: 50px;
+  line-height: 50px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.currency .nav-bottom .broadcast-wrapper .more {
+  float: right;
+  line-height: 50px;
+  font-family: "微软雅黑 Regular", 微软雅黑;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+}
+
+.currency .nav-bottom .broadcast-wrapper .more a {
+  color: #99CBFD;
+}
+
+.currency .nav-bottom .broadcast-wrapper .more a:hover {
+  color: #99CBFD;
+  text-decoration: none;
+}
+
+.container-wrapper {
+  padding-top: 20px;
+  width: 100%;
+  background-color: #f3f3f5;
+}
+
+.container-wrapper .content {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.container-wrapper .content .content-top {
+  width: 100%;
+  font-size: 0;
+  background: #ffffff;
+  padding: 33px 25px 42px 30px;
+}
+
+.container-wrapper .content .content-top .left {
+  display: inline-block;
+  vertical-align: top;
+  width: 360px;
+  height: 325px;
+  padding-left: 43px;
+  background: #e6f2fd;
+}
+
+.container-wrapper .content .content-top .left h3 {
+  margin: 36px 0 37px 0;
+  font-size: 18px;
+  font-family: MicrosoftYaHei;
+  font-weight: bold;
+  color: #333333;
+  cursor: pointer;
+}
+
+.container-wrapper .content .content-top .left h3::after {
+  content: "";
+  display: block;
+  width: 37px;
+  height: 2px;
+  background: #025ab3;
+  margin-top: 15px;
+}
+
+.container-wrapper .content .content-top .left ul {
+  margin: 0;
+  width: 100%;
+  padding: 0;
+}
+
+.container-wrapper .content .content-top .left li {
+  list-style: none;
+  margin-bottom: 28px;
+}
+
+.container-wrapper .content .content-top .left li span {
+  display: inline-block;
+  height: 24px;
+  vertical-align: top;
+}
+
+.container-wrapper .content .content-top .left li a {
+  font-size: 16px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #333333;
+  line-height: 16px;
+  text-decoration: none;
+}
+
+.container-wrapper .content .content-top .left li a:hover {
+  color: #025AB3;
+}
+
+.container-wrapper .content .content-top .center {
+  width: 351px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 40px 0 34px;
+}
+
+.container-wrapper .content .content-top .center .cell {
+  position: relative;
+  display: inline-block;
+  width: 170px;
+  height: 157px;
+  background: #fff7f1;
+  box-sizing: border-box;
+  box-shadow: none;
+  background: inherit inherit inherit inherit inherit inherit inherit inherit inherit;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #fff8f2;
+  border-radius: 0px;
+  cursor: pointer;
+}
+
+.container-wrapper .content .content-top .center .cell:hover h3 {
+  color: #ffffff;
+}
+
+.container-wrapper .content .content-top .center .cell a {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.container-wrapper .content .content-top .center .cell:nth-child(odd) {
+  margin-right: 11px;
+}
+
+.container-wrapper .content .content-top .center .cell:nth-child(1) {
+  margin-bottom: 11px;
+  background: url("../img/cell-1.png") no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.container-wrapper .content .content-top .center .cell:nth-child(1):hover {
+  background: url("../img/cell-1-hover.png") no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.container-wrapper .content .content-top .center .cell:nth-child(2) {
+  margin-bottom: 11px;
+  background: url("../img/cell-2.png") no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.container-wrapper .content .content-top .center .cell:nth-child(2):hover {
+  background: url("../img/cell-2-hover.png") no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.container-wrapper .content .content-top .center .cell:nth-child(3) {
+  background: url("../img/cell-3.png") no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.container-wrapper .content .content-top .center .cell:nth-child(3):hover {
+  background: url("../img/cel-3-hover.png") no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.container-wrapper .content .content-top .center .cell:nth-child(4) {
+  background: url("../img/cell-4.png") no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.container-wrapper .content .content-top .center .cell:nth-child(4):hover {
+  background: url("../img/cell-4-hover.png") no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.container-wrapper .content .content-top .center .cell h3 {
+  margin-top: 111px;
+  font-family: 'Arial Normal', 'Arial';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 13px;
+  color: #333333;
+  text-align: center;
+  line-height: normal;
+}
+
+.container-wrapper .content .content-top .right {
+  width: 360px;
+  display: inline-block;
+}
+
+.container-wrapper .content .content-top .right .logo {
+  width: 360px;
+  height: 100px;
+}
+
+.container-wrapper .content .content-top .right .logo a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.container-wrapper .content .content-top .right .logo:nth-child(1) {
+  margin-bottom: 13px;
+  background: url("../img/system.png") no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.container-wrapper .content .content-top .right .logo:nth-child(2) {
+  margin-bottom: 13px;
+  background: url("../img/jubao.png") no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.container-wrapper .content .content-top .right .logo:nth-child(3) {
+  background: url("../img/zixun.png") no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.container-wrapper .content .content-center {
+  width: 100%;
+  padding: 0 30px 0 30px;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.container-wrapper .content .content-center .center-left {
+  float: left;
+}
+
+.container-wrapper .content .content-center .center-right {
+  float: right;
+}
+
+.container-wrapper .content .content-center .center-right .top .left .icon {
+  background: url("../img/zbsczr5.png") no-repeat !important;
+  background-size: contain !important;
+}
+
+.container-wrapper .content .content-center .center-item {
+  width: 46%;
+  background-color: #ffffff;
+}
+
+.container-wrapper .content .content-center .center-item:first-child {
+  margin-right: 89px;
+}
+
+.container-wrapper .content .content-center .center-item .top {
+  padding: 0;
+  width: 100%;
+  height: 40px;
+}
+
+.container-wrapper .content .content-center .center-item .top .left {
+  float: left;
+}
+
+.container-wrapper .content .content-center .center-item .top .left span {
+  display: inline-block;
+  vertical-align: top;
+  height: 40px;
+  font-family: "Arial Negreta", "Arial Normal", Arial;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 40px;
+}
+
+.container-wrapper .content .content-center .center-item .top .left .icon {
+  margin-left: 5px;
+  margin-top: 8px;
+  margin-right: 10px;
+  display: inline-block;
+  height: 24px;
+  width: 22px;
+  background: url("../img/doc.png") no-repeat;
+  background-size: contain;
+}
+
+.container-wrapper .content .content-center .center-item .top .right {
+  float: right;
+}
+
+.container-wrapper .content .content-center .center-item .top .right a {
+  font-family: 'Arial Normal', 'Arial';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  color: #333333;
+  text-align: center;
+  line-height: 40px;
+}
+
+.container-wrapper .content .content-center .center-item .top .right a:hover {
+  text-decoration: none;
+  color: #025AB3;
+}
+
+.container-wrapper .content .content-center .center-item ul {
+  list-style: none;
+  margin-bottom: 22px;
+  padding: 0;
+}
+
+.container-wrapper .content .content-center .center-item ul li {
+  padding: 20px 0;
+  border-bottom: 1px dotted #E5E5E5;
+}
+
+.container-wrapper .content .content-center .center-item ul li:hover .dots, .container-wrapper .content .content-center .center-item ul li:hover .time, .container-wrapper .content .content-center .center-item ul li:hover a {
+  color: #0099ff;
+}
+
+.container-wrapper .content .content-center .center-item ul li:last-child {
+  border-bottom: 1px dotted transparent;
+}
+
+.container-wrapper .content .content-center .center-item ul .dots {
+  font-size: 24px;
+  line-height: 16px;
+}
+
+.container-wrapper .content .content-center .center-item ul .time {
+  float: right;
+  font-size: 16px;
+  line-height: 16px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #333333;
+}
+
+.container-wrapper .content .content-center .center-item ul a {
+  display: inline-block;
+  max-width: 370px;
+  font-size: 16px;
+  line-height: 16px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #333333;
+  text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.container-wrapper .content .content-bottom {
+  margin-top: 30px;
+  margin-bottom: 86px;
+  background-color: #ffffff;
+  padding: 20px 24px 30px 24px;
+}
+
+.container-wrapper .content .content-bottom .title {
+  margin-bottom: 30px;
+  width: 100%;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.container-wrapper .content .content-bottom .title span {
+  display: inline-block;
+  font-family: '微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';
+  font-weight: 700;
+  font-style: normal;
+  font-size: 24px;
+  text-align: left;
+  line-height: 22px;
+}
+
+.container-wrapper .content .content-bottom .title .bottom-line {
+  padding-bottom: 21px;
+  border-bottom: solid 2px #025AB3;
+}
+
+.container-wrapper .content .content-bottom ul {
+  font-size: 0;
+  padding: 0;
+}
+
+.container-wrapper .content .content-bottom ul li {
+  position: relative;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  display: inline-block;
+  list-style: none;
+  width: 210px;
+  height: 200px;
+  background: inherit;
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 0px;
+  cursor: pointer;
+}
+
+.container-wrapper .content .content-bottom ul li:hover h3 {
+  color: #025AB3;
+}
+
+.container-wrapper .content .content-bottom ul li a {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.container-wrapper .content .content-bottom ul li:nth-child(5n) {
+  margin-right: 0;
+}
+
+.container-wrapper .content .content-bottom ul li .book {
+  display: block;
+  width: 100%;
+  height: 150px;
+}
+
+.container-wrapper .content .content-bottom ul li .book img {
+  width: 100%;
+  height: 100%;
+}
+
+.container-wrapper .content .content-bottom ul li h3 {
+  margin: 10px auto 0 auto;
+  font-family: '微软雅黑 Regular', '微软雅黑';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  text-align: center;
+  max-width: 80%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.container-wrapper .content .content-bottom .button-wrapper {
+  width: 108px;
+  height: 44px;
+  margin: 0px auto;
+  text-align: center;
+  border-radius: 22px;
+  border: 1px solid #025AB3;
+  line-height: 44px;
+  font-size: 16px;
+  background-color: #025AB3;
+}
+
+.container-wrapper .content .content-bottom .button-wrapper a {
+  font-family: '微软雅黑 Regular', '微软雅黑';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 34px;
+  color: #ffffff;
+  text-decoration: none;
+}

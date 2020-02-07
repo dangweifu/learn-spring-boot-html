@@ -1,0 +1,610 @@
+.pr-banner-wrapper {
+  width: 100%;
+  height: 200px;
+  padding-top: 72px;
+  text-align: center;
+  background-image: url("../img/userCenter.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.pr-banner-wrapper h2 {
+  margin-top: 0;
+  margin-bottom: 9px;
+  font-size: 34px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: white;
+}
+
+.pr-banner-wrapper p {
+  font-size: 16px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: white;
+}
+
+.pr-content-wrapper {
+  padding-bottom: 83px;
+  background-color: #F5F5F5;
+}
+
+.pr-content-wrapper .pr-nav-arrow {
+  width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.pr-content-wrapper .pr-nav-arrow .breadcrumb {
+  background-color: #F5F5F5;
+}
+
+.pr-content-wrapper .pr-nav-arrow .breadcrumb li a {
+  font-size: 16px;
+}
+
+.pr-content-wrapper .pr-form-wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 59px 30px 87px 30px;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.pr-content-wrapper .pr-form-wrapper .pr-form-title {
+  position: relative;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.pr-content-wrapper .pr-form-wrapper .pr-form-title a {
+  display: inline-block;
+  font-size: 22px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #333333;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.pr-content-wrapper .pr-form-wrapper .pr-form-title span {
+  display: inline-block;
+  width: 1px;
+  height: 20px;
+  margin: 0 50px;
+  background: #e5e5e5;
+}
+
+.pr-content-wrapper .pr-form-wrapper .pr-form-title .form-title-active {
+  position: relative;
+  color: #025AB3;
+}
+
+.pr-content-wrapper .pr-form-wrapper .pr-form-title .line {
+  width: 88px;
+  height: 4px;
+  background-color: #025AB3;
+  position: absolute;
+  bottom: 0;
+}
+
+.pr-content-wrapper .pr-form-wrapper .info {
+  width: 100%;
+  padding: 20px 30px;
+  margin-bottom: 30px;
+}
+
+.pr-content-wrapper .pr-form-wrapper .info span {
+  font-size: 16px;
+  color: red;
+}
+
+.pr-content-wrapper .pr-form-wrapper .form {
+  text-align: right;
+}
+
+.pr-content-wrapper .pr-form-wrapper .form .control-label {
+  width: 120px;
+}
+
+.pr-content-wrapper .pr-form-wrapper .form-group {
+  display: inline-block;
+  margin-bottom: 30px;
+  display: flex;
+}
+
+.pr-content-wrapper .pr-form-wrapper .form-group input {
+  color: #999999;
+}
+
+.pr-content-wrapper .pr-form-wrapper .form-group label {
+  vertical-align: middle;
+  font-size: 16px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.pr-content-wrapper .pr-form-wrapper .form-group label span {
+  color: red;
+}
+
+.pr-content-wrapper .pr-form-wrapper .form-group .input-wrapper {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.pr-content-wrapper .pr-form-wrapper .form-group .radio-item-frist {
+  margin-left: 29px;
+}
+
+.pr-content-wrapper .pr-form-wrapper .form-group .radio-item {
+  margin-right: 42px;
+}
+
+.pr-content-wrapper .pr-form-wrapper .form-group .radio-item input[type="radio"] {
+  position: absolute;
+  top: 6px;
+  left: 13px;
+  width: 16px;
+  height: 16px;
+  z-index: 2;
+  opacity: 0;
+}
+
+.pr-content-wrapper .pr-form-wrapper .form-group .radio-item input[type="radio"]:checked + label::after {
+  background: url("../img/radio-select.png") no-repeat;
+  background-position: center center;
+}
+
+.pr-content-wrapper .pr-form-wrapper .form-group .radio-item label {
+  position: relative;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #333333;
+}
+
+.pr-content-wrapper .pr-form-wrapper .form-group .radio-item label::after {
+  content: '';
+  display: block;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  left: -28px;
+  bottom: 0px;
+  border-radius: 50%;
+  border: solid 1px #025AB3;
+}
+
+.pr-content-wrapper .pr-form-wrapper .form-group .fileinput-wrapper {
+  margin-right: 30px;
+  position: relative;
+  width: 276px;
+  height: 171px;
+  background: #f4f4f4;
+  text-align: center;
+  font-size: 16px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #999999;
+}
+
+.pr-content-wrapper .pr-form-wrapper .form-group .fileinput-wrapper input {
+  width: 276px;
+  height: 133px;
+  opacity: 0;
+}
+
+.pr-content-wrapper .pr-form-wrapper .form-group .fileinput-wrapper::after {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  content: '';
+  display: block;
+  height: 52px;
+  width: 2px;
+  background: #cccccc;
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.pr-content-wrapper .pr-form-wrapper .form-group .fileinput-wrapper::before {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  content: '';
+  display: block;
+  width: 52px;
+  height: 2px;
+  background: #cccccc;
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.pr-content-wrapper .pr-form-wrapper .form-group .fileinput-wrapper button {
+  margin: 30px auto 0 auto;
+  width: 100px;
+  height: 30px;
+  background: #025ab3;
+  border-radius: 15px;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #fefefe;
+  border-color: transparent;
+}
+
+.pr-content-wrapper .pr-form-wrapper .form-group .with-text-input {
+  box-sizing: border-box;
+  width: 400px;
+  font-size: 16px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  line-height: 56px;
+  color: #333333;
+}
+
+.pr-content-wrapper .pr-form-wrapper .form-group .with-text-input input {
+  box-sizing: border-box;
+  width: 345px !important;
+  float: left;
+}
+
+.pr-content-wrapper .pr-form-wrapper .date {
+  float: right;
+  width: 399px;
+}
+
+.pr-content-wrapper .pr-form-wrapper .date .input-group-addon {
+  background: #f5f5f5;
+  border: solid 1px #F5F5F5;
+}
+
+.pr-content-wrapper .pr-form-wrapper .date .form-control {
+  color: #999999;
+}
+
+.pr-content-wrapper .pr-form-wrapper .text-left {
+  text-align: left;
+}
+
+.pr-content-wrapper .pr-form-wrapper .checkbox {
+  text-align: center;
+}
+
+.pr-content-wrapper .pr-form-wrapper .checkbox input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  opacity: 0;
+  z-index: 2;
+}
+
+.pr-content-wrapper .pr-form-wrapper .checkbox input[type="checkbox"]:checked + label::after {
+  background: url("../img/personalRegistration-selected.png") no-repeat;
+}
+
+.pr-content-wrapper .pr-form-wrapper .checkbox label {
+  padding-left: 17px;
+  position: relative;
+  font-size: 16px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #333333;
+}
+
+.pr-content-wrapper .pr-form-wrapper .checkbox label::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: -20px;
+  bottom: 2px;
+  width: 20px;
+  height: 20px;
+  background: url("../img/personalRegistration-unselected.png") no-repeat;
+}
+
+.pr-content-wrapper .pr-form-wrapper .submit-btn {
+  margin-top: 81px;
+  text-align: center;
+}
+
+.pr-content-wrapper .pr-form-wrapper .submit-btn button {
+  margin-right: 10px;
+  width: 250px;
+  height: 60px;
+  background: #025ab3;
+  font-size: 18px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: white;
+  border-color: transparent;
+  border-radius: 0;
+}
+
+.pr-content-wrapper .pr-form-wrapper .dropdown select {
+  box-sizing: border-box;
+  width: 399px;
+  height: 56px;
+  font-size: 16px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  text-align: left;
+  color: #999999;
+  background: #f4f4f4;
+  border: 0;
+  box-shadow: 0 0 0 0;
+  border-radius: 0;
+}
+
+.pr-content-wrapper .pr-form-wrapper .one-select select {
+  width: 400px;
+}
+
+.pr-content-wrapper .pr-form-wrapper .text-info {
+  float: right;
+  width: 967px;
+  padding: 20px;
+  margin-bottom: 30px;
+  text-align: left;
+  border: solid 1px #f5f5f5;
+  color: #999999;
+}
+
+.pr-content-wrapper .pr-form-wrapper .fileinput-three span {
+  display: inline-block;
+  color: #999999;
+  font-size: 12px;
+}
+
+.pr-content-wrapper .pr-form-wrapper .fileinput-three .form-group {
+  margin-bottom: 0;
+}
+
+.pr-content-wrapper .pr-form-wrapper .fileinput-three .fileinput-wrapper {
+  margin-top: 10px;
+}
+
+.pr-content-wrapper .pr-form-wrapper .fileinput-three .file-name-input {
+  height: 40px;
+  width: 276px;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.pr-content-wrapper .pr-form-wrapper .checkbox-group .control-title {
+  display: inline-block;
+  margin-right: 23px;
+  font-size: 16px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #333333;
+  line-height: 38px;
+  vertical-align: top;
+}
+
+.pr-content-wrapper .pr-form-wrapper .checkbox-group .checkbox-right {
+  display: inline-block;
+  width: 87%;
+}
+
+.pr-content-wrapper .pr-form-wrapper .checkbox-group .checkbox-right .checkbox-position {
+  display: inline-block;
+  margin-right: 55px;
+  margin-bottom: 30px;
+}
+
+.pr-content-wrapper .pr-form-wrapper .checkbox-group .checkbox-right .checkbox-position:nth-child(5), .pr-content-wrapper .pr-form-wrapper .checkbox-group .checkbox-right .checkbox-position:nth-child(10) {
+  margin-right: 0px;
+}
+
+.pr-content-wrapper .pr-form-wrapper .checkbox-group .checkbox-right .checkbox-position label {
+  min-width: 129px;
+  text-align: left;
+  font-size: 16px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #333333;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.pr-content-wrapper .pr-form-wrapper .text-right {
+  text-align: right;
+}
+
+.pr-content-wrapper .pr-form-wrapper .text-left {
+  text-align: left;
+}
+
+.pr-content-wrapper .pr-form-wrapper .input-wrapper input,
+.pr-content-wrapper .pr-form-wrapper .input-wrapper select {
+  width: 399px;
+}
+
+.pr-content-wrapper .pr-form-wrapper .input-wrapper ul {
+  width: 399px;
+}
+
+.pr-content-wrapper .pr-form-wrapper .keyword-input-wrapper {
+  display: inline-block;
+  position: relative;
+  width: 106px;
+  background-color: #F5F5F5;
+  border-radius: 15px;
+}
+
+.pr-content-wrapper .pr-form-wrapper .keyword-input-wrapper .keyword-input {
+  width: 86px;
+  height: 30px;
+  border-radius: 15px;
+  outline: none;
+}
+
+.pr-content-wrapper .pr-form-wrapper .keyword-input-wrapper .keyword-input-icon {
+  position: absolute;
+  right: 12px;
+  bottom: 9px;
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: url("../img/delete.png") no-repeat;
+  background-position: center center;
+  transform: rotateZ(45deg);
+}
+
+.pr-content-wrapper .pr-form-wrapper .keyword-item {
+  display: inline-block;
+  position: relative;
+  margin-right: 30px;
+  height: 30px;
+  padding: 0 32px 0 12px;
+  background-color: #F5F5F5;
+  border-radius: 15px;
+  line-height: 30px;
+  font-size: 16px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #999999;
+}
+
+.pr-content-wrapper .pr-form-wrapper .keyword-item .keyword-item-delete {
+  position: absolute;
+  right: 12px;
+  bottom: 9px;
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: url("../img/delete.png") no-repeat;
+  background-position: center center;
+}
+
+.pr-content-wrapper .pr-form-wrapper .form-textarea label {
+  vertical-align: top;
+}
+
+.pr-content-wrapper .pr-form-wrapper .form-textarea .textarea-bg {
+  width: 967px;
+  background-color: #F5F5F5;
+  border-color: transparent;
+  box-shadow: 0 0 0 0;
+  outline: none;
+}
+
+.pr-content-wrapper .pr-form-wrapper .address-dropdown-wrapper {
+  margin-left: 20px;
+}
+
+.pr-content-wrapper .pr-form-wrapper .address-dropdown-wrapper:nth-child(2) {
+  margin-left: 0;
+}
+
+.pr-content-wrapper .pr-form-wrapper .checkbox-group .control-title {
+  display: inline-block;
+  margin-right: 23px;
+  font-size: 16px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #333333;
+  line-height: 38px;
+  vertical-align: top;
+}
+
+.pr-content-wrapper .pr-form-wrapper .checkbox-group .checkbox-right {
+  display: inline-block;
+  width: 87%;
+}
+
+.pr-content-wrapper .pr-form-wrapper .checkbox-group .checkbox-right .checkbox-position {
+  display: inline-block;
+  margin-right: 55px;
+  margin-bottom: 30px;
+}
+
+.pr-content-wrapper .pr-form-wrapper .checkbox-group .checkbox-right .checkbox-position:nth-child(5), .pr-content-wrapper .pr-form-wrapper .checkbox-group .checkbox-right .checkbox-position:nth-child(10) {
+  margin-right: 0px;
+}
+
+.pr-content-wrapper .pr-form-wrapper .checkbox-group .checkbox-right .checkbox-position label {
+  min-width: 129px;
+  text-align: left;
+  font-size: 16px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #333333;
+}
+
+.pr-content-wrapper .pr-form-wrapper .fileinput-left label {
+  vertical-align: top;
+  margin-left: 46px;
+}
+
+.pr-content-wrapper .pr-form-wrapper .fileinput-left div {
+  display: inline-block;
+}
+
+.pr-content-wrapper .pr-form-wrapper .three-select select {
+  width: 310px;
+}
+
+.pr-content-wrapper .pr-form-wrapper .candidate-wrapper {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: solid 1px #f5f5f5;
+  text-align: center;
+}
+
+.pr-content-wrapper .pr-form-wrapper .candidate-wrapper .candidate-add-btn {
+  text-align: center;
+  padding: 10px 20px;
+  border: solid 1px #025AB3;
+  color: #025AB3;
+  background: #ffffff;
+}
+
+.pr-content-wrapper .pr-form-wrapper .form-fileupload {
+  cursor: pointer;
+}
+
+.pr-content-wrapper .pr-form-wrapper .form-fileupload a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.pr-content-wrapper .pr-form-wrapper .form-fileupload .btn_addPic {
+  display: inline-block;
+  position: relative;
+  width: 140px;
+  height: 46px;
+  line-height: 46px;
+  overflow: hidden;
+  background: #025AB3;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+}
+
+.pr-content-wrapper .pr-form-wrapper .form-fileupload .filePrew {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 140px;
+  height: 46px;
+  font-size: 16px;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  cursor: pointer;
+}
+
+.margin-agree {
+  text-align: left !important;
+  margin-left: 166px;
+  margin-top: 33px;
+}

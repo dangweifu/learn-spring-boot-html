@@ -1,0 +1,452 @@
+.requirementDetail {
+  min-height: 1000px;
+  background: #fff;
+  margin-top: 30px;
+  margin-bottom: 80px;
+  padding: 0 40px 40px;
+}
+
+.requirementDetail .content-title {
+  text-align: center;
+  font-weight: bold;
+}
+
+.requirementDetail p {
+  font-size: 20px;
+  padding-top: 60px;
+  margin: 0px;
+}
+
+.requirementDetail .nav {
+  padding: 20px 30px;
+  background: #f6f6f6;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.requirementDetail .nav .pub {
+  float: left;
+}
+
+.requirementDetail .nav .pub span {
+  line-height: 32px;
+}
+
+.requirementDetail .nav .nav-ceil {
+  float: left;
+}
+
+.requirementDetail .nav .nav-ceil span {
+  line-height: 32px;
+}
+
+.requirementDetail .nav .nav-ceil .txt-ceil, .requirementDetail .nav .nav-ceil .ceil {
+  padding-right: 10px;
+  float: left;
+}
+
+.requirementDetail .nav .nav-ceil .name-ceil {
+  float: left;
+}
+
+.requirementDetail .nav .nav-ceil .txt-ceil {
+  width: 80px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  float: left;
+}
+
+.requirementDetail .nav .ceil {
+  display: flex;
+}
+
+.requirementDetail .nav .ceil span {
+  padding-right: 0px 6px;
+}
+
+.requirementDetail .nav .ceil .demandTypeName, .requirementDetail .nav .ceil .demandPublishUnit {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 90px;
+}
+
+.requirementDetail .nav .right {
+  float: right;
+}
+
+.requirementDetail .nav .right .consult {
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 4px;
+  color: #fff;
+  background: #468cd3;
+  padding: 6px 8px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.requirementDetail .nav .right .consult img {
+  margin-right: 8px;
+  width: 20px;
+  height: 17px;
+}
+
+.requirementDetail .nav .right .imgCollect {
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url(../img/collect.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 39px;
+  height: 32px;
+  border-radius: 5px;
+  border: 1px solid #cccccc;
+}
+
+.requirementDetail .nav .right .imgCollect:hover {
+  background-image: url(../img/select_collect.png);
+  cursor: pointer;
+}
+
+.requirementDetail .detail {
+  border: 1px dashed #CCCCCC;
+  margin-top: 45px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 20px 0;
+  color: #333;
+}
+
+.requirementDetail .detail .ceil p {
+  margin: 0px;
+  padding: 0px;
+  font-size: 16px;
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+
+.requirementDetail .detail .ceil p span {
+  font-weight: 500;
+}
+
+.requirementDetail .content {
+  width: 100%;
+}
+
+.requirementDetail .content .title-ceil {
+  padding: 30px 0 10px;
+  border-bottom: 1px solid #cccccc;
+}
+
+.requirementDetail .content .title-ceil span {
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+.requirementDetail .content .txt {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 36px;
+  color: #333;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.requirementDetail .content .txt span {
+  color: #468cd3;
+}
+
+.requirementDetail .demandDocking {
+  border: 1px solid #f2f2f2;
+  border-top: none;
+  min-height: 500px;
+  margin-top: 50px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.requirementDetail .demandDocking .demand-nav {
+  height: 60px;
+  background: #f6f6f6;
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.requirementDetail .demandDocking .demand-nav .title {
+  position: absolute;
+  color: #666;
+  padding: 14px 24px;
+  background: #fff;
+  font-size: 16px;
+  bottom: 0px;
+  left: 10px;
+}
+
+.requirementDetail .demandDocking .goLogin {
+  text-align: center;
+}
+
+.requirementDetail .demandDocking .goLogin p {
+  color: #ff0000;
+  font-size: 16px;
+}
+
+.requirementDetail .demandDocking .goLogin .login {
+  width: 224px;
+  height: 65px;
+  background: #025AB3;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  margin-top: 40px;
+}
+
+.requirementDetail .demandDocking .goLogin .login a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.requirementDetail .demandDocking .demand-form {
+  overflow: hidden;
+}
+
+.requirementDetail .demandDocking .demand-form .form-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.requirementDetail .demandDocking .demand-form .form-group input {
+  width: 384px;
+  background: #fff;
+  border: 1px solid #ccc;
+}
+
+.requirementDetail .demandDocking .demand-form .form-group .control-label {
+  width: 130px;
+  text-align: right;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.requirementDetail .demandDocking .demand-form .form-group .control-label span {
+  color: #ff0000;
+}
+
+.requirementDetail .demandDocking .demand-form .form-group textarea.form-control {
+  width: 942px;
+}
+
+.requirementDetail .demandDocking .demand-form .form-fileupload a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.requirementDetail .demandDocking .demand-form .form-fileupload span {
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+.requirementDetail .demandDocking .demand-form .form-fileupload h5 {
+  color: #ccc;
+}
+
+.requirementDetail .demandDocking .demand-form .form-fileupload .file {
+  display: flex;
+  align-items: center;
+}
+
+.requirementDetail .demandDocking .demand-form .form-fileupload .btn_addPic {
+  display: inline-block;
+  position: relative;
+  width: 140px;
+  height: 46px;
+  line-height: 46px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background: #fff;
+  color: #999;
+  text-align: center;
+  font-size: 14px;
+}
+
+.requirementDetail .demandDocking .demand-form .form-fileupload .filePrew {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 140px;
+  height: 46px;
+  font-size: 16px;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  cursor: pointer;
+}
+
+.requirementDetail .demandDocking .demand-form .submit-btn {
+  text-align: center;
+  margin: 110px 0 80px 0;
+}
+
+.requirementDetail .demandDocking .demand-form .submit-btn .btn {
+  width: 224px;
+  height: 56px;
+  font-size: 16px;
+  border-radius: 0px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.requirementDetail .demandDocking .demand-form .submit-btn .submit {
+  background: #025AB3;
+  color: #fff;
+  border: none;
+}
+
+.requirementDetail .demandDocking .demand-form .submit-btn .save {
+  background: #fff;
+  color: #025AB3;
+  border: 1px solid #025AB3;
+}
+
+.requirementDetail .demandDocking .demand-form .submit-btn .save:hover {
+  background: #025AB3;
+  color: #fff;
+}
+
+.requirementDetail .demandDocking .guide-form {
+  overflow: hidden;
+}
+
+.requirementDetail .demandDocking .guide-form .form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.requirementDetail .demandDocking .guide-form .form-group input {
+  width: 828px;
+  background: #fff;
+  border: 1px solid #ccc;
+}
+
+.requirementDetail .demandDocking .guide-form .form-group .project-name {
+  background: #E4E4E4;
+}
+
+.requirementDetail .demandDocking .guide-form .form-group .need-title {
+  width: 180px;
+  text-align: right;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.requirementDetail .demandDocking .guide-form .form-group .need-title span {
+  color: #ff0000;
+}
+
+.requirementDetail .demandDocking .guide-form .form-group .feedback {
+  font-size: 16px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: #333333;
+  margin-bottom: 5px;
+}
+
+.requirementDetail .demandDocking .guide-form .form-fileupload a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.requirementDetail .demandDocking .guide-form .form-fileupload span {
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+.requirementDetail .demandDocking .guide-form .form-fileupload h5 {
+  color: #ccc;
+}
+
+.requirementDetail .demandDocking .guide-form .form-fileupload .file {
+  display: flex;
+  align-items: center;
+}
+
+.requirementDetail .demandDocking .guide-form .form-fileupload .btn_addPic {
+  display: inline-block;
+  position: relative;
+  width: 140px;
+  height: 46px;
+  line-height: 46px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background: #fff;
+  color: #999;
+  text-align: center;
+  font-size: 14px;
+}
+
+.requirementDetail .demandDocking .guide-form .form-fileupload .filePrew {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 140px;
+  height: 46px;
+  font-size: 16px;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  cursor: pointer;
+}
+
+.requirementDetail .demandDocking .guide-form .input-group-addon {
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+  z-index: 99;
+}
+
+.requirementDetail .demandDocking .guide-form .input-group-addon .glyphicon-calendar {
+  font-size: 18px;
+}
+
+.requirementDetail .statement {
+  font-size: 16px;
+  margin-top: 40px;
+}
+
+.requirementDetail .statement .txt {
+  color: #cccccc;
+}
+
+.requirementDetail .sub-btn {
+  margin: 80px 0;
+  text-align: center;
+}
+
+.requirementDetail .sub-btn button {
+  margin-right: 10px;
+  width: 250px;
+  height: 60px;
+  background: #025ab3;
+  font-size: 18px;
+  font-family: MicrosoftYaHei;
+  font-weight: 400;
+  color: white;
+  border-color: transparent;
+  border-radius: 0;
+}
+
+.pub div {
+  display: inline-block;
+}
+
+.pub span {
+  margin-right: 10px;
+}
