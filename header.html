@@ -7,9 +7,9 @@
     <div class="header">
       <div class="logo-img" style="display: inline-block"></div>
       <div class="right_m" id="userBar" style="display: inline-block;float: right">
-        <a href="../login.html" class="login">登录</a>
-        <a href="./personalRegistration.html" class="register">注册</a>
-        <a href="./user/userCenter.html" class="register">用户中心</a>
+        <a href="/login.html" class="login">登录</a>
+        <a href="personalRegistration.html" class="register">注册</a>
+        <a href="user/userCenter.html" class="register">用户中心</a>
       </div>
     </div>
   </div>
@@ -20,7 +20,7 @@
 <div class="nav-tab">
   <div class="container person">
     <ul class="nav navbar-nav">
-      <li class="active"><a href="./index.html">首页</a></li>
+      <li class="active"><a href="index.html">首页</a></li>
       <li><a href="#">采购公告</a></li><!-- /procurementNotices/procurementNotices.html -->
       <li><a href="#">采购需求</a></li><!-- /purchaseRequirement/amryRequirement.html -->
       <li><a href="#">集中采购</a></li><!-- /focusPurchase/focusPurchase.html -->
@@ -55,13 +55,13 @@
       //   }
 
       userBar = '<a href="#">我的关注</a>' +
-        '<a href="./user/userCenter.html" class="register user_center" >用户中心</a>' +
+        '<a href="user/userCenter.html" class="register user_center" >用户中心</a>' +
         '<a href="#" class="register">消息中心</a>' +
         '<a href="#" class="register" style="font-size: 20px;">'+"unitName"+'</a>' +
         '<a href="javascript:;" onclick="clearLoginInfo();" class="register"><div class="tuichu"></div></a>';
     } else {
       userBar =
-        '<a href="./login.html" class="login">登录</a><a href="#" class="register">注册</a>';
+        '<a href="login.html" class="login">登录</a><a href="#" class="register">注册</a>';
     }
     $("#userBar").html(userBar);
   });

@@ -1,10 +1,8 @@
-var apiUrl = "http://1.119.134.82/cg_unit";
-// var apiUrl = "http://192.168.1.28:8082/cg_unit";
-// var apiUrl = "http://192.168.1.111:8082/cg_unit";
-var imgUrl = "http://1.119.134.82/";
-var imgUrlUeditor = "http://localhost/cg_unit/ueditor/config";
+var apiUrl = "http://localhost/api";
+var imgUrl = "http://localhost/file/";
+var imgUrlUeditor = "http://localhost/api/ueditor/config";
 var webserviece_api = 'http://localhost/'; // webservice 接口
-var collectUrl = "http://120.27.21.6:82";
+var collectUrl = "http://localhost/collect";
 //ajax 对应实体类的方法
 //CgMemberEntity cgMemberEntity
 function ajax(type, url, data, success, error) {

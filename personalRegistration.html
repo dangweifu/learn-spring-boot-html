@@ -11,13 +11,13 @@
   <script src="../js/respond.min.js"></script>
   <![endif]-->
 
-  <script src="../layui.all.js"></script>
+  <script src="layui.all.js"></script>
 
   <!-- Bootstrap -->
-  <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="../css/font-awesome.min.css" rel="stylesheet">
-  <link href="../css/common.min.css" rel="stylesheet">
-  <link href="../css/personalRegistration.css" rel="stylesheet">
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/common.min.css" rel="stylesheet">
+  <link href="css/personalRegistration.css" rel="stylesheet">
     <style>
         .col-xs-8{
             margin-bottom: 10px;
@@ -36,7 +36,7 @@
   <div class="pr-nav-arrow top">
     <img class="icon" src="img/home.png" alt="">
     <ol class="breadcrumb">
-      <li><a href="../index.html">首页</a></li>
+      <li><a href="index.html">首页</a></li>
       <li><a href="#">用户注册</a></li>
     </ol>
   </div>
@@ -167,11 +167,11 @@
 </footer>
 
 <!-- jQuery 和 Bootstrap-->
-<script src="../bootstrap/js/jquery.min.js"></script>
-<script src="../bootstrap/js/bootstrap.min.js"></script>
-<script src="../js/validate.min.js"></script>
-<script src="../js/cookie.min.js"></script>
-<script src="../js/common.js"></script>
+<script src="bootstrap/js/jquery.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="js/validate.min.js"></script>
+<script src="js/cookie.min.js"></script>
+<script src="js/common.js"></script>
 
 <script>
   $("header").load("header.html");
@@ -343,7 +343,7 @@
             console.log(result);
             if (result.code == 0) {//根据返回值进行跳转
                layer.msg("注册成功！");
-              window.location.href = '../login.html';
+              window.location.href = 'login.html';
             } else {
               if (result.code == 110) {
                 layer.msg("验证码已失效！");
